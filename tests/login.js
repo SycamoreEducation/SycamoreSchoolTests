@@ -1,7 +1,7 @@
 module.exports = {
-  'Login' : function (client) {
+  'Login': function(client) {
     client
-      .url('http://localhost:8080')
+      .url(client.launch_url)
       .waitForElementVisible('body', 1000)
       .assert.title('Sycamore Education')
       .assert.visible('input[name=entered_schid]')
@@ -15,10 +15,18 @@ module.exports = {
       .assert.title('Sycamore School - 1')
   },
 
-  'Student Profile' : function (client) {
+  'School Home': function(client) {
+    client.frame(1);
+    client.page.menu()
+      .assert.containsText('@home', 'School Home')
+    client.frame(null);
+  },
+
+  'Student Profile': function(client) {
+    client.page.studentProfile().navigate()
+      .assert.containsText('@searchBar', 'Search');
+
     client
-      .url('http://localhost:8080/students.php')
-      .assert.containsText('div#ccdiv', 'Search')
       .end();
   }
 };

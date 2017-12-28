@@ -1,11 +1,13 @@
 {
-  "src_folders" : ["tests"],
-  "output_folder" : "reports",
+  "src_folders": "tests",
+  "output_folder": "reports",
+  "page_objects_path": "objects",
 
-  "test_settings" : {
-    "default" : {
-      "screenshots" : {
-        "enabled" : false
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost:8080",
+      "screenshots": {
+        "enabled": false
       },
       "desiredCapabilities": {
         "browserName": "firefox",
