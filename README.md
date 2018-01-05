@@ -8,7 +8,7 @@ npm install -g nightwatch
 
 Start selenium container:
 ```
-docker run -d --net=host selenium/standalone-firefox
+docker run -d --rm --net=host selenium/standalone-firefox
 ```
 
 Ensure that the SycamoreSchool docker environment is up and that school 1 has been populated.
