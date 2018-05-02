@@ -2,6 +2,7 @@
   "src_folders": "tests",
   "output_folder": "reports",
   "page_objects_path": "objects",
+  "custom_commands_path": "functions",
 
   "test_settings": {
     "default": {
@@ -16,4 +17,3 @@
     }
   }
 }
-
