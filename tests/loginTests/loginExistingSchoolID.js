@@ -3,7 +3,7 @@ module.exports = {
 
     'Login Existing School ID Test': (client) => {
 
-        var page = client.page.loginSecondary();
+        var page = client.page.loginExistingSchoolID();
 
         var username = 'superuser';
         var password = 'guest';
@@ -14,21 +14,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .setValue('@usernameField', username)
-            .setValue('@passwordField', password)
-
-            .assert.value('@usernameField', username)
-            .assert.value('@passwordField', password)
-
-            .click('@loginButton');
-
-        client.frame(1);
-        client.page.menu()
-            .assert.containsText('@home', 'School Home')
-        client.frame(null);
-
-        client.page.studentProfile().navigate()
-            .assert.containsText('@searchBar', 'Search');
+            .loginExistingSchoolIDFunc(username, password);
 
         client.end();
     }

@@ -16,15 +16,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .setValue('@schoolField', schoolID)
-            .setValue('@usernameField', username)
-            .setValue('@passwordField', password)
-
-            .assert.value('@schoolField', schoolID)
-            .assert.value('@usernameField', username)
-            .assert.value('@passwordField', password)
-
-            .click('@loginButton')
+            .loginFunc(schoolID, username, password)
 
             // TODO: WHY DOESN'T A TOAST APPEAR FOR INVALID SCHOOL?
             .assert.elementNotPresent('@toast');

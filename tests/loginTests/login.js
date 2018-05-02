@@ -17,15 +17,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .loginFunc(schoolID, username, password)
-
-        client.frame(1);
-        client.page.menu()
-            .assert.containsText('@home', 'School Home')
-        client.frame(null);
-
-        client.page.studentProfile().navigate()
-            .assert.containsText('@searchBar', 'Search');
+            .loginFunc(schoolID, username, password);
 
         client.end();
     }

@@ -3,7 +3,7 @@ module.exports = {
 
     'Login Existing School ID Invalid Username Test': (client) => {
 
-        var page = client.page.loginSecondary();
+        var page = client.page.loginExistingSchoolID();
 
         var username = 'superuse';
         var password = 'guest';
@@ -14,13 +14,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .setValue('@usernameField', username)
-            .setValue('@passwordField', password)
-
-            .assert.value('@usernameField', username)
-            .assert.value('@passwordField', password)
-
-            .click('@loginButton')
+            .loginExistingSchoolIDFunc(username, password)
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
