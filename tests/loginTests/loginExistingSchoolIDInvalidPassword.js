@@ -1,12 +1,13 @@
 module.exports = {
-    tags: ['loginSecondaryNoInput', 'loginTests'],
+    tags: ['loginExistingSchoolIDInvalidPassword', 'loginTests'],
 
-    'Login Secondary No Input Test': (client) => {
+    'Login Existing School ID Invalid Password Test': (client) => {
 
-        const page = client.page.loginSecondary();
+        var page = client.page.loginSecondary();
 
-        const username = '';
-        const password = '';
+        var username = 'superuser';
+        var password = 'gues';
+        var schoolID = '1';
 
         page.navigate()
             .assert.visible('@usernameField')
@@ -24,7 +25,7 @@ module.exports = {
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
-            .assert.containsText('@toast', 'Please make sure all fields have been filled out');
+            .assert.containsText('@toast', 'U/P Incorrect: ' + schoolID + ' - ' + username);
 
         client.end();
     }

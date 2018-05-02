@@ -1,12 +1,12 @@
 module.exports = {
-    tags: ['loginSecondary', 'loginTests'],
+    tags: ['loginExistingSchoolID', 'loginTests'],
 
-    'Login Secondary Test': (client) => {
+    'Login Existing School ID Test': (client) => {
 
-        const page = client.page.loginSecondary();
+        var page = client.page.loginSecondary();
 
-        const username = 'superuser';
-        const password = 'guest';
+        var username = 'superuser';
+        var password = 'guest';
 
         page.navigate()
             .assert.visible('@usernameField')

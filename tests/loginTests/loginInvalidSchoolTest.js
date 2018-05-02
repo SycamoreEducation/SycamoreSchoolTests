@@ -3,11 +3,11 @@ module.exports = {
 
     'Login Invalid School ID': (client) => {
 
-        const page = client.page.login();
+        var page = client.page.login();
 
-        const schoolID = '0';
-        const username = 'superuser';
-        const password = 'guest';
+        var schoolID = '0';
+        var username = 'superuser';
+        var password = 'guest';
 
         page.navigate()
             .assert.visible('@schoolField')

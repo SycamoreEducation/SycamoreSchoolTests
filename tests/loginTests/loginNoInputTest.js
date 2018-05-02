@@ -3,11 +3,11 @@ module.exports = {
 
     'Login No Input': (client) => {
 
-        const page = client.page.login();
+        var page = client.page.login();
 
-        const schoolID = '';
-        const username = '';
-        const password = '';
+        var schoolID = '';
+        var username = '';
+        var password = '';
 
         page.navigate()
             .assert.visible('@schoolField')
