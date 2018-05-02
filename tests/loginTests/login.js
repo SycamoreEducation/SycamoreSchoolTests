@@ -10,14 +10,13 @@ module.exports = {
         var password = 'guest';
 
         page.navigate()
-
             .assert.visible('@schoolField')
             .assert.visible('@usernameField')
             .assert.visible('@passwordField')
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .loginFunc(schoolID, username, password);
+            .schoolLogin(schoolID, username, password);
 
         client.end();
     }

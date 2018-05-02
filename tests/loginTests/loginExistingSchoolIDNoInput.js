@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .loginExistingSchoolIDFunc(username, password)
+            .schoolLoginExistingSchoolID(username, password)
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
