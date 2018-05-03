@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .schoolLoginExistingSchoolID(username, password);
+            .schoolLogin(username, password);
 
         client.end();
     }
