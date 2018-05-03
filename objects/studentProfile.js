@@ -1,5 +1,6 @@
 module.exports = {
     url: function() {
+
         return this.api.launchUrl + '/students.php';
     },
     elements: {
