@@ -3,7 +3,7 @@ module.exports = {
         home: {
             selector: 'ul.breadcrumb li.active a',
         },
-        school: '#menu li a[data-value=School]',
+        school: '#menu > li:nth-child(1) > a',
         frontDesk: '#menu > li:nth-child(2) > a',
         familyDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(1) > a',
         employeeDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(2) > a',
@@ -158,7 +158,7 @@ module.exports = {
         connections: '#menu > li:nth-child(13) > ul > a:nth-child(9)',
         integrations: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(1) > a',
         webHooks: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(2) > a',
-        siteAdmin: '#menu > li:nth-child(13) > ul > a:nth-child(11)',
+        siteAdmin: '#menu > li:nth-child(13) > a',
         migrationWizard: '#menu > li:nth-child(13) > ul > ul:nth-child(12) > li:nth-child(1) > a',
         studentPhotos: '#menu > li:nth-child(13) > ul > ul:nth-child(12) > li:nth-child(2) > a',
         employeePhotos: '#menu > li:nth-child(13) > ul > ul:nth-child(12) > li:nth-child(3) > a',
