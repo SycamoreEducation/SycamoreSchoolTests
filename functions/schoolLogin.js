@@ -16,5 +16,6 @@ exports.command = function(username, password, school) {
     }
     this
         .click('div.loginLoginButtonDiv')
+
     return this;
 };
