@@ -160,26 +160,6 @@ module.exports = {
             .assert.hidden('@communicationConfiguration')
             .assert.hidden('@communicationReports')
 
-        // .click('@commCenter')
-        // 
-        // .assert.visible('@commCenter')
-        // .assert.visible('@commCenterBlogs')
-        // .assert.visible('@commCenterDiscussions')
-        // 
-        // .assert.containsText('@commCenterBlogs', 'Blogs')
-        // .assert.containsText('@commCenterDiscussions', 'Discussions')
-        // 
-        // .assert.attributeEquals('@commCenterBlogs', 'href', 'http://web/blogs.php')
-        // .assert.attributeEquals('@commCenterDiscussions', 'href', 'http://web/forumboard.php?pid=0')
-        // 
-        // 
-        // .click('@commCenter')
-        // 
-        // .assert.visible('@commCenter')
-        // 
-        // .assert.hidden('@commCenterBlogs')
-        // .assert.hidden('@commCenterDiscussions')
-
         client.frame(null);
 
         client.end();
