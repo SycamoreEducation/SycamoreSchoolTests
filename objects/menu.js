@@ -129,7 +129,7 @@ module.exports = {
         sports: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(1) > a',
         teams: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(2) > a',
         scoreboard: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(3) > a',
-        equiptment: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(4) > a',
+        equipment: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(4) > a',
         ptConferences: '#menu > li:nth-child(8) > ul > a:nth-child(3)',
         ptConferencesTeachers: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(1) > a',
         ptConferencesByDate: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(2) > a',
