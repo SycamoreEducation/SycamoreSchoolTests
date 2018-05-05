@@ -192,7 +192,7 @@ module.exports = {
         myUtilitiesImport: '#menu > li:nth-child(16) > ul > ul > li:nth-child(3) > a',
         myUtilitiesApplications: '#menu > li:nth-child(16) > ul > ul > li:nth-child(4) > a',
         myUtilitiesWebHooks: '#menu > li:nth-child(16) > ul > ul > li:nth-child(5) > a',
-        myUtilitiesPassword: '#menu > li:nth-child(16) > ul > li:nth-child(12) > a',
+        myPassword: '#menu > li:nth-child(16) > ul > li:nth-child(12) > a',
         myAccounting: '#menu > li:nth-child(17) > a',
         myAccountingCafetieria: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
         myAccountingExpenseReports: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
