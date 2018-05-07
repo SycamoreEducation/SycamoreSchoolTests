@@ -212,6 +212,6 @@ module.exports = {
         passANoteAssociates: '#menu > li:nth-child(20) > ul > li:nth-child(4) > a',
         passANoteOptions: '#menu > li:nth-child(20) > ul > li:nth-child(5) > a',
         logout: '#menu > li:nth-child(22) > a',
-        spiritStore: '#menu > li:nth-child(23) > a',
+        spiritStore: '#menu > li:nth-child(23) > a'
     }
 };
