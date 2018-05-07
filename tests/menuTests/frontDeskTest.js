@@ -16,6 +16,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@frontDesk')
             .assert.containsText('@frontDesk', '» Front Desk')
+            .assert.attributeEquals('@frontDesk', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@frontDeskFamilyDirectory')
             .assert.hidden('@frontDeskEmployeeDirectory')

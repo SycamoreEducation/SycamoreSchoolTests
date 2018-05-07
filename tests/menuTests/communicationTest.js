@@ -16,6 +16,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@communication')
             .assert.containsText('@communication', '» Communication')
+            .assert.attributeEquals('@communication', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@communicationHomepage')
             .assert.hidden('@communicationHomepagePolling')

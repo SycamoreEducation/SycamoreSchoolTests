@@ -16,6 +16,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@academic')
             .assert.containsText('@academic', '» Academic')
+            .assert.attributeEquals('@academic', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@gradeMgr')
             .assert.hidden('@gradeMgrReportCards')
