@@ -5,12 +5,10 @@ module.exports = {
 
         var page = client.page.login();
 
-        var schoolID = '1';
         var username = 'superuser';
-        var password = 'guest';
 
         page.navigate()
-            .schoolLogin(username, password, schoolID);
+            .schoolLogin();
 
         client.frame(1);
         client.page.menu()
