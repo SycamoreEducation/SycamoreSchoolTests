@@ -15,7 +15,7 @@ module.exports = {
         client.frame(1);
         client.page.menu()
             .assert.visible('@siteAdmin')
-            .assert.containsText('@siteAdmin', '» Site Admin')
+            .assert.containsText('@siteAdmin', '\273 Site Admin')
             .assert.attributeEquals('@siteAdmin', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@information')

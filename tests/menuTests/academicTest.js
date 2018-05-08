@@ -15,7 +15,7 @@ module.exports = {
         client.frame(1);
         client.page.menu()
             .assert.visible('@academic')
-            .assert.containsText('@academic', '» Academic')
+            .assert.containsText('@academic', '\273 Academic')
             .assert.attributeEquals('@academic', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@gradeMgr')

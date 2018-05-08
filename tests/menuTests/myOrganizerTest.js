@@ -15,7 +15,7 @@ module.exports = {
         client.frame(1);
         client.page.menu()
             .assert.visible('@myOrganizer')
-            .assert.containsText('@myOrganizer', '» My Organizer')
+            .assert.containsText('@myOrganizer', '\273 My Organizer')
             .assert.attributeEquals('@myOrganizer', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@myDesktop')

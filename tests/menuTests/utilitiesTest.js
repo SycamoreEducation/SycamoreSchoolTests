@@ -15,7 +15,7 @@ module.exports = {
         client.frame(1);
         client.page.menu()
             .assert.visible('@utilities')
-            .assert.containsText('@utilities', '» Utilities')
+            .assert.containsText('@utilities', '\273 Utilities')
             .assert.attributeEquals('@utilities', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@onlineFormMgr')

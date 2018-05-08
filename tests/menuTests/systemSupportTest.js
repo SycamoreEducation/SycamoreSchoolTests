@@ -15,7 +15,7 @@ module.exports = {
         client.frame(1);
         client.page.menu()
             .assert.visible('@systemSupport')
-            .assert.containsText('@systemSupport', '» System Support')
+            .assert.containsText('@systemSupport', '\273 System Support')
             .assert.attributeEquals('@systemHelp', 'href', 'http://web/schoolmenu.php#')
 
             .assert.hidden('@openTickets')
