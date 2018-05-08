@@ -43,7 +43,6 @@ module.exports = {
             .assert.attributeEquals('@passANoteAssociates', 'href', 'http://web/pan.php?task=sendassociates')
             .assert.attributeEquals('@passANoteOptions', 'href', 'http://web/usercfg.php?task=pan&tab=2')
 
-
             .click('@passANote')
             .assert.hidden('@passANoteInbox')
             .assert.hidden('@passANoteOutbox')

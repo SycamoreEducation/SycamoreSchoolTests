@@ -41,7 +41,6 @@ module.exports = {
             .assert.attributeEquals('@frontDeskClassroomDirectory', 'href', 'http://web/directory.php?task=classes')
             .assert.attributeEquals('@frontDeskDepartments', 'href', 'http://web/departments.php?task=browse')
 
-
             .click('@frontDesk')
 
             .assert.visible('@frontDesk')

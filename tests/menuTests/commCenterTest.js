@@ -33,7 +33,6 @@ module.exports = {
             .assert.attributeEquals('@commCenterBlogs', 'href', 'http://web/blogs.php')
             .assert.attributeEquals('@commCenterDiscussions', 'href', 'http://web/forumboard.php?pid=0')
 
-
             .click('@commCenter')
 
             .assert.visible('@commCenter')
