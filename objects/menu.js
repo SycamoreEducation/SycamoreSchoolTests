@@ -31,10 +31,11 @@ module.exports = {
         infoCenterOnlineForms: '#menu > li:nth-child(3) > ul > li:nth-child(5) > a',
         infoCenterEventRegistration: '#menu > li:nth-child(3) > ul > li:nth-child(6) > a',
         infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a',
+        //Comm Center Menu
+        commCenter: '#menu > li:nth-child(4)',
+        commCenterBlogs: '#menu > li:nth-child(4) > ul > li:nth-child(1) > a',
+        commCenterDiscussions: '#menu > li:nth-child(4) > ul > li:nth-child(2) > a',
 
-        commCenter: 'a[data-value=CommCenter]',
-        commCenterBlogs: '#menu > li:nth-child(3) > ul > li:nth-child(1) > a',
-        commCenterDiscussions: '#menu > li:nth-child(3) > ul > li:nth-child(2) > a',
         communication: 'a[data-value=Communication]',
         communicationHomepage: '#menu > li:nth-child(5) > ul > a:nth-child(1)',
         communicationHomepagePolling: '#menu > li:nth-child(5) > ul > ul:nth-child(2) > li:nth-child(1) > a',
