@@ -22,6 +22,15 @@ module.exports = {
         frontDeskClassroomDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(3) > a',
         frontDeskDepartments: '#menu > li:nth-child(2) > ul > li:nth-child(4) > a',
         frontDeskFacility: '#menu > li:nth-child(2) > ul > li:nth-child(5) > a',
+        //Info Center Menu
+        infoCenter: '#menu > li:nth-child(3)',
+        infoCenterLibrary: '#menu > li:nth-child(3) > ul > li:nth-child(1) > a',
+        infoCenterCafeteria: '#menu > li:nth-child(3) > ul > li:nth-child(2) > a',
+        infoCenterOnlineAuctions: '#menu > li:nth-child(3) > ul > li:nth-child(3) > a',
+        infoCenterDatabases: '#menu > li:nth-child(3) > ul > li:nth-child(4) > a',
+        infoCenterOnlineForms: '#menu > li:nth-child(3) > ul > li:nth-child(5) > a',
+        infoCenterEventRegistration: '#menu > li:nth-child(3) > ul > li:nth-child(6) > a',
+        infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a',
 
         commCenter: 'a[data-value=CommCenter]',
         commCenterBlogs: '#menu > li:nth-child(3) > ul > li:nth-child(1) > a',
