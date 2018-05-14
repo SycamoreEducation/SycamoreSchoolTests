@@ -7,7 +7,15 @@ module.exports = {
         home: {
             selector: 'ul.breadcrumb li.active a',
         },
-        school: 'a[data-value=School]',
+        //School Menu
+        school: '#menu > li:nth-child(1)',
+        schoolNews: '#menu > li:nth-child(1) > ul > li:nth-child(1) > a',
+        schoolCalendar: '#menu > li:nth-child(1) > ul > li:nth-child(2) > a',
+        schoolDocuments: '#menu > li:nth-child(1) > ul > li:nth-child(3) > a',
+        schoolPhotoAlbums: '#menu > li:nth-child(1) > ul > li:nth-child(4) > a',
+        schoolMultimedia: '#menu > li:nth-child(1) > ul > li:nth-child(5) > a',
+        schoolFarofites: '#menu > li:nth-child(1) > ul > li:nth-child(6) > a',
+
         frontDesk: 'a[data-value=FrontDesk]',
         frontDeskFamilyDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(1) > a',
         frontDeskEmployeeDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(2) > a',
