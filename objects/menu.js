@@ -384,6 +384,9 @@ module.exports = {
         tranportationMgrCarpoolMgr: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(3) > a',
         tranportationMgrParkingPasses: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(4) > a',
         tranportationMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(5) > a',
+        //Volunteer Manager
+        volunteerMgr: '#menu > li:nth-child(12) > ul > a:nth-child(15)',
+        volunteerMgrEvents: '#menu > li:nth-child(12) > ul > ul:nth-child(16) > li > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
