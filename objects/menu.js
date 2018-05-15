@@ -431,6 +431,14 @@ module.exports = {
         eventManagerRegistration: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(2) > a',
         eventManagerParticipants: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(3) > a',
         eventManagerReports: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(4) > a',
+        //Facility Manager
+        facilityMgr: '#menu > li:nth-child(13) > ul > a:nth-child(5)',
+        facilityMgrLocations: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(1) > a',
+        facilityMgrBuildings: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(2) > a',
+        facilityMgrRooms: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(3) > a',
+        facilityMgrPlanner: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(4) > a',
+        facilityMgrActivities: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(5) > a',
+        facilityMgrSearch: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(6) > a',
 
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
         onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
