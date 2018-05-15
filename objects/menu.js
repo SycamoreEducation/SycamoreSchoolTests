@@ -459,10 +459,11 @@ module.exports = {
         databaseMgr: '#menu > li:nth-child(13) > ul > a:nth-child(11)',
         databaseMgrPublicTables: '#menu > li:nth-child(13) > ul > ul:nth-child(12) > li:nth-child(1) > a',
         databaseMgrPrivateTables: '#menu > li:nth-child(13) > ul > ul:nth-child(12) > li:nth-child(2) > a',
+        //Online Form Manager
+        onlineFormMgr: '#menu > li:nth-child(13) > ul > a:nth-child(13)',
+        onlineFormMgrActive: '#menu > li:nth-child(13) > ul > ul:nth-child(14) > li:nth-child(1) > a',
+        onlineFormMgrNonActive: '#menu > li:nth-child(13) > ul > ul:nth-child(14) > li:nth-child(2) > a',
 
-        onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
-        onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
-        onlineFormMgrNonActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(2) > a',
         systemHelp: 'a[data-value=SystemHelp]',
         welcomeAboard: '#menu > li:nth-child(10) > ul > li:nth-child(1) > a',
         onlineHelp: '#menu > li:nth-child(10) > ul > li:nth-child(2) > a',
