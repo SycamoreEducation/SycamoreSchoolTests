@@ -572,6 +572,5 @@ module.exports = {
         emailAccounts: '#menu > li:nth-child(26) > ul > li:nth-child(5) > a',
         //Logout
         logout: '#menu > li:nth-child(28) > a',
-        spiritStore: '#menu > li:nth-child(23) > a'
     }
 };
