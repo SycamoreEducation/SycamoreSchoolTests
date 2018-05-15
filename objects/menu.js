@@ -410,6 +410,13 @@ module.exports = {
         libraryMgrConfigurationSetup: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(11) > li:nth-child(3) > a',
         //Library Manager Menu Items
         libraryMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(12) > a',
+        //Auction Manager
+        auctionMgr: '#menu > li:nth-child(12) > ul > a:nth-child(19)',
+        auctionMgrStaff: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(1) > a',
+        auctionMgrAuctions: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(2) > a',
+        auctionMgrAuctionItems: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(3) > a',
+        auctionMgrDonorCompanies: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(4) > a',
+        auctionMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(5) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
