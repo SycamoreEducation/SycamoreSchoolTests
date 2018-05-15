@@ -36,7 +36,7 @@ module.exports = {
         commCenterBlogs: '#menu > li:nth-child(4) > ul > li:nth-child(1) > a',
         commCenterDiscussions: '#menu > li:nth-child(4) > ul > li:nth-child(2) > a',
         //Address Book Menu
-        addressBook: '#menu > li:nth-child(6)';
+        addressBook: '#menu > li:nth-child(6)',
         addressBookByLastName: '#menu > li:nth-child(6) > ul > li:nth-child(1) > a',
         addressBookByCompany: '#menu > li:nth-child(6) > ul > li:nth-child(2) > a',
         addressBookCategories: '#menu > li:nth-child(6) > ul > li:nth-child(3) > a',
@@ -215,9 +215,9 @@ module.exports = {
         accountingMgrEmployeesExpensesApproved: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(2) > a',
         accountingMgrEmployeesExpensesPaid: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(3) > a',
         //Accounting Manager Services
-        accountingMgrServices: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > a:nth-child(9)'
+        accountingMgrServices: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > a:nth-child(9)',
         //Accounting Manager Services Dwolla Menu 
-        accountingMgrServicesDwolla: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > a:nth-child(1)'
+        accountingMgrServicesDwolla: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > a:nth-child(1)',
         accountingMgrServicesDwollaTransactions: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(2) > li:nth-child(1) > a',
         accountingMgrServicesDwollaConfiguration: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(2) > li:nth-child(2) > a',
         //Accounting Manager Services Payjunction:
@@ -231,7 +231,7 @@ module.exports = {
         accountingMgrServicesSmartTuitionConfiguration: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(6) > li > a',
         //Accounting Manager Services PayPal
         accountingMgrServicesPayPal: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > a:nth-child(7)',
-        accountingMgrServicesPayPalOnlinePayments: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(8) > li:nth-child(1) > a'
+        accountingMgrServicesPayPalOnlinePayments: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(8) > li:nth-child(1) > a',
         accountingMgrServicesPayPalInvoices: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(8) > li:nth-child(2) > a',
         accountingMgrServicesPayPalConfiguration: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(10) > ul:nth-child(8) > li:nth-child(3) > a',
         //Accounting Manager Services EFunds
@@ -244,7 +244,7 @@ module.exports = {
         accountingMgrConfiguration: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > li:nth-child(11) > a',
         accountingMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > li:nth-child(12) > a',
         //Cafeteria Manager
-        cafeteriaMgr: '#menu > li:nth-child(10) > ul > a:nth-child(3)'
+        cafeteriaMgr: '#menu > li:nth-child(10) > ul > a:nth-child(3)',
         cafeteriaMgrFood: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(1) > a',
         cafeteriaMgrMenu: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(2) > a',
         cafeteriaMgrCycles: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(3) > a',
@@ -295,7 +295,7 @@ module.exports = {
         //Addmissions Menu
         addmissions: '#menu > li:nth-child(11)',
         //Addmissions Inquiries
-        inquiries: #menu > 'li:nth-child(11) > ul > a:nth-child(1)',
+        inquiries: '#menu > li:nth-child(11) > ul > a:nth-child(1)',
         inquiresStudents: '#menu > li:nth-child(11) > ul > ul:nth-child(2) > li:nth-child(1) > a',
         inquiriesFamilies: '#menu > li:nth-child(11) > ul > ul:nth-child(2) > li:nth-child(2) > a',
         //Addmissions Enrollment
