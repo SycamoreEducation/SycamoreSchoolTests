@@ -334,13 +334,14 @@ module.exports = {
         addmissionsConfigurationSetup: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(6) > a',
         //Addmissions Menu Items
         addmissionsReports: '#menu > li:nth-child(11) > ul > li > a',
-
-        specialties: 'a[data-value=Specialties]',
-        athleticDirector: '#menu > li:nth-child(8) > ul > a:nth-child(1)',
-        sports: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(1) > a',
-        teams: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(2) > a',
-        scoreboard: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(3) > a',
-        equipment: '#menu > li:nth-child(8) > ul > ul:nth-child(2) > li:nth-child(4) > a',
+        //Specialties Menu
+        specialties: '#menu > li:nth-child(12)',
+        //Athletic Director
+        athleticDirector: '#menu > li:nth-child(12) > ul > a:nth-child(1)',
+        athleticDirectorSports: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(1) > a',
+        athleticDirectorTeams: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(2) > a',
+        athleticDirectorScoreboard: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(3) > a',
+        athleticDirectorEquipment: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(4) > a',
         ptConferences: '#menu > li:nth-child(8) > ul > a:nth-child(3)',
         ptConferencesTeachers: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(1) > a',
         ptConferencesByDate: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(2) > a',
