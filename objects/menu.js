@@ -257,6 +257,27 @@ module.exports = {
         cafeteriaMgrAccountsEmployee: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > ul > li:nth-child(2) > a',
         //Cafeteria Manager Menu Items
         cafeteriaMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(9) > a',
+        //Accounting Manager Childcare Manager
+        childcareMgr: '#menu > li:nth-child(10) > ul > a:nth-child(5)',
+        childcareMgrAccounts: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > li:nth-child(1) > a',
+        //Childcare Manager Daily
+        childcareMgrDaily: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > a:nth-child(2)',
+        childcareMgrDailyCheckInOut: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(3) > li:nth-child(1) > a',
+        childcareMgrDailyDailyCharges: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(3) > li:nth-child(2) > a',
+        childcareMgrDailyPricePlans: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(3) > li:nth-child(3) > a',
+        //Childcare Manager Weekly
+        childcareMgrWeekly: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > a:nth-child(4)',
+        childcareMgrWeeklyCharges: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(5) > li:nth-child(1) > a',
+        childcareMgrWeeklyBillingSetup: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(5) > li:nth-child(2) > a',
+        childcareMgrWeeklyPricePlans: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(5) > li:nth-child(3) > a',
+        //Childcare Manager Monthly
+        childcareMgrMonthly: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > a:nth-child(6)',
+        childcareMgrMonthlyCharges: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(7) > li:nth-child(1) > a',
+        childcareMgrMonthlyBillingSetup: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(7) > li:nth-child(2) > a',
+        childcareMgrMonthlyPricePlans: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > ul:nth-child(7) > li:nth-child(3) > a',
+        //Childcare Manager Menu Items
+        childcareMgrNotifications: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > li:nth-child(8) > a',
+        childcareMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > li:nth-child(9) > a',
 
         specialties: 'a[data-value=Specialties]',
         athleticDirector: '#menu > li:nth-child(8) > ul > a:nth-child(1)',
