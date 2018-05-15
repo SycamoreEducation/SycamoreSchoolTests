@@ -463,6 +463,10 @@ module.exports = {
         onlineFormMgr: '#menu > li:nth-child(13) > ul > a:nth-child(13)',
         onlineFormMgrActive: '#menu > li:nth-child(13) > ul > ul:nth-child(14) > li:nth-child(1) > a',
         onlineFormMgrNonActive: '#menu > li:nth-child(13) > ul > ul:nth-child(14) > li:nth-child(2) > a',
+        //Knowledge Base
+        knowledgeBase: '#menu > li:nth-child(13) > ul > a:nth-child(15)',
+        knowledgeBasePublished: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(1) > a',
+        knowledgeBasePending: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(2) > a',
 
         systemHelp: 'a[data-value=SystemHelp]',
         welcomeAboard: '#menu > li:nth-child(10) > ul > li:nth-child(1) > a',
