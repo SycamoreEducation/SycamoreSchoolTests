@@ -539,10 +539,11 @@ module.exports = {
         myUtilitiesWebHooks: '#menu > li:nth-child(21) > ul > ul > li:nth-child(5) > a',
         //My Organizer Menu Items
         myPassword: '#menu > li:nth-child(21) > ul > li:nth-child(12) > a',
+        //My Accounting Menu
+        myAccounting: '#menu > li:nth-child(22)',
+        myAccountingCafetieria: '#menu > li:nth-child(22) > ul > li:nth-child(1) > a',
+        myAccountingExpenseReports: '#menu > li:nth-child(22) > ul > li:nth-child(2) > a',
 
-        myAccounting: 'a[data-value=MyAccounting]',
-        myAccountingCafetieria: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
-        myAccountingExpenseReports: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
         myResources: 'a[data-value=MyResources]',
         myResourcesNews: '#menu > li:nth-child(18) > ul > li:nth-child(1) > a',
         myResourcesPhotos: '#menu > li:nth-child(18) > ul > li:nth-child(2) > a',
