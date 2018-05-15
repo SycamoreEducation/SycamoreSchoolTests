@@ -278,6 +278,20 @@ module.exports = {
         //Childcare Manager Menu Items
         childcareMgrNotifications: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > li:nth-child(8) > a',
         childcareMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(6) > li:nth-child(9) > a',
+        //Accounting Manager Donation Manager
+        donationMgr: '#menu > li:nth-child(10) > ul > a:nth-child(7)',
+        //Donation Manager Donors
+        donationMgrDonors: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > a:nth-child(1)',
+        donationMgrDonorsNewDonors: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(2) > li:nth-child(1) > a',
+        donationMgrDonorsByContact: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(2) > li:nth-child(2) > a',
+        donationMgrDonorsPledges: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(2) > li:nth-child(3) > a',
+        //Donation Manager Donations
+        donationMgrDonations: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > a:nth-child(3)',
+        donationMgrDonationsReceive: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(1) > a',
+        donationMgrDonationsProcess: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(2) > a',
+        //Donatoin Manager Menu Items
+        donationMgrCampaings: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(5) > a',
+        donationMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(6) > a',
 
         specialties: 'a[data-value=Specialties]',
         athleticDirector: '#menu > li:nth-child(8) > ul > a:nth-child(1)',
