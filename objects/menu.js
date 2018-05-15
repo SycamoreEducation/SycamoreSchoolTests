@@ -550,10 +550,11 @@ module.exports = {
         myResourcesDocuments: '#menu > li:nth-child(23) > ul > li:nth-child(3) > a',
         myResourcesOnlineTests: '#menu > li:nth-child(23) > ul > li:nth-child(4) > a',
         myResourcesGradeBook: '#menu > li:nth-child(23) > ul > li:nth-child(5) > a',
+        //My Communications Menu
+        myCommunication: '#menu > li:nth-child(24)',
+        myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
+        myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
 
-        myCommunication: 'a[data-value=MyCommunication]',
-        myBatchEmail: '#menu > li:nth-child(19) > ul > li:nth-child(1) > a',
-        myBlogs: '#menu > li:nth-child(19) > ul > li:nth-child(2) > a',
         passANote: 'a[data-value=PassANote]',
         passANoteInbox: '#menu > li:nth-child(20) > ul > li:nth-child(1) > a',
         passANoteOutbox: '#menu > li:nth-child(20) > ul > li:nth-child(2) > a',
