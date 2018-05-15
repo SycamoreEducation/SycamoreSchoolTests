@@ -342,6 +342,16 @@ module.exports = {
         athleticDirectorTeams: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(2) > a',
         athleticDirectorScoreboard: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(3) > a',
         athleticDirectorEquipment: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(4) > a',
+        //NursesOffice
+        nursesOffice: '#menu > li:nth-child(12) > ul > a:nth-child(3)',
+        nursesOfficeDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > li:nth-child(1) > a',
+        nursesOfficeStudents: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > li:nth-child(2) > a',
+        nursesOfficeConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > a',
+        nursesOfficeConfigurationComplaints: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > ul > li:nth-child(1) > a',
+        nursesOfficeConfigurationMedications: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > ul > li:nth-child(2) > a',
+        nursesOfficeConfigurationImmunizations: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > ul > li:nth-child(3) > a',
+        nursesOfficeReports: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > li:nth-child(5) > a',
+
         ptConferences: '#menu > li:nth-child(8) > ul > a:nth-child(3)',
         ptConferencesTeachers: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(1) > a',
         ptConferencesByDate: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(2) > a',
