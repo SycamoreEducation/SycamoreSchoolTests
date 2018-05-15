@@ -478,10 +478,11 @@ module.exports = {
         webinarTraining: '#menu > li:nth-child(15) > ul > li:nth-child(4) > a',
         sycamoreLeafNotes: '#menu > li:nth-child(15) > ul > li:nth-child(5) > a',
         releaseNotes: '#menu > li:nth-child(15) > ul > li:nth-child(6) > a',
+        //System Support Menu
+        systemSupport: '#menu > li:nth-child(17)',
+        openTickets: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
+        closedTickets: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
 
-        systemSupport: 'a[data-value=SupportHelp]',
-        openTickets: '#menu > li:nth-child(12) > ul > li:nth-child(1) > a',
-        closedTickets: '#menu > li:nth-child(12) > ul > li:nth-child(2) > a',
         siteAdmin: 'a[data-value=SiteAdmin]',
         information: '#menu > li:nth-child(13) > ul > li:nth-child(1) > a',
         configuration: '#menu > li:nth-child(13) > ul > li:nth-child(2) > a',
