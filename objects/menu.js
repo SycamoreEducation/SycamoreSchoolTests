@@ -371,6 +371,12 @@ module.exports = {
         serviceMgrDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(3) > a',
         serviceMgrOpportunites: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(4) > a',
         serviceMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(5) > a',
+        //Connection Manager
+        connectionMgr: '#menu > li:nth-child(12) > ul > a:nth-child(11)',
+        connectionMgrStudents: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(1) > a',
+        connectionMgrDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(2) > a',
+        connectionMgrInitiator: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(3) > a',
+        connectionMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(4) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
