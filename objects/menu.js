@@ -351,12 +351,13 @@ module.exports = {
         nursesOfficeConfigurationMedications: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > ul > li:nth-child(2) > a',
         nursesOfficeConfigurationImmunizations: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > ul > li:nth-child(3) > a',
         nursesOfficeReports: '#menu > li:nth-child(12) > ul > ul:nth-child(4) > li:nth-child(5) > a',
+        // P/T Conferences
+        ptConferences: '#menu > li:nth-child(12) > ul > a:nth-child(5)',
+        ptConferencesTeachers: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(1) > a',
+        ptConferencesByDate: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(2) > a',
+        ptConferencesByTeacher: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(3) > a',
+        ptConferencesConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(4) > a',
 
-        ptConferences: '#menu > li:nth-child(8) > ul > a:nth-child(3)',
-        ptConferencesTeachers: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(1) > a',
-        ptConferencesByDate: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(2) > a',
-        ptConferencesByTeacher: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(3) > a',
-        ptConferencesConfiguration: '#menu > li:nth-child(8) > ul > ul:nth-child(4) > li:nth-child(4) > a',
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
         onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
