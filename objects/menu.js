@@ -448,6 +448,13 @@ module.exports = {
         timecardMgrTasks: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(5) > a',
         timecardMgrConfiguration: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(6) > a',
         timecardMgrReports: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(7) > a',
+        //Workflow Manager
+        workflowMgr: '#menu > li:nth-child(13) > ul > a:nth-child(9)',
+        workflowMgrByStatus: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(1) > a',
+        workflowMgrByAuthor: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(2) > a',
+        workflowMgrByCategory: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(3) > a',
+        workflowMgrByClassroom: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(4) > a',
+        workflowMgrCategories: '#menu > li:nth-child(13) > ul > ul:nth-child(10) > li:nth-child(5) > a',
 
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
         onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
