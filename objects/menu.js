@@ -554,13 +554,16 @@ module.exports = {
         myCommunication: '#menu > li:nth-child(24)',
         myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
         myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
+        //Pass-A-Note Menu
+        passANote: '#menu > li:nth-child(25)',
+        passANoteInbox: '#menu > li:nth-child(25) > ul > li:nth-child(1) > a',
+        passANoteOutbox: '#menu > li:nth-child(25) > ul > li:nth-child(2) > a',
+        passANoteEmployees: '#menu > li:nth-child(25) > ul > li:nth-child(3) > a',
+        passANoteAssociates: '#menu > li:nth-child(25) > ul > li:nth-child(4) > a',
+        passANoteFamilies: '#menu > li:nth-child(25) > ul > li:nth-child(5) > a',
+        passANoteStudents: '#menu > li:nth-child(25) > ul > li:nth-child(6) > a',
+        passANoteOptions: '#menu > li:nth-child(25) > ul > li:nth-child(7) > a',
 
-        passANote: 'a[data-value=PassANote]',
-        passANoteInbox: '#menu > li:nth-child(20) > ul > li:nth-child(1) > a',
-        passANoteOutbox: '#menu > li:nth-child(20) > ul > li:nth-child(2) > a',
-        passANoteEmployees: '#menu > li:nth-child(20) > ul > li:nth-child(3) > a',
-        passANoteAssociates: '#menu > li:nth-child(20) > ul > li:nth-child(4) > a',
-        passANoteOptions: '#menu > li:nth-child(20) > ul > li:nth-child(5) > a',
         logout: '#menu > li:nth-child(22) > a',
         spiritStore: '#menu > li:nth-child(23) > a'
     }
