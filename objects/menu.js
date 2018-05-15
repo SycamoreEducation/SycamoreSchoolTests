@@ -467,6 +467,9 @@ module.exports = {
         knowledgeBase: '#menu > li:nth-child(13) > ul > a:nth-child(15)',
         knowledgeBasePublished: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(1) > a',
         knowledgeBasePending: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(2) > a',
+        //Breakroom Menu
+        breakRoom: '#menu > li:nth-child(14)',
+        classifiedAds: '#menu > li:nth-child(14) > ul > li > a',
 
         systemHelp: 'a[data-value=SystemHelp]',
         welcomeAboard: '#menu > li:nth-child(10) > ul > li:nth-child(1) > a',
