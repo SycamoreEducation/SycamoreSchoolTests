@@ -387,6 +387,29 @@ module.exports = {
         //Volunteer Manager
         volunteerMgr: '#menu > li:nth-child(12) > ul > a:nth-child(15)',
         volunteerMgrEvents: '#menu > li:nth-child(12) > ul > ul:nth-child(16) > li > a',
+        //Library Manager
+        libraryMgr: '#menu > li:nth-child(12) > ul > a:nth-child(17)',
+        libraryMgrBook: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(1) > a',
+        libraryMgrStudents: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(2) > a',
+        libraryMgrCheckIn: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(3) > a',
+        libraryMgrCheckOut: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(4) > a',
+        libraryMgrWhatsOut: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(5) > a',
+        //Library Manager Books Menu
+        libraryMgrBooks: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > a:nth-child(6)',
+        libraryMgrBooksLibrary: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(7) > li:nth-child(1) > a',
+        libraryMgrBooksTextBooks: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(7) > li:nth-child(2) > a',
+        libraryMgrBooksInventoryLibrary: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(7) > li:nth-child(3) > a',
+        //Library Manager Search Menu
+        libraryMgrSearch: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > a:nth-child(8)',
+        libraryMgrSearchLocal: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(9) > li:nth-child(1) > a',
+        libraryMgrSearchGoogle: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(9) > li:nth-child(2) > a',
+        //Library Manager Configuration Menu
+        libraryMgrConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > a:nth-child(10)',
+        libraryMgrConfigurationLocations: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(11) > li:nth-child(1) > a',
+        libraryMgrConfigurationImport: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(11) > li:nth-child(2) > a',
+        libraryMgrConfigurationSetup: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > ul:nth-child(11) > li:nth-child(3) > a',
+        //Library Manager Menu Items
+        libraryMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(18) > li:nth-child(12) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
