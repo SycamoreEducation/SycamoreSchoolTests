@@ -364,6 +364,13 @@ module.exports = {
         disciplineDetentions: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(3) > a',
         disciplineConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(4) > a',
         disciplineReports: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(5) > a',
+        //Service Manager
+        serviceMgr: '#menu > li:nth-child(12) > ul > a:nth-child(9)',
+        serviceMgrStudents: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(1) > a',
+        serviceMgrFamilies: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(2) > a',
+        serviceMgrDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(3) > a',
+        serviceMgrOpportunites: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(4) > a',
+        serviceMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(10) > li:nth-child(5) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
