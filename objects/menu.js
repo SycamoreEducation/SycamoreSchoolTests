@@ -243,6 +243,20 @@ module.exports = {
         //Accounting Manger Menu Items
         accountingMgrConfiguration: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > li:nth-child(11) > a',
         accountingMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > li:nth-child(12) > a',
+        //Cafeteria Manager
+        cafeteriaMgr: '#menu > li:nth-child(10) > ul > a:nth-child(3)'
+        cafeteriaMgrFood: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(1) > a',
+        cafeteriaMgrMenu: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(2) > a',
+        cafeteriaMgrCycles: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(3) > a',
+        cafeteriaMgrOrders: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(4) > a',
+        cafeteriaMgrPricePlans: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(5) > a',
+        cafeteriaMgrNotifications: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(6) > a',
+        //Cafeteria Manager Accounts
+        cafeteriaMgrAccounts: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > a',
+        cafeteriaMgrAccountsFamily: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > ul > li:nth-child(1) > a',
+        cafeteriaMgrAccountsEmployee: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > ul > li:nth-child(2) > a',
+        //Cafeteria Manager Menu Items
+        cafeteriaMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(4) > li:nth-child(9) > a',
 
         specialties: 'a[data-value=Specialties]',
         athleticDirector: '#menu > li:nth-child(8) > ul > a:nth-child(1)',
