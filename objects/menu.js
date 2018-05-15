@@ -357,6 +357,13 @@ module.exports = {
         ptConferencesByDate: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(2) > a',
         ptConferencesByTeacher: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(3) > a',
         ptConferencesConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(6) > li:nth-child(4) > a',
+        // Discipline
+        discipline: '#menu > li:nth-child(12) > ul > a:nth-child(7)',
+        disciplineStudents: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(1) > a',
+        disciplineDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(2) > a',
+        disciplineDetentions: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(3) > a',
+        disciplineConfiguration: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(4) > a',
+        disciplineReports: '#menu > li:nth-child(12) > ul > ul:nth-child(8) > li:nth-child(5) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
