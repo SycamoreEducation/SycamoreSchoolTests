@@ -439,6 +439,15 @@ module.exports = {
         facilityMgrPlanner: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(4) > a',
         facilityMgrActivities: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(5) > a',
         facilityMgrSearch: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(6) > a',
+        //Timecard Manager
+        timecardMgr: '#menu > li:nth-child(13) > ul > a:nth-child(7)',
+        timecardMgrByDay: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(1) > a',
+        timecardMgrByPeriod: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(2) > a',
+        timecardMgrByEmployee: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(3) > a',
+        timecardMgrRequests: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(4) > a',
+        timecardMgrTasks: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(5) > a',
+        timecardMgrConfiguration: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(6) > a',
+        timecardMgrReports: '#menu > li:nth-child(13) > ul > ul:nth-child(8) > li:nth-child(7) > a',
 
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
         onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
