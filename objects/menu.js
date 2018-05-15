@@ -470,14 +470,15 @@ module.exports = {
         //Breakroom Menu
         breakRoom: '#menu > li:nth-child(14)',
         classifiedAds: '#menu > li:nth-child(14) > ul > li > a',
+        //System Help Menu
+        systemHelp: '#menu > li:nth-child(15)',
+        welcomeAboard: '#menu > li:nth-child(15) > ul > li:nth-child(1) > a',
+        onlineHelp: '#menu > li:nth-child(15) > ul > li:nth-child(2) > a',
+        trainingVideos: '#menu > li:nth-child(15) > ul > li:nth-child(3) > a',
+        webinarTraining: '#menu > li:nth-child(15) > ul > li:nth-child(4) > a',
+        sycamoreLeafNotes: '#menu > li:nth-child(15) > ul > li:nth-child(5) > a',
+        releaseNotes: '#menu > li:nth-child(15) > ul > li:nth-child(6) > a',
 
-        systemHelp: 'a[data-value=SystemHelp]',
-        welcomeAboard: '#menu > li:nth-child(10) > ul > li:nth-child(1) > a',
-        onlineHelp: '#menu > li:nth-child(10) > ul > li:nth-child(2) > a',
-        trainingVideos: '#menu > li:nth-child(10) > ul > li:nth-child(3) > a',
-        webinarTraining: '#menu > li:nth-child(10) > ul > li:nth-child(4) > a',
-        sycamoreLeafNotes: '#menu > li:nth-child(10) > ul > li:nth-child(5) > a',
-        releaseNotes: '#menu > li:nth-child(10) > ul > li:nth-child(6) > a',
         systemSupport: 'a[data-value=SupportHelp]',
         openTickets: '#menu > li:nth-child(12) > ul > li:nth-child(1) > a',
         closedTickets: '#menu > li:nth-child(12) > ul > li:nth-child(2) > a',
