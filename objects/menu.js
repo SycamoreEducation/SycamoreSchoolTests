@@ -425,6 +425,12 @@ module.exports = {
         assetMgrTypes: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(2) > a',
         assetMgrAdditionalFields: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(3) > a',
         assetMgrReports: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(4) > a',
+        //Event Manager
+        eventManager: '#menu > li:nth-child(13) > ul > a:nth-child(3)',
+        eventManagerManagedEvents: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(1) > a',
+        eventManagerRegistration: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(2) > a',
+        eventManagerParticipants: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(3) > a',
+        eventManagerReports: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(4) > a',
 
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
         onlineFormMgrActive: '#menu > li:nth-child(9) > ul > ul > li:nth-child(1) > a',
