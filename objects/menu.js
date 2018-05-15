@@ -377,6 +377,13 @@ module.exports = {
         connectionMgrDailyLogs: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(2) > a',
         connectionMgrInitiator: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(3) > a',
         connectionMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(12) > li:nth-child(4) > a',
+        //Transportation Manager
+        tranportationMgr: '#menu > li:nth-child(12) > ul > a:nth-child(13)',
+        tranportationMgrBusRoutes: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(1) > a',
+        tranportationMgrFieldTrips: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(2) > a',
+        tranportationMgrCarpoolMgr: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(3) > a',
+        tranportationMgrParkingPasses: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(4) > a',
+        tranportationMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(14) > li:nth-child(5) > a',
 
         utilities: 'a[data-value=Utilities]',
         onlineFormMgr: '#menu > li:nth-child(9) > ul > a',
