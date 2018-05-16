@@ -551,7 +551,7 @@ module.exports = {
         myResourcesOnlineTests: '#menu > li:nth-child(23) > ul > li:nth-child(4) > a',
         myResourcesGradeBook: '#menu > li:nth-child(23) > ul > li:nth-child(5) > a',
         //My Communications Menu
-        myCommunication: '#menu > li:nth-child(24)',
+        myCommunication: '#menu > li:nth-child(24) > a',
         myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
         myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
         //Pass-A-Note Menu
