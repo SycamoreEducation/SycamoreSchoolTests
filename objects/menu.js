@@ -471,7 +471,7 @@ module.exports = {
         breakRoom: '#menu > li:nth-child(14)',
         classifiedAds: '#menu > li:nth-child(14) > ul > li > a',
         //System Help Menu
-        systemHelp: '#menu > li:nth-child(15)',
+        systemHelp: '#menu > li:nth-child(15) > a',
         welcomeAboard: '#menu > li:nth-child(15) > ul > li:nth-child(1) > a',
         onlineHelp: '#menu > li:nth-child(15) > ul > li:nth-child(2) > a',
         trainingVideos: '#menu > li:nth-child(15) > ul > li:nth-child(3) > a',
