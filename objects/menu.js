@@ -32,7 +32,7 @@ module.exports = {
         infoCenterEventRegistration: '#menu > li:nth-child(3) > ul > li:nth-child(6) > a',
         infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a',
         //Comm Center Menu
-        commCenter: '#menu > li:nth-child(4)',
+        commCenter: '#menu > li:nth-child(4) > a',
         commCenterBlogs: '#menu > li:nth-child(4) > ul > li:nth-child(1) > a',
         commCenterDiscussions: '#menu > li:nth-child(4) > ul > li:nth-child(2) > a',
         //Address Book Menu
