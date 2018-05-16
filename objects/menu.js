@@ -123,7 +123,7 @@ module.exports = {
         humanResourcesAdditionalFields: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(7) > a',
         humanResourcesReports: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(8) > a',
         //Academic Menu
-        academic: '#menu > li:nth-child(9)',
+        academic: '#menu > li:nth-child(9) > a',
         //Academic Grade Manager
         gradeMgr: '#menu > li:nth-child(9) > ul > a:nth-child(1)',
         gradeMgrReportCards: '#menu > li:nth-child(9) > ul > ul:nth-child(2) > li:nth-child(1) > a',
@@ -177,10 +177,10 @@ module.exports = {
         iepMgrCoordinators: '#menu > li:nth-child(9) > ul > ul:nth-child(14) > li:nth-child(2) > a',
         iepMgrConfiguration: '#menu > li:nth-child(9) > ul > ul:nth-child(14) > li:nth-child(3) > a',
         iepMgrReports: '#menu > li:nth-child(9) > ul > ul:nth-child(14) > li:nth-child(4) > a',
-        //Academic Classroom Manager
-        classroomMgr: '#menu > li:nth-child(9) > ul > a:nth-child(15)',
-        classroomMgrStudents: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(1) > a',
-        classroomMgrColleges: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(2) > a',
+        //Academic College Credit Manager
+        collegeCreditMgr: '#menu > li:nth-child(9) > ul > a:nth-child(15)',
+        collegeCreditMgrStudents: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(1) > a',
+        collegeCreditMgrColleges: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(2) > a',
         //Financial Menu
         financial: '#menu > li:nth-child(10)',
         //Financial Accounting Manager
