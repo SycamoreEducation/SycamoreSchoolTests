@@ -71,7 +71,7 @@ module.exports = {
         communicationConfiguration: '#menu > li:nth-child(7) > ul > li:nth-child(13) > a',
         communicationReports: '#menu > li:nth-child(7) > ul > li:nth-child(14) > a',
         //Administrative Menu
-        administrative: '#menu > li:nth-child(8)',
+        administrative: '#menu > li:nth-child(8) > a',
         //Administrative Back Office Mgr
         backOfficeMgr: '#menu > li:nth-child(8) > ul > a:nth-child(1)',
         //Back Office Mgr Students
