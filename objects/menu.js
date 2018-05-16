@@ -555,7 +555,7 @@ module.exports = {
         myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
         myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
         //Pass-A-Note Menu
-        passANote: '#menu > li:nth-child(25)',
+        passANote: '#menu > li:nth-child(25) > a',
         passANoteInbox: '#menu > li:nth-child(25) > ul > li:nth-child(1) > a',
         passANoteOutbox: '#menu > li:nth-child(25) > ul > li:nth-child(2) > a',
         passANoteEmployees: '#menu > li:nth-child(25) > ul > li:nth-child(3) > a',
