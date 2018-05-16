@@ -520,7 +520,7 @@ module.exports = {
         staffDiscussions: '#menu > li:nth-child(20) > ul > li:nth-child(11) > a',
         schoolSchedule: '#menu > li:nth-child(20) > ul > li:nth-child(12) > a',
         //My Organizer Menu
-        myOrganizer: '#menu > li:nth-child(21)',
+        myOrganizer: '#menu > li:nth-child(21) > a',
         myDesktop: '#menu > li:nth-child(21) > ul > li:nth-child(1) > a',
         myTasks: '#menu > li:nth-child(21) > ul > li:nth-child(2) > a',
         myCalendar: '#menu > li:nth-child(21) > ul > li:nth-child(3) > a',
