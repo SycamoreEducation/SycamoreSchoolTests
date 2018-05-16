@@ -43,7 +43,7 @@ module.exports = {
         addressBookAdditionalFields: '#menu > li:nth-child(6) > ul > li:nth-child(4) > a',
         addressBookReports: '#menu > li:nth-child(6) > ul > li:nth-child(5) > a',
         //Communication Menu
-        communication: '#menu > li:nth-child(7)',
+        communication: '#menu > li:nth-child(7) > a',
         //Communicaton Homepage
         communicationHomepage: '#menu > li:nth-child(7) > ul > a:nth-child(1)',
         communicationHomepagePolling: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(1) > a',
