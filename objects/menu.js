@@ -506,7 +506,7 @@ module.exports = {
         importDataEmployeePhotos: '#menu > li:nth-child(18) > ul > ul:nth-child(12) > li:nth-child(3) > a',
         importDataMiscellaneous: '#menu > li:nth-child(18) > ul > ul:nth-child(12) > li:nth-child(4) > a',
         //My School Menu
-        mySchool: '#menu > li:nth-child(20)',
+        mySchool: '#menu > li:nth-child(20) > a',
         myClasses: '#menu > li:nth-child(20) > ul > li:nth-child(1) > a',
         myStudents: '#menu > li:nth-child(20) > ul > li:nth-child(2) > a',
         myServiceLogs: '#menu > li:nth-child(20) > ul > li:nth-child(3) > a',
