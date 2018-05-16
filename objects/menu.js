@@ -335,7 +335,7 @@ module.exports = {
         //Addmissions Menu Items
         addmissionsReports: '#menu > li:nth-child(11) > ul > li > a',
         //Specialties Menu
-        specialties: '#menu > li:nth-child(12)',
+        specialties: '#menu > li:nth-child(12) > a',
         //Athletic Director
         athleticDirector: '#menu > li:nth-child(12) > ul > a:nth-child(1)',
         athleticDirectorSports: '#menu > li:nth-child(12) > ul > ul:nth-child(2) > li:nth-child(1) > a',
