@@ -544,7 +544,7 @@ module.exports = {
         myAccountingCafetieria: '#menu > li:nth-child(22) > ul > li:nth-child(1) > a',
         myAccountingExpenseReports: '#menu > li:nth-child(22) > ul > li:nth-child(2) > a',
         //My Resources Menu
-        myResources: '#menu > li:nth-child(23)',
+        myResources: '#menu > li:nth-child(23) > a',
         myResourcesNews: '#menu > li:nth-child(23) > ul > li:nth-child(1) > a',
         myResourcesPhotos: '#menu > li:nth-child(23) > ul > li:nth-child(2) > a',
         myResourcesDocuments: '#menu > li:nth-child(23) > ul > li:nth-child(3) > a',
