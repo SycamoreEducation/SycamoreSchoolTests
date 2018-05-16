@@ -483,7 +483,7 @@ module.exports = {
         openTickets: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
         closedTickets: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
         //Site Admin Menu
-        siteAdmin: '#menu > li:nth-child(18)',
+        siteAdmin: '#menu > li:nth-child(18) > a',
         siteAdminInformation: '#menu > li:nth-child(18) > ul > li:nth-child(1) > a',
         siteAdminConfiguration: '#menu > li:nth-child(18) > ul > li:nth-child(2) > a',
         siteAdminSubscription: '#menu > li:nth-child(18) > ul > li:nth-child(3) > a',
