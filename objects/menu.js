@@ -418,7 +418,7 @@ module.exports = {
         auctionMgrDonorCompanies: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(4) > a',
         auctionMgrReports: '#menu > li:nth-child(12) > ul > ul:nth-child(20) > li:nth-child(5) > a',
         //Utilities Menu
-        utilities: '#menu > li:nth-child(13)',
+        utilities: '#menu > li:nth-child(13) > a',
         //Asset Manager 
         assetMgr: '#menu > li:nth-child(13) > ul > a:nth-child(1)',
         assetMgrInventory: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(1) > a',
@@ -426,11 +426,11 @@ module.exports = {
         assetMgrAdditionalFields: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(3) > a',
         assetMgrReports: '#menu > li:nth-child(13) > ul > ul:nth-child(2) > li:nth-child(4) > a',
         //Event Manager
-        eventManager: '#menu > li:nth-child(13) > ul > a:nth-child(3)',
-        eventManagerManagedEvents: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(1) > a',
-        eventManagerRegistration: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(2) > a',
-        eventManagerParticipants: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(3) > a',
-        eventManagerReports: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(4) > a',
+        eventMgr: '#menu > li:nth-child(13) > ul > a:nth-child(3)',
+        eventMgrManagedEvents: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(1) > a',
+        eventMgrRegistration: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(2) > a',
+        eventMgrParticipants: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(3) > a',
+        eventMgrReports: '#menu > li:nth-child(13) > ul > ul:nth-child(4) > li:nth-child(4) > a',
         //Facility Manager
         facilityMgr: '#menu > li:nth-child(13) > ul > a:nth-child(5)',
         facilityMgrLocations: '#menu > li:nth-child(13) > ul > ul:nth-child(6) > li:nth-child(1) > a',
