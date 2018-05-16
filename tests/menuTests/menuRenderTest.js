@@ -29,7 +29,6 @@ module.exports = {
             .assert.visible('@myCommunication')
             .assert.visible('@passANote')
             .assert.visible('@logout')
-            .assert.visible('@spiritStore')
 
             .assert.containsText('@home', 'School Home')
             .assert.containsText('@school', 'School')
@@ -50,7 +49,6 @@ module.exports = {
             .assert.containsText('@myCommunication', 'My Communication')
             .assert.containsText('@passANote', 'Pass-A-Note')
             .assert.containsText('@logout', 'Logout')
-            .assert.containsText('@spiritStore', 'Spirit Store')
 
         client.frame(null);
 
