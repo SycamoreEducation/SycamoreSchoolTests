@@ -9,7 +9,6 @@ module.exports = {
             .schoolLogin();
 
         client.frame(1);
-        client.pause(2000);
         client.page.menu()
             .assert.visible('@school')
             .assert.containsText('@school', '\273 School')
