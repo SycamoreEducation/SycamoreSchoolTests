@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
         //Addmissions Menu
-        addmissions: '#menu > li:nth-child(11) > a',
+        admissions: '#menu > li:nth-child(11) > a',
         //Addmissions Inquiries
         inquiries: '#menu > li:nth-child(11) > ul > a:nth-child(1)',
         inquiresStudents: '#menu > li:nth-child(11) > ul > ul:nth-child(2) > li:nth-child(1) > a',
