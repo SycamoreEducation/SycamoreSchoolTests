@@ -41,7 +41,6 @@ module.exports = {
             .assert.attributeEquals('@infoCenterEventRegistration', 'href', 'http://web/eventproperty.php')
             .assert.attributeEquals('@infoCenterKnowledgebase', 'href', 'http://web/knowledge.php')
 
-
             .click('@infoCenter')
             .assert.hidden('@infoCenterCafeteria')
             .assert.hidden('@infoCenterOnlineAuctions')
