@@ -23,8 +23,8 @@ module.exports = {
         courseMgrConfiguration: '#menu > li:nth-child(11) > ul > ul:nth-child(8) > li:nth-child(6) > a',
         courseMgrReports: '#menu > li:nth-child(11) > ul > ul:nth-child(8) > li:nth-child(7) > a',
         //Addmissions Communication
-        addmissionsCommunication: '#menu > li:nth-child(11) > ul > a:nth-child(9)',
-        addmissionsCommunicationBatchEmail: '#menu > li:nth-child(11) > ul > ul:nth-child(10) > li > a',
+        admissionsCommunication: '#menu > li:nth-child(11) > ul > a:nth-child(9)',
+        admissionsCommunicationBatchEmail: '#menu > li:nth-child(11) > ul > ul:nth-child(10) > li > a',
         //Portal Manager
         portalMgr: '#menu > li:nth-child(11) > ul > a:nth-child(11)',
         portalMgrStudents: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(1) > a',
