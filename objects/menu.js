@@ -33,14 +33,14 @@ module.exports = {
         portalMgrEssayQuestions: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(4) > a',
         portalMgrRequestedDocs: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(5) > a',
         //Addmissions Configuration
-        addmissionsConfiguration: '#menu > li:nth-child(11) > ul > a:nth-child(13)',
-        addmissionsConfigurationChecklist: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(1) > a',
-        addmissionsConfigurationDocuments: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(2) > a',
-        addmissionsConfigurationAgreements: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(3) > a',
-        addmissionsConfigurationTuitionPlans: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(4) > a',
-        addmissionsConfigurationEnrollStatus: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(5) > a',
-        addmissionsConfigurationSetup: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(6) > a',
+        admissionsConfiguration: '#menu > li:nth-child(11) > ul > a:nth-child(13)',
+        admissionsConfigurationChecklist: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(1) > a',
+        admissionsConfigurationDocuments: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(2) > a',
+        admissionsConfigurationAgreements: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(3) > a',
+        admissionsConfigurationTuitionPlans: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(4) > a',
+        admissionsConfigurationEnrollStatus: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(5) > a',
+        admissionsConfigurationSetup: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(6) > a',
         //Addmissions Menu Items
-        addmissionsReports: '#menu > li:nth-child(11) > ul > li > a',
+        admissionsReports: '#menu > li:nth-child(11) > ul > li > a',
     }
 };
