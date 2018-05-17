@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
         //Info Center Menu
-        infoCenter: '#menu > li:nth-child(3)',
+        infoCenter: '#menu > li:nth-child(3) > a',
         infoCenterLibrary: '#menu > li:nth-child(3) > ul > li:nth-child(1) > a',
         infoCenterCafeteria: '#menu > li:nth-child(3) > ul > li:nth-child(2) > a',
         infoCenterOnlineAuctions: '#menu > li:nth-child(3) > ul > li:nth-child(3) > a',
