@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
         //Address Book Menu
-        addressBook: '#menu > li:nth-child(6)',
+        addressBook: '#menu > li:nth-child(6) > a',
         addressBookByLastName: '#menu > li:nth-child(6) > ul > li:nth-child(1) > a',
         addressBookByCompany: '#menu > li:nth-child(6) > ul > li:nth-child(2) > a',
         addressBookCategories: '#menu > li:nth-child(6) > ul > li:nth-child(3) > a',
