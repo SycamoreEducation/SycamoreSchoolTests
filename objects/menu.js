@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
-        home: {
-            selector: 'ul.breadcrumb li.active a'
-        }
+        //Breakroom Menu
+        breakRoom: '#menu > li:nth-child(14)',
+        classifiedAds: '#menu > li:nth-child(14) > ul > li > a',
     }
 };
