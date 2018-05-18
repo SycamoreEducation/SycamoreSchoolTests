@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['schoolTest', 'menuTests'],
 
-    'My Communication Menu Test': (client) => {
+    'School Menu Test': (client) => {
 
         var page = client.page.login();
 
