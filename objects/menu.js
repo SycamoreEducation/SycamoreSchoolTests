@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
-        home: {
-            selector: 'ul.breadcrumb li.active a'
-        }
+        //Logout
+        logout: '#menu > li:nth-child(28) > a',
     }
 };
