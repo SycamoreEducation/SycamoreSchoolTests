@@ -1,0 +1,116 @@
+module.exports = {
+    tags: ['myOrganizerTest', 'menuTests'],
+
+    'My Organizer Menu Test': (client) => {
+
+        var page = client.page.login();
+
+        page.navigate()
+            .schoolLogin();
+
+        client.frame(1);
+        client.page.menu()
+            .assert.visible('@myOrganizer')
+            .assert.containsText('@myOrganizer', '\273 My Organizer')
+            .assert.attributeEquals('@myOrganizer', 'href', 'http://web/schoolmenu.php#')
+
+            .assert.hidden('@myDesktop')
+            .assert.hidden('@myTasks')
+            .assert.hidden('@myCalendar')
+            .assert.hidden('@myDocuments')
+            .assert.hidden('@myAddressBook')
+            .assert.hidden('@myPhotoAlbums')
+            .assert.hidden('@myMemos')
+            .assert.hidden('@myFavoriteLinks')
+            .assert.hidden('@myDailyJournal')
+            .assert.hidden('@myUtilities')
+            .assert.hidden('@myUtilitiesOptions')
+            .assert.hidden('@myUtilitiesCategories')
+            .assert.hidden('@myUtilitiesImport')
+            .assert.hidden('@myUtilitiesApplications')
+            .assert.hidden('@myUtilitiesWebHooks')
+            .assert.hidden('@myPassword')
+
+            .click('@myOrganizer')
+            .assert.visible('@myDesktop')
+            .assert.visible('@myTasks')
+            .assert.visible('@myCalendar')
+            .assert.visible('@myDocuments')
+            .assert.visible('@myAddressBook')
+            .assert.visible('@myPhotoAlbums')
+            .assert.visible('@myMemos')
+            .assert.visible('@myFavoriteLinks')
+            .assert.visible('@myDailyJournal')
+            .assert.visible('@myUtilities')
+            .assert.visible('@myPassword')
+            .assert.containsText('@myDesktop', 'My Desktop')
+            .assert.containsText('@myTasks', 'My Tasks')
+            .assert.containsText('@myCalendar', 'My Calendar')
+            .assert.containsText('@myDocuments', 'My Documents')
+            .assert.containsText('@myAddressBook', 'My Address Book')
+            .assert.containsText('@myPhotoAlbums', 'My Photo Albums')
+            .assert.containsText('@myMemos', 'My Memos')
+            .assert.containsText('@myFavoriteLinks', 'My Favorite Links')
+            .assert.containsText('@myDailyJournal', 'My Daily Journal')
+            .assert.containsText('@myUtilities', 'Utilities')
+            .assert.containsText('@myPassword', 'Password')
+            .assert.attributeEquals('@myDesktop', 'href', 'http://web/mydesktop.php?task=newtoday')
+            .assert.attributeEquals('@myTasks', 'href', 'http://web/mytasks.php')
+            .assert.attributeEquals('@myCalendar', 'href', 'http://web/mycalendar.php?overlayid=-1&uid=1')
+            .assert.attributeEquals('@myDocuments', 'href', 'http://web/myexplorer.php?myfolderid=-1')
+            .assert.attributeEquals('@myAddressBook', 'href', 'http://web/mycontacts.php?mine=1')
+            .assert.attributeEquals('@myPhotoAlbums', 'href', 'http://web/myphotos.php')
+            .assert.attributeEquals('@myMemos', 'href', 'http://web/notepad.php')
+            .assert.attributeEquals('@myFavoriteLinks', 'href', 'http://web/myfavorites.php')
+            .assert.attributeEquals('@myDailyJournal', 'href', 'http://web/myjournal.php')
+            .assert.attributeEquals('@myUtilities', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@myPassword', 'href', 'http://web/password.php')
+
+            .click('@myUtilities')
+            .assert.visible('@myUtilitiesOptions')
+            .assert.visible('@myUtilitiesCategories')
+            .assert.visible('@myUtilitiesImport')
+            .assert.visible('@myUtilitiesApplications')
+            // TODO: Webhooks not working
+            // .assert.visible('@myUtilitiesWebHooks')
+            .assert.containsText('@myUtilitiesOptions', 'Options')
+            .assert.containsText('@myUtilitiesCategories', 'Categories')
+            .assert.containsText('@myUtilitiesImport', 'Import')
+            .assert.containsText('@myUtilitiesApplications', 'Applications')
+            // .assert.containsText('@myUtilitiesWebHooks', 'Webhooks')
+            .assert.attributeEquals('@myUtilitiesOptions', 'href', 'http://web/usercfg.php')
+            .assert.attributeEquals('@myUtilitiesCategories', 'href', 'http://web/mycategories.php')
+            .assert.attributeEquals('@myUtilitiesImport', 'href', 'http://web/import.php?task=in&tab=0')
+            .assert.attributeEquals('@myUtilitiesApplications', 'href', 'http://web/useroauth.php')
+            .assert.attributeEquals('@myUtilitiesWebHooks', 'href', 'http://web/webhooks.php?uid=1')
+
+            .click('@myUtilities')
+            .assert.hidden('@myUtilitiesOptions')
+            .assert.hidden('@myUtilitiesCategories')
+            .assert.hidden('@myUtilitiesImport')
+            .assert.hidden('@myUtilitiesApplications')
+            .assert.hidden('@myUtilitiesWebHooks')
+
+            .click('@myOrganizer')
+            .assert.hidden('@myDesktop')
+            .assert.hidden('@myTasks')
+            .assert.hidden('@myCalendar')
+            .assert.hidden('@myDocuments')
+            .assert.hidden('@myAddressBook')
+            .assert.hidden('@myPhotoAlbums')
+            .assert.hidden('@myMemos')
+            .assert.hidden('@myFavoriteLinks')
+            .assert.hidden('@myDailyJournal')
+            .assert.hidden('@myUtilities')
+            .assert.hidden('@myUtilitiesOptions')
+            .assert.hidden('@myUtilitiesCategories')
+            .assert.hidden('@myUtilitiesImport')
+            .assert.hidden('@myUtilitiesApplications')
+            .assert.hidden('@myUtilitiesWebHooks')
+            .assert.hidden('@myPassword')
+
+        client.frame(null);
+
+        client.end();
+    }
+};
