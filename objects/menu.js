@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
         //Email Menu
-        email: '#menu > li:nth-child(26)',
+        email: '#menu > li:nth-child(26) > a',
         emailInbox: '#menu > li:nth-child(26) > ul > li:nth-child(1) > a',
         emailFolders: '#menu > li:nth-child(26) > ul > li:nth-child(2) > a',
         emailCompose: '#menu > li:nth-child(26) > ul > li:nth-child(3) > a',
