@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
         //Financial Menu
-        financial: '#menu > li:nth-child(10)',
+        financial: '#menu > li:nth-child(10) > a',
         //Financial Accounting Manager
         accountingMgr: '#menu > li:nth-child(10) > ul > a:nth-child(1)',
         //Accounting Manager School
@@ -15,7 +15,7 @@ module.exports = {
         accountingMgrFamiliesBillingSetup: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(3) > a',
         accountingMgrFamiliesMonthlyCharges: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(4) > a',
         accountingMgrFamiliesReceivePayment: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(5) > a',
-        accountingMgrFamiliesNotifications: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(6) > a',
+        accountingMgrFamiliesNotification: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(6) > a',
         accountingMgrFamiliesInvoices: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > ul:nth-child(4) > li:nth-child(7) > a',
         //Accounting Manager Banking
         accountingMgrBanking: '#menu > li:nth-child(10) > ul > ul:nth-child(2) > a:nth-child(5)',
