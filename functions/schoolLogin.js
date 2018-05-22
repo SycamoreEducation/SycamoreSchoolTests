@@ -1,5 +1,5 @@
 exports.command = function(username, password, school) {
-    if(!username && !password && !school) {
+    if(username === null && password === null && school === null) {
         this
             .setValue('input[name=entered_login]', 'superuser')
             .assert.value('input[name=entered_login]', 'superuser')
