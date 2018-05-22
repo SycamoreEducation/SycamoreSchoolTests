@@ -31,14 +31,14 @@ module.exports = {
 
             .assert.visible('@currentTab')
             .assert.containsText('@currentTab', 'Current')
-            .assert.attributeEquals('@currentTab', 'href', 'http://web/news.php?type=2&classid=0&display=browse&tab=0')
+            .assert.attributeEquals('@currentTab', 'href', page.url() + '/news.php?type=2&classid=0&display=browse&tab=0')
 
             .assert.visible('@archiveTab')
             .assert.containsText('@archiveTab', 'Archive')
 
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')
-            .assert.attributeEquals('@searchTab', 'href', 'http://web/news.php?task=search&classid=0&display=browse&tab=2')
+            .assert.attributeEquals('@searchTab', 'href', page.url() + '/news.php?task=search&classid=0&display=browse&tab=2')
 
             .assert.visible('@newArticleBtn')
             .assert.attributeEquals('@newArticleBtn', 'value', 'New Article')

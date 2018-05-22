@@ -28,11 +28,11 @@ module.exports = {
 
             .assert.visible('@archiveTab')
             .assert.containsText('@archiveTab', 'Archive')
-            .assert.attributeEquals('@archiveTab', 'href', 'http://web/news.php?type=3&classid=0&display=browse&tab=1')
+            .assert.attributeEquals('@archiveTab', 'href', page.url() + '/news.php?type=3&classid=0&display=browse&tab=1')
 
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')
-            .assert.attributeEquals('@searchTab', 'href', 'http://web/news.php?task=search&classid=0&display=browse&tab=2')
+            .assert.attributeEquals('@searchTab', 'href', page.url() + '/news.php?task=search&classid=0&display=browse&tab=2')
 
             .assert.visible('@newArticleBtn')
             .assert.attributeEquals('@newArticleBtn', 'value', 'New Article')
