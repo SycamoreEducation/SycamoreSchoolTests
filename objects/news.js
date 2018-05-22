@@ -9,7 +9,7 @@ module.exports = {
         archiveTab: 'body > ul.nav.nav-tabs > li:nth-child(2) > a',
         searchTab: 'body > ul.nav.nav-tabs > li:nth-child(3) > a',
         newArticleBtn: 'body > ul.nav.nav-tabs > input',
-        //Current Tab Elements
+        //Current/Archive Tab Elements
         browseListBtn: 'body > div.tab-content > form > div > span.se-font-small > a',
         browseListText: 'body > div.tab-content > form > div > span.se-font-small',
         resultMsg: 'body > div.tab-content > form > div > span.se-font.se-bold',
@@ -17,7 +17,7 @@ module.exports = {
         date: 'body > div.tab-content > form > table > tbody > tr > td:nth-child(2)',
         author: 'body > div.tab-content > form > table > tbody > tr > td:nth-child(3)',
         headline: 'body > div.tab-content > form > table > tbody > tr > td:nth-child(4)',
-        archiveBtn: 'body > div.tab-content > form > input[type="submit"]:nth-child(8)',
+        archiveCurrentBtn: 'body > div.tab-content > form > input[type="submit"]:nth-child(8)',
         deleteBtn: 'body > div.tab-content > form > input.btn.btn-mini.pull-right.btn-danger',
     }
 };
