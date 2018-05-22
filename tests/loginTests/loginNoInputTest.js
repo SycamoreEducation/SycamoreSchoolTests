@@ -5,9 +5,9 @@ module.exports = {
 
         var page = client.page.login();
 
-        var schoolID = ' ';
-        var username = ' ';
-        var password = ' ';
+        var schoolID = '';
+        var username = '';
+        var password = '';
 
         page.navigate()
             .assert.visible('@schoolField')
