@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['schoolTests', 'newsTests', 'newsSearchTabTest'],
 
-    'School News Current Test': (client) => {
+    'School News Search Test': (client) => {
 
         var page = client.page.login();
 
