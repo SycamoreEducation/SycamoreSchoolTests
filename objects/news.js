@@ -10,8 +10,8 @@ module.exports = {
         searchTab: 'body > ul.nav.nav-tabs > li:nth-child(3) > a',
         newArticleBtn: 'body > ul.nav.nav-tabs > input',
         //Current Tab Elements
-        browse: 'body > div.tab-content > form > div > span.se-font-small > a',
-        list: 'body > div.tab-content > form > div > span.se-font-small > a',
+        browseListBtn: 'body > div.tab-content > form > div > span.se-font-small > a',
+        browseListText: 'body > div.tab-content > form > div > span.se-font-small',
         resultMsg: 'body > div.tab-content > form > div > span.se-font.se-bold',
         checkbox: 'body > div.tab-content > form > table > tbody > tr > td.setChecked > a',
         date: 'body > div.tab-content > form > table > tbody > tr > td:nth-child(2)',
