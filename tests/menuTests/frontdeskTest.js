@@ -12,7 +12,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@frontDesk')
             .assert.containsText('@frontDesk', '\273 Front Desk')
-            .assert.attributeEquals('@frontDesk', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@frontDesk', 'href', page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@frontDeskFamilyDirectory')
             .assert.hidden('@frontDeskEmployeeDirectory')
@@ -35,11 +35,11 @@ module.exports = {
             .assert.containsText('@frontDeskDepartments', 'Departments')
             .assert.containsText('@frontDeskFacility', 'Facility')
 
-            .assert.attributeEquals('@frontDeskFamilyDirectory', 'href', 'http://web/directory.php?task=view&grade=-1')
-            .assert.attributeEquals('@frontDeskEmployeeDirectory', 'href', 'http://web/directory.php?task=staffphoto')
-            .assert.attributeEquals('@frontDeskClassroomDirectory', 'href', 'http://web/directory.php?task=classes')
-            .assert.attributeEquals('@frontDeskDepartments', 'href', 'http://web/departments.php?task=browse')
-            .assert.attributeEquals('@frontDeskFacility', 'href', 'http://web/facility.php')
+            .assert.attributeEquals('@frontDeskFamilyDirectory', 'href', page.url() + '/directory.php?task=view&grade=-1')
+            .assert.attributeEquals('@frontDeskEmployeeDirectory', 'href', page.url() + '/directory.php?task=staffphoto')
+            .assert.attributeEquals('@frontDeskClassroomDirectory', 'href', page.url() + '/directory.php?task=classes')
+            .assert.attributeEquals('@frontDeskDepartments', 'href', page.url() + '/departments.php?task=browse')
+            .assert.attributeEquals('@frontDeskFacility', 'href', page.url() + '/facility.php')
 
             .click('@frontDesk')
 
