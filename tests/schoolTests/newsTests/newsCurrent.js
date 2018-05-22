@@ -63,8 +63,8 @@ module.exports = {
             .assert.visible('@headline')
             .assert.containsText('@headline', 'Headline')
 
-            .assert.visible('@archiveBtn')
-            .assert.attributeEquals('@archiveBtn', 'value', 'Archive')
+            .assert.visible('@archiveCurrentBtn')
+            .assert.attributeEquals('@archiveCurrentBtn', 'value', 'Archive')
 
             .assert.visible('@deleteBtn')
             .assert.attributeEquals('@deleteBtn', 'value', 'Delete')
