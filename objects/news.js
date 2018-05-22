@@ -19,5 +19,13 @@ module.exports = {
         headline: 'body > div.tab-content > form > table > tbody > tr > td:nth-child(4)',
         archiveCurrentBtn: 'body > div.tab-content > form > input[type="submit"]:nth-child(8)',
         deleteBtn: 'body > div.tab-content > form > input.btn.btn-mini.pull-right.btn-danger',
+        //Search Tab Elements
+        searchCurrentTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
+        searchArchivetab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
+        searchSearchTab: 'body > form > ul.nav.nav-tabs > li.active > a',
+        searchField: 'body > form > ul.nav.nav-tabs > input.search-query.pull-right',
+        searchBtn: 'body > form > ul.nav.nav-tabs > input.btn.btn-primary.btn-mini.pull-right',
+        searchDate: 'body > table > tbody > tr > td:nth-child(1)',
+        searchHeadline: 'body > table > tbody > tr > td:nth-child(2)'
     }
 };
