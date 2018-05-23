@@ -6,7 +6,7 @@ module.exports = {
         var page = client.page.login();
 
         page.navigate()
-            .schoolLogin('superuser', 'guest', '1');
+            .schoolLogin();
 
         client.frame(1);
         client.page.addressBook()
