@@ -23,6 +23,10 @@ module.exports = {
         infoCenterDatabases: '#menu > li:nth-child(3) > ul > li:nth-child(4) > a',
         infoCenterOnlineForms: '#menu > li:nth-child(3) > ul > li:nth-child(5) > a',
         infoCenterEventRegistration: '#menu > li:nth-child(3) > ul > li:nth-child(6) > a',
-        infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a'
+        infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a',
+        //Comm Center Menu
+        commCenter: '#menu > li:nth-child(4) > a',
+        commCenterBlogs: '#menu > li:nth-child(4) > ul > li:nth-child(1) > a',
+        commCenterDiscussions: '#menu > li:nth-child(4) > ul > li:nth-child(2) > a'
     }
 };
