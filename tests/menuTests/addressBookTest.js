@@ -9,7 +9,7 @@ module.exports = {
             .schoolLogin('superuser', 'guest', '1');
 
         client.frame(1);
-        client.page.menu()
+        client.page.addressBook()
             .assert.visible('@addressBook')
             .assert.containsText('@addressBook', '\273 Address Book')
             .assert.attributeEquals('@addressBook', 'href', 'http://web/schoolmenu.php#')
