@@ -51,6 +51,6 @@ module.exports = {
         humanResourcesTypes: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(5) > a',
         humanResourcesCategories: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(6) > a',
         humanResourcesAdditionalFields: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(7) > a',
-        humanResourcesReports: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(8) > a',
+        humanResourcesReports: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(8) > a'
     }
 };
