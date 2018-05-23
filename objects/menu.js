@@ -1,5 +1,6 @@
 module.exports = {
     elements: {
+<<<<<<< HEAD
         //Administrative Menu
         administrative: '#menu > li:nth-child(8) > a',
         //Administrative Back Office Mgr
@@ -52,5 +53,74 @@ module.exports = {
         humanResourcesCategories: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(6) > a',
         humanResourcesAdditionalFields: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(7) > a',
         humanResourcesReports: '#menu > li:nth-child(8) > ul > ul:nth-child(8) > li:nth-child(8) > a'
+||||||| merged common ancestors
+        home: {
+            selector: 'ul.breadcrumb li.active a'
+        }
+=======
+        //School Menu
+        school: '#menu > li:nth-child(1) > a',
+        schoolNews: '#menu > li:nth-child(1) > ul > li:nth-child(1) > a',
+        schoolCalendar: '#menu > li:nth-child(1) > ul > li:nth-child(2) > a',
+        schoolDocuments: '#menu > li:nth-child(1) > ul > li:nth-child(3) > a',
+        schoolPhotoAlbums: '#menu > li:nth-child(1) > ul > li:nth-child(4) > a',
+        schoolMultimedia: '#menu > li:nth-child(1) > ul > li:nth-child(5) > a',
+        schoolFarvorites: '#menu > li:nth-child(1) > ul > li:nth-child(6) > a',
+        //Front Desk Menu
+        frontDesk: '#menu > li:nth-child(2) > a',
+        frontDeskFamilyDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(1) > a',
+        frontDeskEmployeeDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(2) > a',
+        frontDeskClassroomDirectory: '#menu > li:nth-child(2) > ul > li:nth-child(3) > a',
+        frontDeskDepartments: '#menu > li:nth-child(2) > ul > li:nth-child(4) > a',
+        frontDeskFacility: '#menu > li:nth-child(2) > ul > li:nth-child(5) > a',
+        //Info Center Menu
+        infoCenter: '#menu > li:nth-child(3) > a',
+        infoCenterLibrary: '#menu > li:nth-child(3) > ul > li:nth-child(1) > a',
+        infoCenterCafeteria: '#menu > li:nth-child(3) > ul > li:nth-child(2) > a',
+        infoCenterOnlineAuctions: '#menu > li:nth-child(3) > ul > li:nth-child(3) > a',
+        infoCenterDatabases: '#menu > li:nth-child(3) > ul > li:nth-child(4) > a',
+        infoCenterOnlineForms: '#menu > li:nth-child(3) > ul > li:nth-child(5) > a',
+        infoCenterEventRegistration: '#menu > li:nth-child(3) > ul > li:nth-child(6) > a',
+        infoCenterKnowledgebase: '#menu > li:nth-child(3) > ul > li:nth-child(7) > a',
+        //Comm Center Menu
+        commCenter: '#menu > li:nth-child(4) > a',
+        commCenterBlogs: '#menu > li:nth-child(4) > ul > li:nth-child(1) > a',
+        commCenterDiscussions: '#menu > li:nth-child(4) > ul > li:nth-child(2) > a',
+        //Address Book Menu
+        addressBook: '#menu > li:nth-child(6) > a',
+        addressBookByLastName: '#menu > li:nth-child(6) > ul > li:nth-child(1) > a',
+        addressBookByCompany: '#menu > li:nth-child(6) > ul > li:nth-child(2) > a',
+        addressBookCategories: '#menu > li:nth-child(6) > ul > li:nth-child(3) > a',
+        addressBookAdditionalFields: '#menu > li:nth-child(6) > ul > li:nth-child(4) > a',
+        addressBookReports: '#menu > li:nth-child(6) > ul > li:nth-child(5) > a',
+        //Communication Menu
+        communication: '#menu > li:nth-child(7) > a',
+        //Communicaton Homepage
+        communicationHomepage: '#menu > li:nth-child(7) > ul > a:nth-child(1)',
+        communicationHomepagePolling: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(1) > a',
+        communicationHomepageFlashNews: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(2) > a',
+        communicationHomepageSponsorAds: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(3) > a',
+        communicationHomepageRequest: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(4) > a',
+        communicationHomepageMsgOfTheDay: '#menu > li:nth-child(7) > ul > ul:nth-child(2) > li:nth-child(5) > a',
+        //Communication Batch Email
+        communicationBatchEmail: '#menu > li:nth-child(7) > ul > a:nth-child(3)',
+        communicationBatchEmailCompose: '#menu > li:nth-child(7) > ul > ul:nth-child(4) > li:nth-child(1) > a',
+        communicationBatchEmailDrafts: '#menu > li:nth-child(7) > ul > ul:nth-child(4) > li:nth-child(2) > a',
+        communicationBatchEmailScheduled: '#menu > li:nth-child(7) > ul > ul:nth-child(4) > li:nth-child(3) > a',
+        communicationBatchEmailSent: '#menu > li:nth-child(7) > ul > ul:nth-child(4) > li:nth-child(4) > a',
+        //Communication Text Messaging
+        communicationTextMessaging: '#menu > li:nth-child(7) > ul > a:nth-child(5)',
+        communicationTextMessagingBatchTextMessage: '#menu > li:nth-child(7) > ul > ul:nth-child(6) > li:nth-child(1) > a',
+        communicationTextMessagingMessageLogs: '#menu > li:nth-child(7) > ul > ul:nth-child(6) > li:nth-child(2) > a',
+        //Communication Menu Items
+        communicationTemplates: '#menu > li:nth-child(7) > ul > li:nth-child(7) > a',
+        communicationSafetyAlerts: '#menu > li:nth-child(7) > ul > li:nth-child(8) > a',
+        communicationMemoMaker: '#menu > li:nth-child(7) > ul > li:nth-child(9) > a',
+        communicationEVerification: '#menu > li:nth-child(7) > ul > li:nth-child(10) > a',
+        communicationChecklist: '#menu > li:nth-child(7) > ul > li:nth-child(11) > a',
+        communicationNotificationLists: '#menu > li:nth-child(7) > ul > li:nth-child(12) > a',
+        communicationConfiguration: '#menu > li:nth-child(7) > ul > li:nth-child(13) > a',
+        communicationReports: '#menu > li:nth-child(7) > ul > li:nth-child(14) > a'
+>>>>>>> master
     }
 };
