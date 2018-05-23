@@ -62,6 +62,6 @@ module.exports = {
         communicationChecklist: '#menu > li:nth-child(7) > ul > li:nth-child(11) > a',
         communicationNotificationLists: '#menu > li:nth-child(7) > ul > li:nth-child(12) > a',
         communicationConfiguration: '#menu > li:nth-child(7) > ul > li:nth-child(13) > a',
-        communicationReports: '#menu > li:nth-child(7) > ul > li:nth-child(14) > a',
+        communicationReports: '#menu > li:nth-child(7) > ul > li:nth-child(14) > a'
     }
 };
