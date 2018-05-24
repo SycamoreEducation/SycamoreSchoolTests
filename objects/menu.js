@@ -173,6 +173,6 @@ module.exports = {
         //Academic College Credit Manager
         collegeCreditMgr: '#menu > li:nth-child(9) > ul > a:nth-child(15)',
         collegeCreditMgrStudents: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(1) > a',
-        collegeCreditMgrColleges: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(2) > a',
+        collegeCreditMgrColleges: '#menu > li:nth-child(9) > ul > ul:nth-child(16) > li:nth-child(2) > a'
     }
 };
