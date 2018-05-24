@@ -1,4 +1,13 @@
 exports.command = function(username, password, school) {
+    if(username === undefined && password === undefined && school === undefined) {
+        this
+            .setValue('input[name=entered_login]', 'superuser')
+            .assert.value('input[name=entered_login]', 'superuser')
+            .setValue('input[name=entered_password]', 'guest')
+            .assert.value('input[name=entered_password]', 'guest')
+            .setValue('input[name=entered_schid]', '1')
+            .assert.value('input[name=entered_schid]', '1')
+    }
     if(username) {
         this
             .setValue('input[name=entered_login]', username)
