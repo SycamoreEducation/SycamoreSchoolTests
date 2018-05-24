@@ -41,6 +41,6 @@ module.exports = {
         admissionsConfigurationEnrollStatus: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(5) > a',
         admissionsConfigurationSetup: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(6) > a',
         //Addmissions Menu Items
-        admissionsReports: '#menu > li:nth-child(11) > ul > li > a',
+        admissionsReports: '#menu > li:nth-child(11) > ul > li > a'
     }
 };
