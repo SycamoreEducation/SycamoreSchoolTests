@@ -295,6 +295,8 @@ module.exports = {
 
             .click('@academic')
 
+            .assert.visible('@academic')
+
             .assert.hidden('@gradeMgr')
             .assert.hidden('@gradeMgrReportCards')
             .assert.hidden('@gradeMgrGradingScales')
