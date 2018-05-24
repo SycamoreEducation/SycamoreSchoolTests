@@ -18,9 +18,24 @@ module.exports = {
 
         client.frame(2);
         client.page.schoolPhotoAlbums()
-            .waitForElementVisible('@breadcrumb', 5000)
+            .waitForElementVisible('@breadcrumb', 10000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Photos/ Albums')
+
+            .assert.visible('@albumsTab')
+            .assert.containsText('@albumsTab', 'Albums')
+
+            .assert.visible('@galleryTab')
+            .assert.visible('@galleryTab', 'Gallery')
+
+            .assert.visible('@newAlbum')
+            .assert.attributeEquals('@newAlbum', 'value', 'New Album')
+            .assert.attributeEquals('@newAlbum', 'onclick', 'newfolder()')
+
+            .assert.visible('@thumbnailListSelector')
+            .assert.containsText('@thumbnailListSelector', 'Thumbnail | List')
+
+            .assert.visible('@photoList')
 
         client.frame(null)
 
