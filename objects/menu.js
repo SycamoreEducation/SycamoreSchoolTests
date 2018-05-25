@@ -284,6 +284,6 @@ module.exports = {
         donationMgrDonationsProcess: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(2) > a',
         //Donatoin Manager Menu Items
         donationMgrCampaings: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(5) > a',
-        donationMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(6) > a',
+        donationMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(6) > a'
     }
 };
