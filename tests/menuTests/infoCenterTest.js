@@ -23,22 +23,27 @@ module.exports = {
 
             .click('@infoCenter')
             .assert.visible('@infoCenterCafeteria')
-            .assert.visible('@infoCenterOnlineAuctions')
-            .assert.visible('@infoCenterDatabases')
-            .assert.visible('@infoCenterOnlineForms')
-            .assert.visible('@infoCenterEventRegistration')
-            .assert.visible('@infoCenterKnowledgebase')
             .assert.containsText('@infoCenterCafeteria', 'Cafeteria')
-            .assert.containsText('@infoCenterOnlineAuctions', 'Online Auctions')
-            .assert.containsText('@infoCenterDatabases', 'Databases')
-            .assert.containsText('@infoCenterOnlineForms', 'Online Forms')
-            .assert.containsText('@infoCenterEventRegistration', 'Event Registration')
-            .assert.containsText('@infoCenterKnowledgebase', 'Knowledgebase')
             .assert.attributeEquals('@infoCenterCafeteria', 'href', page.url() + '/lunch.php')
+
+            .assert.visible('@infoCenterOnlineAuctions')
+            .assert.containsText('@infoCenterOnlineAuctions', 'Online Auctions')
             .assert.attributeEquals('@infoCenterOnlineAuctions', 'href', page.url() + '/auctionblock.php')
+
+            .assert.visible('@infoCenterDatabases')
+            .assert.containsText('@infoCenterDatabases', 'Databases')
             .assert.attributeEquals('@infoCenterDatabases', 'href', page.url() + '/databases.php')
+
+            .assert.visible('@infoCenterOnlineForms')
+            .assert.containsText('@infoCenterOnlineForms', 'Online Forms')     
             .assert.attributeEquals('@infoCenterOnlineForms', 'href', page.url() + '/forms.php')
+
+            .assert.visible('@infoCenterEventRegistration')
+            .assert.containsText('@infoCenterEventRegistration', 'Event Registration')
             .assert.attributeEquals('@infoCenterEventRegistration', 'href', page.url() + '/eventproperty.php')
+
+            .assert.visible('@infoCenterKnowledgebase')
+            .assert.containsText('@infoCenterKnowledgebase', 'Knowledgebase')
             .assert.attributeEquals('@infoCenterKnowledgebase', 'href', page.url() + '/knowledge.php')
 
             .click('@infoCenter')
