@@ -108,47 +108,57 @@ module.exports = {
 
             .click('@financial')
             .assert.visible('@accountingMgr')
-            .assert.visible('@cafeteriaMgr')
-            .assert.visible('@childcareMgr')
-            .assert.visible('@donationMgr')
             .assert.containsText('@accountingMgr', '\273 Accounting Mgr')
-            .assert.containsText('@cafeteriaMgr', '\273 Cafeteria Mgr')
-            .assert.containsText('@childcareMgr', '\273 Childcare Mgr')
-            .assert.containsText('@donationMgr', '\273 Donation Mgr')
             .assert.attributeEquals('@accountingMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@cafeteriaMgr')
+            .assert.containsText('@cafeteriaMgr', '\273 Cafeteria Mgr')
             .assert.attributeEquals('@cafeteriaMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@childcareMgr')
+            .assert.containsText('@childcareMgr', '\273 Childcare Mgr')
             .assert.attributeEquals('@childcareMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@donationMgr')
+            .assert.containsText('@donationMgr', '\273 Donation Mgr')
             .assert.attributeEquals('@donationMgr', 'href', page.url() + '/schoolmenu.php#')
 
             .click('@accountingMgr')
             .assert.visible('@accountingMgrSchool')
-            .assert.visible('@accountingMgrFamilies')
-            .assert.visible('@accountingMgrBanking')
-            .assert.visible('@accountingMgrEmployees')
-            .assert.visible('@accountingMgrServices')
-            .assert.visible('@accountingMgrConfiguration')
-            .assert.visible('@accountingMgrReports')
             .assert.containsText('@accountingMgrSchool', '\273 School')
-            .assert.containsText('@accountingMgrFamilies', '\273 Families')
-            .assert.containsText('@accountingMgrBanking', '\273 Banking')
-            .assert.containsText('@accountingMgrEmployees', '\273 Employees')
-            .assert.containsText('@accountingMgrServices', '\273 Services')
-            .assert.containsText('@accountingMgrConfiguration', 'Configuration')
-            .assert.containsText('@accountingMgrReports', 'Reports')
             .assert.attributeEquals('@accountingMgrSchool', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrFamilies')
+            .assert.containsText('@accountingMgrFamilies', '\273 Families')
             .assert.attributeEquals('@accountingMgrFamilies', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrBanking')
+            .assert.containsText('@accountingMgrBanking', '\273 Banking')
             .assert.attributeEquals('@accountingMgrBanking', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrEmployees')
+            .assert.containsText('@accountingMgrEmployees', '\273 Employees')
             .assert.attributeEquals('@accountingMgrEmployees', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrServices')
+            .assert.containsText('@accountingMgrServices', '\273 Services')
             .assert.attributeEquals('@accountingMgrServices', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrConfiguration')
+            .assert.containsText('@accountingMgrConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrConfiguration', 'href', page.url() + '/superstatementcfg.php')
+            
+            .assert.visible('@accountingMgrReports')
+            .assert.containsText('@accountingMgrReports', 'Reports')
             .assert.attributeEquals('@accountingMgrReports', 'href', page.url() + '/reports.php?type=3')
 
             .click('@accountingMgrSchool')
             .assert.visible('@accountingMgrSchoolChartOfAccounts')
-            .assert.visible('@accountingMgrSchoolActivityLogs')
             .assert.containsText('@accountingMgrSchoolChartOfAccounts', 'Chart of Accounts')
-            .assert.containsText('@accountingMgrSchoolActivityLogs', 'Activity Logs')
             .assert.attributeEquals('@accountingMgrSchoolChartOfAccounts', 'href', page.url() + '/schoolaccounts.php')
+            
+            .assert.visible('@accountingMgrSchoolActivityLogs')
+            .assert.containsText('@accountingMgrSchoolActivityLogs', 'Activity Logs')
             .assert.attributeEquals('@accountingMgrSchoolActivityLogs', 'href', page.url() + '/acctactivity.php')
 
             .click('@accountingMgrSchool')
@@ -157,25 +167,31 @@ module.exports = {
 
             .click('@accountingMgrFamilies')
             .assert.visible('@accountingMgrFamiliesCurrent')
-            .assert.visible('@accountingMgrFamiliesAccounts')
-            .assert.visible('@accountingMgrFamiliesBillingSetup')
-            .assert.visible('@accountingMgrFamiliesMonthlyCharges')
-            .assert.visible('@accountingMgrFamiliesReceivePayment')
-            .assert.visible('@accountingMgrFamiliesNotification')
-            .assert.visible('@accountingMgrFamiliesInvoices')
             .assert.containsText('@accountingMgrFamiliesCurrent', 'Current')
-            .assert.containsText('@accountingMgrFamiliesAccounts', 'Accounts')
-            .assert.containsText('@accountingMgrFamiliesBillingSetup', 'Billing Setup')
-            .assert.containsText('@accountingMgrFamiliesMonthlyCharges', 'Monthly Charges')
-            .assert.containsText('@accountingMgrFamiliesReceivePayment', 'Receive Payment')
-            .assert.containsText('@accountingMgrFamiliesNotification', 'Notification')
-            .assert.containsText('@accountingMgrFamiliesInvoices', 'Invoices')
             .assert.attributeEquals('@accountingMgrFamiliesCurrent', 'href', page.url() + '/familyaccounting.php')
+            
+            .assert.visible('@accountingMgrFamiliesAccounts')
+            .assert.containsText('@accountingMgrFamiliesAccounts', 'Accounts')
             .assert.attributeEquals('@accountingMgrFamiliesAccounts', 'href', page.url() + '/familyaccountmgr.php')
+            
+            .assert.visible('@accountingMgrFamiliesBillingSetup')
+            .assert.containsText('@accountingMgrFamiliesBillingSetup', 'Billing Setup')
             .assert.attributeEquals('@accountingMgrFamiliesBillingSetup', 'href', page.url() + '/familymonthlybilling.php')
+            
+            .assert.visible('@accountingMgrFamiliesMonthlyCharges')
+            .assert.containsText('@accountingMgrFamiliesMonthlyCharges', 'Monthly Charges')
             .assert.attributeEquals('@accountingMgrFamiliesMonthlyCharges', 'href', page.url() + '/familymonthlycharges.php')
+            
+            .assert.visible('@accountingMgrFamiliesReceivePayment')
+            .assert.containsText('@accountingMgrFamiliesReceivePayment', 'Receive Payment')
             .assert.attributeEquals('@accountingMgrFamiliesReceivePayment', 'href', page.url() + '/familypayment.php?task=payment')
+            
+            .assert.visible('@accountingMgrFamiliesNotification')
+            .assert.containsText('@accountingMgrFamiliesNotification', 'Notification')
             .assert.attributeEquals('@accountingMgrFamiliesNotification', 'href', page.url() + '/accountnotification.php')
+            
+            .assert.visible('@accountingMgrFamiliesInvoices')
+            .assert.containsText('@accountingMgrFamiliesInvoices', 'Invoices')
             .assert.attributeEquals('@accountingMgrFamiliesInvoices', 'href', page.url() + '/acctinv.php')
 
             .click('@accountingMgrFamilies')
@@ -189,13 +205,15 @@ module.exports = {
 
             .click('@accountingMgrBanking')
             .assert.visible('@accountingMgrBankingDeposits')
-            .assert.visible('@accountingMgrBankingRegisters')
-            .assert.visible('@accountingMgrBankingJournal')
             .assert.containsText('@accountingMgrBankingDeposits', 'Deposits')
-            .assert.containsText('@accountingMgrBankingRegisters', 'Registers')
-            .assert.containsText('@accountingMgrBankingJournal', 'Journal')
             .assert.attributeEquals('@accountingMgrBankingDeposits', 'href', page.url() + '/schooldeposits.php')
+            
+            .assert.visible('@accountingMgrBankingRegisters')
+            .assert.containsText('@accountingMgrBankingRegisters', 'Registers')
             .assert.attributeEquals('@accountingMgrBankingRegisters', 'href', page.url() + '/schoolregister.php')
+            
+            .assert.visible('@accountingMgrBankingJournal')
+            .assert.containsText('@accountingMgrBankingJournal', 'Journal')
             .assert.attributeEquals('@accountingMgrBankingJournal', 'href', page.url() + '/acctjournals.php')
 
             .click('@accountingMgrBanking')
@@ -205,18 +223,20 @@ module.exports = {
 
             .click('@accountingMgrEmployees')
             .assert.visible('@accountingMgrEmployeesPayroll')
-            .assert.visible('@accountingMgrEmployeesExpenses')
             .assert.containsText('@accountingMgrEmployeesPayroll', '\273 Payroll')
-            .assert.containsText('@accountingMgrEmployeesExpenses', '\273 Expenses')
             .assert.attributeEquals('@accountingMgrEmployeesPayroll', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrEmployeesExpenses')
+            .assert.containsText('@accountingMgrEmployeesExpenses', '\273 Expenses')
             .assert.attributeEquals('@accountingMgrEmployeesExpenses', 'href', page.url() + '/schoolmenu.php#')
 
             .click('@accountingMgrEmployeesPayroll')
             .assert.visible('@accountingMgrEmployeesPayrollByEmployee')
-            .assert.visible('@accountingMgrEmployeesPayrollByMonth')
             .assert.containsText('@accountingMgrEmployeesPayrollByEmployee', 'by Employee')
-            .assert.containsText('@accountingMgrEmployeesPayrollByMonth', 'by Month')
             .assert.attributeEquals('@accountingMgrEmployeesPayrollByEmployee', 'href', page.url() + '/payrollemployee.php')
+            
+            .assert.visible('@accountingMgrEmployeesPayrollByMonth')
+            .assert.containsText('@accountingMgrEmployeesPayrollByMonth', 'by Month')
             .assert.attributeEquals('@accountingMgrEmployeesPayrollByMonth', 'href', page.url() + '/payrollmonthly.php')
 
             .click('@accountingMgrEmployeesPayroll')
@@ -225,13 +245,15 @@ module.exports = {
 
             .click('@accountingMgrEmployeesExpenses')
             .assert.visible('@accountingMgrEmployeesExpensesSubmitted')
-            .assert.visible('@accountingMgrEmployeesExpensesApproved')
-            .assert.visible('@accountingMgrEmployeesExpensesPaid')
             .assert.containsText('@accountingMgrEmployeesExpensesSubmitted', 'Submitted')
-            .assert.containsText('@accountingMgrEmployeesExpensesApproved', 'Approved')
-            .assert.containsText('@accountingMgrEmployeesExpensesPaid', 'Paid')
             .assert.attributeEquals('@accountingMgrEmployeesExpensesSubmitted', 'href', page.url() + '/expenseaccounts.php?type=1')
+            
+            .assert.visible('@accountingMgrEmployeesExpensesApproved')
+            .assert.containsText('@accountingMgrEmployeesExpensesApproved', 'Approved')
             .assert.attributeEquals('@accountingMgrEmployeesExpensesApproved', 'href', page.url() + '/expenseaccounts.php?type=2')
+            
+            .assert.visible('@accountingMgrEmployeesExpensesPaid')
+            .assert.containsText('@accountingMgrEmployeesExpensesPaid', 'Paid')
             .assert.attributeEquals('@accountingMgrEmployeesExpensesPaid', 'href', page.url() + '/expenseaccounts.php?type=3')
 
             .click('@accountingMgrEmployeesExpenses')
@@ -245,27 +267,32 @@ module.exports = {
 
             .click('@accountingMgrServices')
             .assert.visible('@accountingMgrServicesDwolla')
-            .assert.visible('@accountingMgrServicesPayJunction')
-            .assert.visible('@accountingMgrServicesSmartTuition')
-            .assert.visible('@accountingMgrServicesPayPal')
-            .assert.visible('@accountingMgrServicesEFunds')
             .assert.containsText('@accountingMgrServicesDwolla', '\273 Dwolla')
-            .assert.containsText('@accountingMgrServicesPayJunction', '\273 PayJunction')
-            .assert.containsText('@accountingMgrServicesSmartTuition', '\273 Smart Tuition')
-            .assert.containsText('@accountingMgrServicesPayPal', '\273 PayPal')
-            .assert.containsText('@accountingMgrServicesEFunds', '\273 E-Funds')
             .assert.attributeEquals('@accountingMgrServicesDwolla', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrServicesPayJunction')
+            .assert.containsText('@accountingMgrServicesPayJunction', '\273 PayJunction')
             .assert.attributeEquals('@accountingMgrServicesPayJunction', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrServicesSmartTuition')
+            .assert.containsText('@accountingMgrServicesSmartTuition', '\273 Smart Tuition')
             .assert.attributeEquals('@accountingMgrServicesSmartTuition', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrServicesPayPal')
+            .assert.containsText('@accountingMgrServicesPayPal', '\273 PayPal')
             .assert.attributeEquals('@accountingMgrServicesPayPal', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@accountingMgrServicesEFunds')
+            .assert.containsText('@accountingMgrServicesEFunds', '\273 E-Funds')
             .assert.attributeEquals('@accountingMgrServicesEFunds', 'href', page.url() + '/schoolmenu.php#')
 
             .click('@accountingMgrServicesDwolla')
             .assert.visible('@accountingMgrServicesDwollaTransactions')
-            .assert.visible('@accountingMgrServicesDwollaConfiguration')
             .assert.containsText('@accountingMgrServicesDwollaTransactions', 'Transactions')
-            .assert.containsText('@accountingMgrServicesDwollaConfiguration', 'Configuration')
             .assert.visible('@accountingMgrServicesDwollaTransactions', 'href', page.url() + '/dwolla.php')
+            
+            .assert.visible('@accountingMgrServicesDwollaConfiguration')
+            .assert.containsText('@accountingMgrServicesDwollaConfiguration', 'Configuration')
             .assert.visible('@accountingMgrServicesDwollaConfiguration', 'href', page.url() + '/dwollacfg.php')
 
             .click('@accountingMgrServicesDwolla')
@@ -274,16 +301,19 @@ module.exports = {
 
             .click('@accountingMgrServicesPayJunction')
             .assert.visible('@accountingMgrServicesPayJunctionInvoices')
-            .assert.visible('@accountingMgrServicesPayJunctionPayments')
-            .assert.visible('@accountingMgrServicesPayJunctionConvenienceFees')
-            .assert.visible('@accountingMgrServicesPayJunctionConfiguration')
             .assert.containsText('@accountingMgrServicesPayJunctionInvoices', 'Invoices')
-            .assert.containsText('@accountingMgrServicesPayJunctionPayments', 'Payments')
-            .assert.containsText('@accountingMgrServicesPayJunctionConvenienceFees', 'Convenience Fees')
-            .assert.containsText('@accountingMgrServicesPayJunctionConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesPayJunctionInvoices', 'href', page.url() + '/payjunction.php?task=allinvoices')
+            
+            .assert.visible('@accountingMgrServicesPayJunctionPayments')
+            .assert.containsText('@accountingMgrServicesPayJunctionPayments', 'Payments')
             .assert.attributeEquals('@accountingMgrServicesPayJunctionPayments', 'href', page.url() + '/payjunction.php?task=allpayments')
+            
+            .assert.visible('@accountingMgrServicesPayJunctionConvenienceFees')
+            .assert.containsText('@accountingMgrServicesPayJunctionConvenienceFees', 'Convenience Fees')
             .assert.attributeEquals('@accountingMgrServicesPayJunctionConvenienceFees', 'href', page.url() + '/payjunction.php?task=convenience')
+            
+            .assert.visible('@accountingMgrServicesPayJunctionConfiguration')
+            .assert.containsText('@accountingMgrServicesPayJunctionConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesPayJunctionConfiguration', 'href', page.url() + '/payjunctioncfg.php')
 
             .click('@accountingMgrServicesPayJunction')
@@ -302,13 +332,15 @@ module.exports = {
 
             .click('@accountingMgrServicesPayPal')
             .assert.visible('@accountingMgrServicesPayPalOnlinePayments')
-            .assert.visible('@accountingMgrServicesPayPalInvoices')
-            .assert.visible('@accountingMgrServicesPayPalConfiguration')
             .assert.containsText('@accountingMgrServicesPayPalOnlinePayments', 'Online Payments')
-            .assert.containsText('@accountingMgrServicesPayPalInvoices', 'Invoices')
-            .assert.containsText('@accountingMgrServicesPayPalConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesPayPalOnlinePayments', 'href', page.url() + '/paypal.php?task=allpayments')
+            
+            .assert.visible('@accountingMgrServicesPayPalInvoices')
+            .assert.containsText('@accountingMgrServicesPayPalInvoices', 'Invoices')
             .assert.attributeEquals('@accountingMgrServicesPayPalInvoices', 'href', page.url() + '/paypal.php?task=allinvoices')
+            
+            .assert.visible('@accountingMgrServicesPayPalConfiguration')
+            .assert.containsText('@accountingMgrServicesPayPalConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesPayPalConfiguration', 'href', page.url() + '/paypalcfg.php')
 
             .click('@accountingMgrServicesPayPal')
@@ -318,16 +350,19 @@ module.exports = {
 
             .click('@accountingMgrServicesEFunds')
             .assert.visible('@accountingMgrServicesEFundsPayments')
-            .assert.visible('@accountingMgrServicesEFundsTransactions')
-            .assert.visible('@accountingMgrServicesEFundsRemittance')
-            .assert.visible('@accountingMgrServicesEFundsConfiguration')
             .assert.containsText('@accountingMgrServicesEFundsPayments', 'Payments')
-            .assert.containsText('@accountingMgrServicesEFundsTransactions', 'Transactions')
-            .assert.containsText('@accountingMgrServicesEFundsRemittance', 'Remittance')
-            .assert.containsText('@accountingMgrServicesEFundsConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesEFundsPayments', 'href', page.url() + '/efunds.php?task=allpayments')
+            
+            .assert.visible('@accountingMgrServicesEFundsTransactions')
+            .assert.containsText('@accountingMgrServicesEFundsTransactions', 'Transactions')
             .assert.attributeEquals('@accountingMgrServicesEFundsTransactions', 'href', page.url() + '/efunds.php?task=allinvoices')
+            
+            .assert.visible('@accountingMgrServicesEFundsRemittance')
+            .assert.containsText('@accountingMgrServicesEFundsRemittance', 'Remittance')
             .assert.attributeEquals('@accountingMgrServicesEFundsRemittance', 'href', page.url() + '/efundsremittance.php')
+            
+            .assert.visible('@accountingMgrServicesEFundsConfiguration')
+            .assert.containsText('@accountingMgrServicesEFundsConfiguration', 'Configuration')
             .assert.attributeEquals('@accountingMgrServicesEFundsConfiguration', 'href', page.url() + '/efundscfg.php')
 
             .click('@accountingMgrServicesEFunds')
@@ -354,36 +389,44 @@ module.exports = {
 
             .click('@cafeteriaMgr')
             .assert.visible('@cafeteriaMgrFood')
-            .assert.visible('@cafeteriaMgrMenu')
-            .assert.visible('@cafeteriaMgrCycles')
-            .assert.visible('@cafeteriaMgrOrders')
-            .assert.visible('@cafeteriaMgrPricePlans')
-            .assert.visible('@cafeteriaMgrNotifications')
-            .assert.visible('@cafeteriaMgrAccounts')
-            .assert.visible('@cafeteriaMgrReports')
             .assert.containsText('@cafeteriaMgrFood', 'Food')
-            .assert.containsText('@cafeteriaMgrMenu', 'Menu')
-            .assert.containsText('@cafeteriaMgrCycles', 'Cycles')
-            .assert.containsText('@cafeteriaMgrOrders', 'Orders')
-            .assert.containsText('@cafeteriaMgrPricePlans', 'Price Plans')
-            .assert.containsText('@cafeteriaMgrNotifications', 'Notifications')
-            .assert.containsText('@cafeteriaMgrAccounts', '\273 Accounts')
-            .assert.containsText('@cafeteriaMgrReports', 'Reports')
             .assert.attributeEquals('@cafeteriaMgrFood', 'href', page.url() + '/lunchmeals.php?tab=0')
+            
+            .assert.visible('@cafeteriaMgrMenu')
+            .assert.containsText('@cafeteriaMgrMenu', 'Menu')
             .assert.attributeEquals('@cafeteriaMgrMenu', 'href', page.url() + '/lunchcal.php?tab=1')
+            
+            .assert.visible('@cafeteriaMgrCycles')
+            .assert.containsText('@cafeteriaMgrCycles', 'Cycles')            
             .assert.attributeEquals('@cafeteriaMgrCycles', 'href', page.url() + '/lunchcycle.php?tab=2')
+            
+            .assert.visible('@cafeteriaMgrOrders')
+            .assert.containsText('@cafeteriaMgrOrders', 'Orders')
             .assert.attributeEquals('@cafeteriaMgrOrders', 'href', page.url() + '/lunchorders.php?tab=3')
+            
+            .assert.visible('@cafeteriaMgrPricePlans')
+            .assert.containsText('@cafeteriaMgrPricePlans', 'Price Plans')
             .assert.attributeEquals('@cafeteriaMgrPricePlans', 'href', page.url() + '/lunchpriceplans.php')
+            
+            .assert.visible('@cafeteriaMgrNotifications')
+            .assert.containsText('@cafeteriaMgrNotifications', 'Notifications')
             .assert.attributeEquals('@cafeteriaMgrNotifications', 'href', page.url() + '/lunchnotification.php')
+            
+            .assert.visible('@cafeteriaMgrAccounts')
+            .assert.containsText('@cafeteriaMgrAccounts', '\273 Accounts')
             .assert.attributeEquals('@cafeteriaMgrAccounts', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@cafeteriaMgrReports')
+            .assert.containsText('@cafeteriaMgrReports', 'Reports')
             .assert.attributeEquals('@cafeteriaMgrReports', 'href', page.url() + '/reports.php?type=17')
 
             .click('@cafeteriaMgrAccounts')
             .assert.visible('@cafeteriaMgrAccountsFamily')
-            .assert.visible('@cafeteriaMgrAccountsEmployee')
             .assert.containsText('@cafeteriaMgrAccountsFamily', 'Family')
-            .assert.containsText('@cafeteriaMgrAccountsEmployee', 'Employee')
             .assert.attributeEquals('@cafeteriaMgrAccountsFamily', 'href', page.url() + '/lunchaccounts.php?task=family')
+            
+            .assert.visible('@cafeteriaMgrAccountsEmployee')
+            .assert.containsText('@cafeteriaMgrAccountsEmployee', 'Employee')
             .assert.attributeEquals('@cafeteriaMgrAccountsEmployee', 'href', page.url() + '/lunchaccounts.php?task=employee')
 
             .click('@cafeteriaMgrAccounts')
@@ -402,33 +445,40 @@ module.exports = {
 
             .click('@childcareMgr')
             .assert.visible('@childcareMgrAccounts')
-            .assert.visible('@childcareMgrDaily')
-            .assert.visible('@childcareMgrWeekly')
-            .assert.visible('@childcareMgrMonthly')
-            .assert.visible('@childcareMgrNotifications')
-            .assert.visible('@childcareMgrReports')
             .assert.containsText('@childcareMgrAccounts', 'Accounts')
-            .assert.containsText('@childcareMgrDaily', '\273 Daily')
-            .assert.containsText('@childcareMgrWeekly', '\273 Weekly')
-            .assert.containsText('@childcareMgrMonthly', '\273 Monthly')
-            .assert.containsText('@childcareMgrNotifications', 'Notification')
-            .assert.containsText('@childcareMgrReports', 'Reports')
             .assert.attributeEquals('@childcareMgrAccounts', 'href', page.url() + '/daycareaccounts.php')
+            
+            .assert.visible('@childcareMgrDaily')
+            .assert.containsText('@childcareMgrDaily', '\273 Daily')
             .assert.attributeEquals('@childcareMgrDaily', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@childcareMgrWeekly')
+            .assert.containsText('@childcareMgrWeekly', '\273 Weekly')
             .assert.attributeEquals('@childcareMgrWeekly', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@childcareMgrMonthly')
+            .assert.containsText('@childcareMgrMonthly', '\273 Monthly')
             .assert.attributeEquals('@childcareMgrMonthly', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@childcareMgrNotifications')
+            .assert.containsText('@childcareMgrNotifications', 'Notification')
             .assert.attributeEquals('@childcareMgrNotifications', 'href', page.url() + '/childcarenotification.php')
+            
+            .assert.visible('@childcareMgrReports')
+            .assert.containsText('@childcareMgrReports', 'Reports')
             .assert.attributeEquals('@childcareMgrReports', 'href', page.url() + '/reports.php?type=26')
 
             .click('@childcareMgrDaily')
             .assert.visible('@childcareMgrDailyCheckInOut')
-            .assert.visible('@childcareMgrDailyDailyCharges')
-            .assert.visible('@childcareMgrDailyPricePlans')
             .assert.containsText('@childcareMgrDailyCheckInOut', 'Check In/Out')
-            .assert.containsText('@childcareMgrDailyDailyCharges', 'Daily Charges')
-            .assert.containsText('@childcareMgrDailyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrDailyCheckInOut', 'href', page.url() + '/daycarecheck.php')
+            
+            .assert.visible('@childcareMgrDailyDailyCharges')
+            .assert.containsText('@childcareMgrDailyDailyCharges', 'Daily Charges')
             .assert.attributeEquals('@childcareMgrDailyDailyCharges', 'href', page.url() + '/daycareorders.php?grade=99')
+            
+            .assert.visible('@childcareMgrDailyPricePlans')
+            .assert.containsText('@childcareMgrDailyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrDailyPricePlans', 'href', page.url() + '/daycarepriceplans.php')
 
             .click('@childcareMgrDaily')
@@ -438,13 +488,15 @@ module.exports = {
 
             .click('@childcareMgrWeekly')
             .assert.visible('@childcareMgrWeeklyCharges')
-            .assert.visible('@childcareMgrWeeklyBillingSetup')
-            .assert.visible('@childcareMgrWeeklyPricePlans')
             .assert.containsText('@childcareMgrWeeklyCharges', 'Charges')
-            .assert.containsText('@childcareMgrWeeklyBillingSetup', 'Billing Setup')
-            .assert.containsText('@childcareMgrWeeklyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrWeeklyCharges', 'href', page.url() + '/daycarecharges.php')
+            
+            .assert.visible('@childcareMgrWeeklyBillingSetup')
+            .assert.containsText('@childcareMgrWeeklyBillingSetup', 'Billing Setup')
             .assert.attributeEquals('@childcareMgrWeeklyBillingSetup', 'href', page.url() + '/daycarebilling.php')
+            
+            .assert.visible('@childcareMgrWeeklyPricePlans')
+            .assert.containsText('@childcareMgrWeeklyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrWeeklyPricePlans', 'href', page.url() + '/daycareweeklyplans.php')
 
             .click('@childcareMgrWeekly')
@@ -454,13 +506,15 @@ module.exports = {
 
             .click('@childcareMgrMonthly')
             .assert.visible('@childcareMgrMonthlyCharges')
-            .assert.visible('@childcareMgrMonthlyBillingSetup')
-            .assert.visible('@childcareMgrMonthlyPricePlans')
             .assert.containsText('@childcareMgrMonthlyCharges', 'Charges')
-            .assert.containsText('@childcareMgrMonthlyBillingSetup', 'Billing Setup')
-            .assert.containsText('@childcareMgrMonthlyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrMonthlyCharges', 'href', page.url() + '/daycaremonthlycharges.php')
+            
+            .assert.visible('@childcareMgrMonthlyBillingSetup')
+            .assert.containsText('@childcareMgrMonthlyBillingSetup', 'Billing Setup')
             .assert.attributeEquals('@childcareMgrMonthlyBillingSetup', 'href', page.url() + '/daycaremonthlybilling.php')
+            
+            .assert.visible('@childcareMgrMonthlyPricePlans')
+            .assert.containsText('@childcareMgrMonthlyPricePlans', 'Price Plans')
             .assert.attributeEquals('@childcareMgrMonthlyPricePlans', 'href', page.url() + '/daycaremonthlyplans.php')
 
             .click('@childcareMgrMonthly')
@@ -478,27 +532,32 @@ module.exports = {
 
             .click('@donationMgr')
             .assert.visible('@donationMgrDonors')
-            .assert.visible('@donationMgrDonations')
-            .assert.visible('@donationMgrCampaings')
-            .assert.visible('@donationMgrReports')
             .assert.containsText('@donationMgrDonors', '\273 Donors')
-            .assert.containsText('@donationMgrDonations', '\273 Donations')
-            .assert.containsText('@donationMgrCampaings', 'Campaigns')
-            .assert.containsText('@donationMgrReports', 'Reports')
             .assert.attributeEquals('@donationMgrDonors', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@donationMgrDonations')
+            .assert.containsText('@donationMgrDonations', '\273 Donations')
             .assert.attributeEquals('@donationMgrDonations', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@donationMgrCampaings')
+            .assert.containsText('@donationMgrCampaings', 'Campaigns')            
             .assert.attributeEquals('@donationMgrCampaings', 'href', page.url() + '/donorcampaigns.php')
+            
+            .assert.visible('@donationMgrReports')
+            .assert.containsText('@donationMgrReports', 'Reports')
             .assert.attributeEquals('@donationMgrReports', 'href', page.url() + '/reports.php?type=22')
 
             .click('@donationMgrDonors')
             .assert.visible('@donationMgrDonorsNewDonors')
-            .assert.visible('@donationMgrDonorsByContact')
-            .assert.visible('@donationMgrDonorsPledges')
             .assert.containsText('@donationMgrDonorsNewDonors', 'New Donors')
-            .assert.containsText('@donationMgrDonorsByContact', 'by Contact')
-            .assert.containsText('@donationMgrDonorsPledges', 'Pledges')
             .assert.attributeEquals('@donationMgrDonorsNewDonors', 'href', page.url() + '/donors.php?task=new')
+            
+            .assert.visible('@donationMgrDonorsByContact')
+            .assert.containsText('@donationMgrDonorsByContact', 'by Contact')            
             .assert.attributeEquals('@donationMgrDonorsByContact', 'href', page.url() + '/donors.php?task=bycontact')
+            
+            .assert.visible('@donationMgrDonorsPledges')
+            .assert.containsText('@donationMgrDonorsPledges', 'Pledges')
             .assert.attributeEquals('@donationMgrDonorsPledges', 'href', page.url() + '/donorpledges.php')
 
             .click('@donationMgrDonors')
@@ -508,10 +567,11 @@ module.exports = {
 
             .click('@donationMgrDonations')
             .assert.visible('@donationMgrDonationsReceive')
-            .assert.visible('@donationMgrDonationsProcess')
             .assert.containsText('@donationMgrDonationsReceive', 'Receive')
-            .assert.containsText('@donationMgrDonationsProcess', 'Process')
             .assert.attributeEquals('@donationMgrDonationsReceive', 'href', page.url() + '/donordonations.php?task=receive')
+            
+            .assert.visible('@donationMgrDonationsProcess')
+            .assert.containsText('@donationMgrDonationsProcess', 'Process')
             .assert.attributeEquals('@donationMgrDonationsProcess', 'href', page.url() + '/donordonations.php?task=pending')
 
             .click('@donationMgrDonations')
