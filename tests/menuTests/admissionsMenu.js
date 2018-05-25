@@ -56,36 +56,44 @@ module.exports = {
 
             .click('@admissions')
             .assert.visible('@inquiries')
-            .assert.visible('@enrollment')
-            .assert.visible('@classMgr')
-            .assert.visible('@courseMgr')
-            .assert.visible('@admissionsCommunication')
-            .assert.visible('@portalMgr')
-            .assert.visible('@admissionsConfiguration')
-            .assert.visible('@admissionsReports')
             .assert.containsText('@inquiries', '\273 Inquiries')
-            .assert.containsText('@enrollment', '\273 Enrollment')
-            .assert.containsText('@classMgr', '\273 Class Mgr')
-            .assert.containsText('@courseMgr', '\273 Course Mgr')
-            .assert.containsText('@admissionsCommunication', '\273 Communication')
-            .assert.containsText('@portalMgr', '\273 Portal Mgr')
-            .assert.containsText('@admissionsConfiguration', '\273 Configuration')
-            .assert.containsText('@admissionsReports', 'Reports')
             .assert.attributeEquals('@inquiries', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@enrollment')
+            .assert.containsText('@enrollment', '\273 Enrollment')
             .assert.attributeEquals('@enrollment', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@classMgr')
+            .assert.containsText('@classMgr', '\273 Class Mgr')
             .assert.attributeEquals('@classMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@courseMgr')
+            .assert.containsText('@courseMgr', '\273 Course Mgr')
             .assert.attributeEquals('@courseMgr', 'href', page.url() + '/schoolmenu.php#')
+
+            .assert.visible('@admissionsCommunication')
+            .assert.containsText('@admissionsCommunication', '\273 Communication')
             .assert.attributeEquals('@admissionsCommunication', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@portalMgr')
+            .assert.containsText('@portalMgr', '\273 Portal Mgr')
             .assert.attributeEquals('@portalMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@admissionsConfiguration')
+            .assert.containsText('@admissionsConfiguration', '\273 Configuration')
             .assert.attributeEquals('@admissionsConfiguration', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@admissionsReports')
+            .assert.containsText('@admissionsReports', 'Reports')
             .assert.attributeEquals('@admissionsReports', 'href', page.url() + '/reports.php?type=18')
 
             .click('@inquiries')
             .assert.visible('@inquiresStudents')
-            .assert.visible('@inquiriesFamilies')
             .assert.containsText('@inquiresStudents', 'Students')
-            .assert.containsText('@inquiriesFamilies', 'Families')
             .assert.attributeEquals('@inquiresStudents', 'href', page.url() + '/enrollstudentprospects.php')
+            
+            .assert.visible('@inquiriesFamilies')
+            .assert.containsText('@inquiriesFamilies', 'Families')
             .assert.attributeEquals('@inquiriesFamilies', 'href', page.url() + '/enrollfamilyprospects.php')
 
             .click('@inquiries')
@@ -94,10 +102,11 @@ module.exports = {
 
             .click('@enrollment')
             .assert.visible('@enrollmentStudent')
-            .assert.visible('@enrollmentFamilies')
             .assert.containsText('@enrollmentStudent', 'Student')
-            .assert.containsText('@enrollmentFamilies', 'Families')
             .assert.attributeEquals('@enrollmentStudent', 'href', page.url() + '/enrollstudents.php')
+            
+            .assert.visible('@enrollmentFamilies')
+            .assert.containsText('@enrollmentFamilies', 'Families')
             .assert.attributeEquals('@enrollmentFamilies', 'href', page.url() + '/enrollfamilies.php')
 
             .click('@enrollment')
@@ -114,25 +123,31 @@ module.exports = {
 
             .click('@courseMgr')
             .assert.visible('@courseMgrCourses')
-            .assert.visible('@courseMgrTeachers')
-            .assert.visible('@courseMgrStudents')
-            .assert.visible('@courseMgrFacility')
-            .assert.visible('@courseMgrScheduler')
-            .assert.visible('@courseMgrConfiguration')
-            .assert.visible('@courseMgrReports')
             .assert.containsText('@courseMgrCourses', 'Courses')
-            .assert.containsText('@courseMgrTeachers', 'Teachers')
-            .assert.containsText('@courseMgrStudents', 'Students')
-            .assert.containsText('@courseMgrFacility', 'Facility')
-            .assert.containsText('@courseMgrScheduler', 'Scheduler')
-            .assert.containsText('@courseMgrConfiguration', 'Configuration')
-            .assert.containsText('@courseMgrReports', 'Reports')
             .assert.attributeEquals('@courseMgrCourses', 'href', page.url() + '/courses.php')
+            
+            .assert.visible('@courseMgrTeachers')
+            .assert.containsText('@courseMgrTeachers', 'Teachers')
             .assert.attributeEquals('@courseMgrTeachers', 'href', page.url() + '/courseloadteachers.php')
+            
+            .assert.visible('@courseMgrStudents')
+            .assert.containsText('@courseMgrStudents', 'Students')
             .assert.attributeEquals('@courseMgrStudents', 'href', page.url() + '/courseloadstudents.php?grade=99')
+            
+            .assert.visible('@courseMgrFacility')
+            .assert.containsText('@courseMgrFacility', 'Facility')
             .assert.attributeEquals('@courseMgrFacility', 'href', page.url() + '/courseloadfacility.php')
+            
+            .assert.visible('@courseMgrScheduler')
+            .assert.containsText('@courseMgrScheduler', 'Scheduler')
             .assert.attributeEquals('@courseMgrScheduler', 'href', page.url() + '/coursescheduler.php')
+            
+            .assert.visible('@courseMgrConfiguration')
+            .assert.containsText('@courseMgrConfiguration', 'Configuration')
             .assert.attributeEquals('@courseMgrConfiguration', 'href', page.url() + '/coursecfg.php')
+            
+            .assert.visible('@courseMgrReports')
+            .assert.containsText('@courseMgrReports', 'Reports')
             .assert.attributeEquals('@courseMgrReports', 'href', page.url() + '/reports.php?type=25')
 
             .click('@courseMgr')
@@ -151,19 +166,23 @@ module.exports = {
 
             .click('@portalMgr')
             .assert.visible('@portalMgrStudents')
-            .assert.visible('@portalMgrFamilies')
-            .assert.visible('@portalMgrApplications')
-            .assert.visible('@portalMgrEssayQuestions')
-            .assert.visible('@portalMgrRequestedDocs')
             .assert.containsText('@portalMgrStudents', 'Students')
-            .assert.containsText('@portalMgrFamilies', 'Families')
-            .assert.containsText('@portalMgrApplications', 'Applications')
-            .assert.containsText('@portalMgrEssayQuestions', 'Essay Questions')
-            .assert.containsText('@portalMgrRequestedDocs', 'Requested Docs')
             .assert.attributeEquals('@portalMgrStudents', 'href', page.url() + '/enrollstudents2.php')
+            
+            .assert.visible('@portalMgrFamilies')
+            .assert.containsText('@portalMgrFamilies', 'Families')
             .assert.attributeEquals('@portalMgrFamilies', 'href', page.url() + '/enrollfamilies2.php')
+            
+            .assert.visible('@portalMgrApplications')
+            .assert.containsText('@portalMgrApplications', 'Applications')
             .assert.attributeEquals('@portalMgrApplications', 'href', page.url() + '/enrollapplications.php')
+            
+            .assert.visible('@portalMgrEssayQuestions')
+            .assert.containsText('@portalMgrEssayQuestions', 'Essay Questions')
             .assert.attributeEquals('@portalMgrEssayQuestions', 'href', page.url() + '/enrollessays.php')
+            
+            .assert.visible('@portalMgrRequestedDocs')
+            .assert.containsText('@portalMgrRequestedDocs', 'Requested Docs')
             .assert.attributeEquals('@portalMgrRequestedDocs', 'href', page.url() + '/essentialdocuments.php')
 
             .click('@portalMgr')
@@ -175,22 +194,27 @@ module.exports = {
 
             .click('@admissionsConfiguration')
             .assert.visible('@admissionsConfigurationChecklist')
-            .assert.visible('@admissionsConfigurationDocuments')
-            .assert.visible('@admissionsConfigurationAgreements')
-            .assert.visible('@admissionsConfigurationTuitionPlans')
-            .assert.visible('@admissionsConfigurationEnrollStatus')
-            .assert.visible('@admissionsConfigurationSetup')
             .assert.containsText('@admissionsConfigurationChecklist', 'Checklist')
-            .assert.containsText('@admissionsConfigurationDocuments', 'Documents')
-            .assert.containsText('@admissionsConfigurationAgreements', 'Agreements')
-            .assert.containsText('@admissionsConfigurationTuitionPlans', 'Tuition Plans')
-            .assert.containsText('@admissionsConfigurationEnrollStatus', 'Enroll Status')
-            .assert.containsText('@admissionsConfigurationSetup', 'Setup')
             .assert.attributeEquals('@admissionsConfigurationChecklist', 'href', page.url() + '/enrollcheck.php')
+            
+            .assert.visible('@admissionsConfigurationDocuments')
+            .assert.containsText('@admissionsConfigurationDocuments', 'Documents')
             .assert.attributeEquals('@admissionsConfigurationDocuments', 'href', page.url() + '/enrolldocs.php')
+            
+            .assert.visible('@admissionsConfigurationAgreements')
+            .assert.containsText('@admissionsConfigurationAgreements', 'Agreements')
             .assert.attributeEquals('@admissionsConfigurationAgreements', 'href', page.url() + '/enrollagreements.php')
+            
+            .assert.visible('@admissionsConfigurationTuitionPlans')
+            .assert.containsText('@admissionsConfigurationTuitionPlans', 'Tuition Plans')
             .assert.attributeEquals('@admissionsConfigurationTuitionPlans', 'href', page.url() + '/tuition.php')
+            
+            .assert.visible('@admissionsConfigurationEnrollStatus')
+            .assert.containsText('@admissionsConfigurationEnrollStatus', 'Enroll Status')
             .assert.attributeEquals('@admissionsConfigurationEnrollStatus', 'href', page.url() + '/enrollstatus.php')
+            
+            .assert.visible('@admissionsConfigurationSetup')
+            .assert.containsText('@admissionsConfigurationSetup', 'Setup')
             .assert.attributeEquals('@admissionsConfigurationSetup', 'href', page.url() + '/enrollconfig.php')
 
             .click('@admissionsConfiguration')
