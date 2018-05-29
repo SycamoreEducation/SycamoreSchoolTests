@@ -12,7 +12,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@systemHelp')
             .assert.containsText('@systemHelp', '\273 System Help')
-            .assert.attributeEquals('@systemHelp', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@systemHelp', 'href', page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@welcomeAboard')
             .assert.hidden('@onlineHelp')
@@ -34,12 +34,12 @@ module.exports = {
             .assert.containsText('@webinarTraining', 'Webinar Training')
             .assert.containsText('@sycamoreLeafNotes', 'Sycamore Leaf Notes')
             .assert.containsText('@releaseNotes', 'Release Notes')
-            .assert.attributeEquals('@welcomeAboard', 'href', 'http://web/welcome.php')
+            .assert.attributeEquals('@welcomeAboard', 'href', page.url() + '/welcome.php')
             .assert.attributeEquals('@onlineHelp', 'onclick', 'doHelpExternal();')
-            .assert.attributeEquals('@trainingVideos', 'href', 'http://web/systemvideos.php')
-            .assert.attributeEquals('@webinarTraining', 'href', 'http://web/webinartraining.php')
-            .assert.attributeEquals('@sycamoreLeafNotes', 'href', 'http://web/systemleafnotes.php')
-            .assert.attributeEquals('@releaseNotes', 'href', 'http://web/systemenhancements.php')
+            .assert.attributeEquals('@trainingVideos', 'href', page.url() + '/systemvideos.php')
+            .assert.attributeEquals('@webinarTraining', 'href', page.url() + '/webinartraining.php')
+            .assert.attributeEquals('@sycamoreLeafNotes', 'href', page.url() + '/systemleafnotes.php')
+            .assert.attributeEquals('@releaseNotes', 'href', page.url() + '/systemenhancements.php')
 
             .click('@systemHelp')
 
