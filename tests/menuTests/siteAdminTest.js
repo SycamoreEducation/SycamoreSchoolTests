@@ -38,42 +38,52 @@ module.exports = {
 
             .click('@siteAdmin')
             .assert.visible('@siteAdminInformation')
-            .assert.visible('@siteAdminConfiguration')
-            .assert.visible('@siteAdminSubscription')
-            .assert.visible('@siteAdminPermissions')
-            .assert.visible('@siteAdminEmailAccounts')
-            .assert.visible('@siteAdminYearEndCloseout')
-            .assert.visible('@systemLogs')
-            .assert.visible('@connections')
-            .assert.visible('@importData')
             .assert.containsText('@siteAdminInformation', 'Information')
-            .assert.containsText('@siteAdminConfiguration', 'Configuration')
-            .assert.containsText('@siteAdminSubscription', 'Subscription')
-            .assert.containsText('@siteAdminPermissions', 'Permissions')
-            .assert.containsText('@siteAdminEmailAccounts', 'Email Accounts')
-            .assert.containsText('@siteAdminYearEndCloseout', 'Year End Closeout')
-            .assert.containsText('@systemLogs', 'System Logs')
-            .assert.containsText('@connections', 'Connections')
-            .assert.containsText('@importData', 'Import Data')
             .assert.attributeEquals('@siteAdminInformation', 'href', page.url() + '/schoolinfo.php')
+            
+            .assert.visible('@siteAdminConfiguration')
+            .assert.containsText('@siteAdminConfiguration', 'Configuration')
             .assert.attributeEquals('@siteAdminConfiguration', 'href', page.url() + '/schoolcfg.php')
+            
+            .assert.visible('@siteAdminSubscription')
+            .assert.containsText('@siteAdminSubscription', 'Subscription')
             .assert.attributeEquals('@siteAdminSubscription', 'href', page.url() + '/schoolsubscription.php')
+            
+            .assert.visible('@siteAdminPermissions')
+            .assert.containsText('@siteAdminPermissions', 'Permissions')
             .assert.attributeEquals('@siteAdminPermissions', 'href', page.url() + '/usersecurity.php')
+            
+            .assert.visible('@siteAdminEmailAccounts')
+            .assert.containsText('@siteAdminEmailAccounts', 'Email Accounts')
             .assert.attributeEquals('@siteAdminEmailAccounts', 'href', page.url() + '/emailaccounts.php')
+            
+            .assert.visible('@siteAdminYearEndCloseout')
+            .assert.containsText('@siteAdminYearEndCloseout', 'Year End Closeout')
             .assert.attributeEquals('@siteAdminYearEndCloseout', 'href', page.url() + '/endofyear.php')
+            
+            .assert.visible('@systemLogs')
+            .assert.containsText('@systemLogs', 'System Logs')
             .assert.attributeEquals('@systemLogs', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@connections')
+            .assert.containsText('@connections', 'Connections')
             .assert.attributeEquals('@connections', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@importData')
+            .assert.containsText('@importData', 'Import Data')
             .assert.attributeEquals('@importData', 'href', page.url() + '/schoolmenu.php#')
 
             .click('@systemLogs')
             .assert.visible('@systemLogsSiteUsage')
-            .assert.visible('@systemLogsDailyOverview')
-            .assert.visible('@systmeLogsSecurityLogs')
             .assert.containsText('@systemLogsSiteUsage', 'Site Usage')
-            .assert.containsText('@systemLogsDailyOverview', 'Daily Overview')
-            .assert.containsText('@systmeLogsSecurityLogs', 'Security Logs')
             .assert.attributeEquals('@systemLogsSiteUsage', 'href', page.url() + '/usage.php')
+            
+            .assert.visible('@systemLogsDailyOverview')
+            .assert.containsText('@systemLogsDailyOverview', 'Daily Overview')
             .assert.attributeEquals('@systemLogsDailyOverview', 'href', page.url() + '/overview.php')
+            
+            .assert.visible('@systmeLogsSecurityLogs')
+            .assert.containsText('@systmeLogsSecurityLogs', 'Security Logs')
             .assert.attributeEquals('@systmeLogsSecurityLogs', 'href', page.url() + '/securitylogs.php')
 
             .click('@systemLogs')
@@ -83,10 +93,11 @@ module.exports = {
 
             .click('@connections')
             .assert.visible('@connectionsIntegrations')
-            .assert.visible('@connectionsWebHooks')
             .assert.containsText('@connectionsIntegrations', 'Integrations')
-            .assert.containsText('@connectionsWebHooks', 'Web Hooks')
             .assert.attributeEquals('@connectionsIntegrations', 'href', page.url() + '/schoolcfg.php?view=integration')
+            
+            .assert.visible('@connectionsWebHooks')
+            .assert.containsText('@connectionsWebHooks', 'Web Hooks')
             .assert.attributeEquals('@connectionsWebHooks', 'href', page.url() + '/webhooks.php')
 
             .click('@connections')
@@ -95,16 +106,19 @@ module.exports = {
 
             .click('@importData')
             .assert.visible('@importDataMigrationWizard')
-            .assert.visible('@importDataStudentPhotos')
-            .assert.visible('@importDataEmployeePhotos')
-            .assert.visible('@importDataMiscellaneous')
             .assert.containsText('@importDataMigrationWizard', 'Migration Wizard')
-            .assert.containsText('@importDataStudentPhotos', 'Student Photos')
-            .assert.containsText('@importDataEmployeePhotos', 'Employee Photos')
-            .assert.containsText('@importDataMiscellaneous', 'Miscellaneous')
             .assert.attributeEquals('@importDataMigrationWizard', 'href', page.url() + '/importdatawizard.php')
+            
+            .assert.visible('@importDataStudentPhotos')
+            .assert.containsText('@importDataStudentPhotos', 'Student Photos')
             .assert.attributeEquals('@importDataStudentPhotos', 'href', page.url() + '/Reports/0/importuserphotos.php?type=0')
+            
+            .assert.visible('@importDataEmployeePhotos')
+            .assert.containsText('@importDataEmployeePhotos', 'Employee Photos')
             .assert.attributeEquals('@importDataEmployeePhotos', 'href', page.url() + '/Reports/0/importuserphotos.php?type=2')
+            
+            .assert.visible('@importDataMiscellaneous')
+            .assert.containsText('@importDataMiscellaneous', 'Miscellaneous')
             .assert.attributeEquals('@importDataMiscellaneous', 'href', page.url() + '/importmisc.php')
 
             .click('@importData')
