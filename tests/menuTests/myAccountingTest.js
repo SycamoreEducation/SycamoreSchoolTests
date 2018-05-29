@@ -19,10 +19,11 @@ module.exports = {
 
             .click('@myAccounting')
             .assert.visible('@myAccountingCafetieria')
-            .assert.visible('@myAccountingExpenseReports')
             .assert.containsText('@myAccountingCafetieria', 'Cafeteria')
-            .assert.containsText('@myAccountingExpenseReports', 'Expense Reports')
             .assert.attributeEquals('@myAccountingCafetieria', 'href', page.url() + '/employeelunchaccount.php')
+            
+            .assert.visible('@myAccountingExpenseReports')
+            .assert.containsText('@myAccountingExpenseReports', 'Expense Reports')
             .assert.attributeEquals('@myAccountingExpenseReports', 'href', page.url() + '/expense.php')
 
             .click('@myAccounting')
