@@ -19,10 +19,11 @@ module.exports = {
 
             .click('@systemSupport')
             .assert.visible('@openTickets')
-            .assert.visible('@closedTickets')
             .assert.containsText('@openTickets', 'Open Tickets')
-            .assert.containsText('@closedTickets', 'Closed Tickets')
             .assert.attributeEquals('@openTickets', 'href', page.url() + '/support.php?type=open')
+            
+            .assert.visible('@closedTickets')
+            .assert.containsText('@closedTickets', 'Closed Tickets')
             .assert.attributeEquals('@closedTickets', 'href', page.url() + '/support.php?type=closed')
 
             .click('@systemSupport')
