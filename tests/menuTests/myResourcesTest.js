@@ -22,19 +22,23 @@ module.exports = {
 
             .click('@myResources')
             .assert.visible('@myResourcesNews')
-            .assert.visible('@myResourcesPhotos')
-            .assert.visible('@myResourcesDocuments')
-            .assert.visible('@myResourcesOnlineTests')
-            .assert.visible('@myResourcesGradeBook')
             .assert.containsText('@myResourcesNews', 'News')
-            .assert.containsText('@myResourcesPhotos', 'Photos')
-            .assert.containsText('@myResourcesDocuments', 'Documents')
-            .assert.containsText('@myResourcesOnlineTests', 'Online Tests')
-            .assert.containsText('@myResourcesGradeBook', 'Grade Book')
             .assert.attributeEquals('@myResourcesNews', 'href', page.url() + '/cloudnews.php')
+            
+            .assert.visible('@myResourcesPhotos')
+            .assert.containsText('@myResourcesPhotos', 'Photos')
             .assert.attributeEquals('@myResourcesPhotos', 'href', page.url() + '/cloudphotos.php')
+            
+            .assert.visible('@myResourcesDocuments')
+            .assert.containsText('@myResourcesDocuments', 'Documents')
             .assert.attributeEquals('@myResourcesDocuments', 'href', page.url() + '/clouddocuments.php')
+            
+            .assert.visible('@myResourcesOnlineTests')
+            .assert.containsText('@myResourcesOnlineTests', 'Online Tests')
             .assert.attributeEquals('@myResourcesOnlineTests', 'href', page.url() + '/myonlinetests.php')
+            
+            .assert.visible('@myResourcesGradeBook')
+            .assert.containsText('@myResourcesGradeBook', 'Grade Book')
             .assert.attributeEquals('@myResourcesGradeBook', 'href', page.url() + '/mygradebooks.php')
 
             .click('@myResources')
