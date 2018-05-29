@@ -19,10 +19,11 @@ module.exports = {
 
             .click('@myCommunication')
             .assert.visible('@myBatchEmail')
-            .assert.visible('@myBlogs')
             .assert.containsText('@myBatchEmail', 'My Batch Email')
-            .assert.containsText('@myBlogs', 'My Blogs')
             .assert.attributeEquals('@myBatchEmail', 'href', page.url() + '/batchemail3.php?classid=-1')
+            
+            .assert.visible('@myBlogs')
+            .assert.containsText('@myBlogs', 'My Blogs')
             .assert.attributeEquals('@myBlogs', 'href', page.url() + '/blogs.php?task=mine')
 
             .click('@myCommunication')
