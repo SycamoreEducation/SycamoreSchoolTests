@@ -12,7 +12,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@systemSupport')
             .assert.containsText('@systemSupport', '\273 System Support')
-            .assert.attributeEquals('@systemSupport', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@systemSupport', 'href', page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@openTickets')
             .assert.hidden('@closedTickets')
@@ -22,8 +22,8 @@ module.exports = {
             .assert.visible('@closedTickets')
             .assert.containsText('@openTickets', 'Open Tickets')
             .assert.containsText('@closedTickets', 'Closed Tickets')
-            .assert.attributeEquals('@openTickets', 'href', 'http://web/support.php?type=open')
-            .assert.attributeEquals('@closedTickets', 'href', 'http://web/support.php?type=closed')
+            .assert.attributeEquals('@openTickets', 'href', page.url() + '/support.php?type=open')
+            .assert.attributeEquals('@closedTickets', 'href', page.url() + '/support.php?type=closed')
 
             .click('@systemSupport')
 
