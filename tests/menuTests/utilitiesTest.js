@@ -64,41 +64,52 @@ module.exports = {
 
             .click('@utilities')
             .assert.visible('@assetMgr')
-            .assert.visible('@eventMgr')
-            .assert.visible('@facilityMgr')
-            .assert.visible('@timecardMgr')
-            .assert.visible('@workflowMgr')
-            .assert.visible('@databaseMgr')
-            .assert.visible('@onlineFormMgr')
-            .assert.visible('@knowledgeBase')
-            .assert.containsText('@eventMgr', '\273 Event Mgr')
-            .assert.containsText('@facilityMgr', '\273 Facility Mgr')
-            .assert.containsText('@timecardMgr', '\273 Timecard Mgr')
-            .assert.containsText('@workflowMgr', '\273 Workflow Mgr')
-            .assert.containsText('@databaseMgr', '\273 Database Mgr')
-            .assert.containsText('@onlineFormMgr', '\273 Online Form Mgr')
-            .assert.containsText('@knowledgeBase', '\273 Knowledge Base')
+            .assert.containsText('@assetMgr', '\273 Asset Mgr')
             .assert.attributeEquals('@assetMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@eventMgr')
+            .assert.containsText('@eventMgr', '\273 Event Mgr')
             .assert.attributeEquals('@eventMgr', 'href', page.url() + '/schoolmenu.php#')
+
+            .assert.visible('@facilityMgr')
+            .assert.containsText('@facilityMgr', '\273 Facility Mgr')
             .assert.attributeEquals('@facilityMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@timecardMgr')
+            .assert.containsText('@timecardMgr', '\273 Timecard Mgr')
             .assert.attributeEquals('@timecardMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@workflowMgr')
+            .assert.containsText('@workflowMgr', '\273 Workflow Mgr')
             .assert.attributeEquals('@workflowMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@databaseMgr')
+            .assert.containsText('@databaseMgr', '\273 Database Mgr')
             .assert.attributeEquals('@databaseMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@onlineFormMgr')
+            .assert.containsText('@onlineFormMgr', '\273 Online Form Mgr')
             .assert.attributeEquals('@onlineFormMgr', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@knowledgeBase')
+            .assert.containsText('@knowledgeBase', '\273 Knowledge Base')
             .assert.attributeEquals('@knowledgeBase', 'href', page.url() + '/schoolmenu.php#')
 
             .click('@assetMgr')
             .assert.visible('@assetMgrInventory')
-            .assert.visible('@assetMgrTypes')
-            .assert.visible('@assetMgrAdditionalFields')
-            .assert.visible('@assetMgrReports')
             .assert.containsText('@assetMgrInventory', 'Inventory')
-            .assert.containsText('@assetMgrTypes', 'Types')
-            .assert.containsText('@assetMgrAdditionalFields', 'Additional Fields')
-            .assert.containsText('@assetMgrReports', 'Reports')
             .assert.attributeEquals('@assetMgrInventory', 'href', page.url() + '/assets.php')
+            
+            .assert.visible('@assetMgrTypes')
+            .assert.containsText('@assetMgrTypes', 'Types')
             .assert.attributeEquals('@assetMgrTypes', 'href', page.url() + '/assettypes.php')
+            
+            .assert.visible('@assetMgrAdditionalFields')
+            .assert.containsText('@assetMgrAdditionalFields', 'Additional Fields')
             .assert.attributeEquals('@assetMgrAdditionalFields', 'href', page.url() + '/assetstatistics.php?task=list')
+            
+            .assert.visible('@assetMgrReports')
+            .assert.containsText('@assetMgrReports', 'Reports')
             .assert.attributeEquals('@assetMgrReports', 'href', page.url() + '/reports.php?type=34')
 
             .click('@assetMgr')
@@ -109,16 +120,19 @@ module.exports = {
 
             .click('@eventMgr')
             .assert.visible('@eventMgrManagedEvents')
-            .assert.visible('@eventMgrRegistration')
-            .assert.visible('@eventMgrParticipants')
-            .assert.visible('@eventMgrReports')
             .assert.containsText('@eventMgrManagedEvents', 'Managed Events')
-            .assert.containsText('@eventMgrRegistration', 'Registration')
-            .assert.containsText('@eventMgrParticipants', 'Participants')
-            .assert.containsText('@eventMgrReports', 'Reports')
             .assert.attributeEquals('@eventMgrManagedEvents', 'href', page.url() + '/eventproperty.php?task=list')
+            
+            .assert.visible('@eventMgrRegistration')
+            .assert.containsText('@eventMgrRegistration', 'Registration')
             .assert.attributeEquals('@eventMgrRegistration', 'href', page.url() + '/eventregistrations.php')
+            
+            .assert.visible('@eventMgrParticipants')
+            .assert.containsText('@eventMgrParticipants', 'Participants')
             .assert.attributeEquals('@eventMgrParticipants', 'href', page.url() + '/eventparticipants.php')
+            
+            .assert.visible('@eventMgrReports')
+            .assert.containsText('@eventMgrReports', 'Reports')
             .assert.attributeEquals('@eventMgrReports', 'href', page.url() + '/reports.php?type=24')
 
             .click('@eventMgr')
@@ -129,22 +143,27 @@ module.exports = {
 
             .click('@facilityMgr')
             .assert.visible('@facilityMgrLocations')
-            .assert.visible('@facilityMgrBuildings')
-            .assert.visible('@facilityMgrRooms')
-            .assert.visible('@facilityMgrPlanner')
-            .assert.visible('@facilityMgrActivities')
-            .assert.visible('@facilityMgrSearch')
             .assert.containsText('@facilityMgrLocations', 'Locations')
-            .assert.containsText('@facilityMgrBuildings', 'Buildings')
-            .assert.containsText('@facilityMgrRooms', 'Rooms')
-            .assert.containsText('@facilityMgrPlanner', 'Planner')
-            .assert.containsText('@facilityMgrActivities', 'Activities')
-            .assert.containsText('@facilityMgrSearch', 'Search')
             .assert.attributeEquals('@facilityMgrLocations', 'href', page.url() + '/facilitylocations.php')
+            
+            .assert.visible('@facilityMgrBuildings')
+            .assert.containsText('@facilityMgrBuildings', 'Buildings')
             .assert.attributeEquals('@facilityMgrBuildings', 'href', page.url() + '/facilitybuildings.php')
+            
+            .assert.visible('@facilityMgrRooms')
+            .assert.containsText('@facilityMgrRooms', 'Rooms')
             .assert.attributeEquals('@facilityMgrRooms', 'href', page.url() + '/facilityrooms.php')
+            
+            .assert.visible('@facilityMgrPlanner')
+            .assert.containsText('@facilityMgrPlanner', 'Planner')
             .assert.attributeEquals('@facilityMgrPlanner', 'href', page.url() + '/facilityplanner.php')
+            
+            .assert.visible('@facilityMgrActivities')
+            .assert.containsText('@facilityMgrActivities', 'Activities')
             .assert.attributeEquals('@facilityMgrActivities', 'href', page.url() + '/facilityactivities.php')
+            
+            .assert.visible('@facilityMgrSearch')
+            .assert.containsText('@facilityMgrSearch', 'Search')
             .assert.attributeEquals('@facilityMgrSearch', 'href', page.url() + '/facilitysearch.php')
 
             .click('@facilityMgr')
@@ -157,25 +176,31 @@ module.exports = {
 
             .click('@timecardMgr')
             .assert.visible('@timecardMgrByDay')
-            .assert.visible('@timecardMgrByPeriod')
-            .assert.visible('@timecardMgrByEmployee')
-            .assert.visible('@timecardMgrRequests')
-            .assert.visible('@timecardMgrTasks')
-            .assert.visible('@timecardMgrConfiguration')
-            .assert.visible('@timecardMgrReports')
             .assert.containsText('@timecardMgrByDay', 'by Day')
-            .assert.containsText('@timecardMgrByPeriod', 'by Period')
-            .assert.containsText('@timecardMgrByEmployee', 'by Employee')
-            .assert.containsText('@timecardMgrRequests', 'Requests')
-            .assert.containsText('@timecardMgrTasks', 'Tasks')
-            .assert.containsText('@timecardMgrConfiguration', 'Configuration')
-            .assert.containsText('@timecardMgrReports', 'Reports')
             .assert.attributeEquals('@timecardMgrByDay', 'href', page.url() + '/timecard.php?task=day')
+            
+            .assert.visible('@timecardMgrByPeriod')
+            .assert.containsText('@timecardMgrByPeriod', 'by Period')
             .assert.attributeEquals('@timecardMgrByPeriod', 'href', page.url() + '/timecard.php?task=period')
+            
+            .assert.visible('@timecardMgrByEmployee')
+            .assert.containsText('@timecardMgrByEmployee', 'by Employee')
             .assert.attributeEquals('@timecardMgrByEmployee', 'href', page.url() + '/timecard.php?task=users')
+            
+            .assert.visible('@timecardMgrRequests')
+            .assert.containsText('@timecardMgrRequests', 'Requests')
             .assert.attributeEquals('@timecardMgrRequests', 'href', page.url() + '/timeoff.php')
+            
+            .assert.visible('@timecardMgrTasks')
+            .assert.containsText('@timecardMgrTasks', 'Tasks')
             .assert.attributeEquals('@timecardMgrTasks', 'href', page.url() + '/timetasks.php')
+            
+            .assert.visible('@timecardMgrConfiguration')
+            .assert.containsText('@timecardMgrConfiguration', 'Configuration')
             .assert.attributeEquals('@timecardMgrConfiguration', 'href', page.url() + '/timeperiods.php')
+            
+            .assert.visible('@timecardMgrReports')
+            .assert.containsText('@timecardMgrReports', 'Reports')
             .assert.attributeEquals('@timecardMgrReports', 'href', page.url() + '/reports.php?type=36')
 
             .click('@timecardMgr')
@@ -189,19 +214,23 @@ module.exports = {
 
             .click('@workflowMgr')
             .assert.visible('@workflowMgrByStatus')
-            .assert.visible('@workflowMgrByAuthor')
-            .assert.visible('@workflowMgrByCategory')
-            .assert.visible('@workflowMgrByClassroom')
-            .assert.visible('@workflowMgrCategories')
             .assert.containsText('@workflowMgrByStatus', 'by Status')
-            .assert.containsText('@workflowMgrByAuthor', 'by Author')
-            .assert.containsText('@workflowMgrByCategory', 'by Category')
-            .assert.containsText('@workflowMgrByClassroom', 'by Classroom')
-            .assert.containsText('@workflowMgrCategories', 'Categories')
             .assert.attributeEquals('@workflowMgrByStatus', 'href', page.url() + '/ticket.php?task=bystatus')
+            
+            .assert.visible('@workflowMgrByAuthor')
+            .assert.containsText('@workflowMgrByAuthor', 'by Author')
             .assert.attributeEquals('@workflowMgrByAuthor', 'href', page.url() + '/ticket.php?task=byauthor')
+            
+            .assert.visible('@workflowMgrByCategory')
+            .assert.containsText('@workflowMgrByCategory', 'by Category')
             .assert.attributeEquals('@workflowMgrByCategory', 'href', page.url() + '/ticket.php?task=bycatagory')
+            
+            .assert.visible('@workflowMgrByClassroom')
+            .assert.containsText('@workflowMgrByClassroom', 'by Classroom')
             .assert.attributeEquals('@workflowMgrByClassroom', 'href', page.url() + '/ticket.php?task=byproject')
+            
+            .assert.visible('@workflowMgrCategories')
+            .assert.containsText('@workflowMgrCategories', 'Categories')
             .assert.attributeEquals('@workflowMgrCategories', 'href', page.url() + '/ticketcatagories.php')
 
             .click('@workflowMgr')
@@ -213,10 +242,11 @@ module.exports = {
 
             .click('@databaseMgr')
             .assert.visible('@databaseMgrPublicTables')
-            .assert.visible('@databaseMgrPrivateTables')
-            .assert.containsText('@databaseMgrPublicTables', 'Public Tables')
             .assert.containsText('@databaseMgrPrivateTables', 'Private Tables')
             .assert.attributeEquals('@databaseMgrPublicTables', 'href', page.url() + '/databases.php?task=list&type=1')
+            
+            .assert.visible('@databaseMgrPrivateTables')
+            .assert.containsText('@databaseMgrPrivateTables', 'Private Tables')
             .assert.attributeEquals('@databaseMgrPrivateTables', 'href', page.url() + '/databases.php?task=list&type=2')
 
             .click('@databaseMgr')
@@ -225,10 +255,11 @@ module.exports = {
 
             .click('@onlineFormMgr')
             .assert.visible('@onlineFormMgrActive')
-            .assert.visible('@onlineFormMgrNonActive')
             .assert.containsText('@onlineFormMgrActive', 'Active')
-            .assert.containsText('@onlineFormMgrNonActive', 'Non Active')
             .assert.attributeEquals('@onlineFormMgrActive', 'href', page.url() + '/forms.php?task=list&type=active')
+            
+            .assert.visible('@onlineFormMgrNonActive')
+            .assert.containsText('@onlineFormMgrNonActive', 'Non Active')
             .assert.attributeEquals('@onlineFormMgrNonActive', 'href', page.url() + '/forms.php?task=list&type=nonactive')
 
             .click('@onlineFormMgr')
@@ -237,10 +268,11 @@ module.exports = {
 
             .click('@knowledgeBase')
             .assert.visible('@knowledgeBasePublished')
-            .assert.visible('@knowledgeBasePending')
             .assert.containsText('@knowledgeBasePublished', 'Published')
-            .assert.containsText('@knowledgeBasePending', 'Pending')
             .assert.attributeEquals('@knowledgeBasePublished', 'href', page.url() + '/knowledge.php?task=list')
+            
+            .assert.visible('@knowledgeBasePending')
+            .assert.containsText('@knowledgeBasePending', 'Pending')
             .assert.attributeEquals('@knowledgeBasePending', 'href', page.url() + '/knowledge.php?task=pending')
 
             .click('@knowledgeBase')
