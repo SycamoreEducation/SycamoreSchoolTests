@@ -22,19 +22,23 @@ module.exports = {
 
             .click('@email')
             .assert.visible('@emailInbox')
-            .assert.visible('@emailFolders')
-            .assert.visible('@emailCompose')
-            .assert.visible('@emailPreferences')
-            .assert.visible('@emailAccounts')
             .assert.containsText('@emailInbox', 'Inbox')
-            .assert.containsText('@emailFolders', 'Folders')
-            .assert.containsText('@emailCompose', 'Compose')
-            .assert.containsText('@emailPreferences', 'Preferences')
-            .assert.containsText('@emailAccounts', 'Accounts')
             .assert.attributeEquals('@emailInbox', 'href', page.url() + '/rclogin.php?_task=mail')
+            
+            .assert.visible('@emailFolders')
+            .assert.containsText('@emailFolders', 'Folders')
             .assert.attributeEquals('@emailFolders', 'href', page.url() + '/rclogin.php?_task=settings&_action=folders')
+            
+            .assert.visible('@emailCompose')
+            .assert.containsText('@emailCompose', 'Compose')
             .assert.attributeEquals('@emailCompose', 'href', page.url() + '/rclogin.php?_task=mail&_action=compose')
+            
+            .assert.visible('@emailPreferences')
+            .assert.containsText('@emailPreferences', 'Preferences')
             .assert.attributeEquals('@emailPreferences', 'href', page.url() + '/rclogin.php?_task=settings')
+            
+            .assert.visible('@emailAccounts')
+            .assert.containsText('@emailAccounts', 'Accounts')
             .assert.attributeEquals('@emailAccounts', 'href', page.url() + '/rcaccounts.php')
 
             .click('@email')
