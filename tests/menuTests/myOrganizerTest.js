@@ -97,7 +97,6 @@ module.exports = {
             // .assert.visible('@myUtilitiesWebHooks')
             // .assert.containsText('@myUtilitiesWebHooks', 'Webhooks')
             .assert.attributeEquals('@myUtilitiesWebHooks', 'href', page.url() + '/webhooks.php?uid=1')
-            
 
             .click('@myUtilities')
             .assert.hidden('@myUtilitiesOptions')
