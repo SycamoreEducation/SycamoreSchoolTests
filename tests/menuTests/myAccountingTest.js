@@ -12,7 +12,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@myAccounting')
             .assert.containsText('@myAccounting', '\273 My Accounting')
-            .assert.attributeEquals('@myAccounting', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@myAccounting', 'href', page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@myAccountingCafetieria')
             .assert.hidden('@myAccountingExpenseReports')
@@ -22,8 +22,8 @@ module.exports = {
             .assert.visible('@myAccountingExpenseReports')
             .assert.containsText('@myAccountingCafetieria', 'Cafeteria')
             .assert.containsText('@myAccountingExpenseReports', 'Expense Reports')
-            .assert.attributeEquals('@myAccountingCafetieria', 'href', 'http://web/employeelunchaccount.php')
-            .assert.attributeEquals('@myAccountingExpenseReports', 'href', 'http://web/expense.php')
+            .assert.attributeEquals('@myAccountingCafetieria', 'href', page.url() + '/employeelunchaccount.php')
+            .assert.attributeEquals('@myAccountingExpenseReports', 'href', page.url() + '/expense.php')
 
             .click('@myAccounting')
             .assert.hidden('@myAccountingCafetieria')
