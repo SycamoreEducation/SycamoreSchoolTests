@@ -14,7 +14,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@logout')
             .assert.containsText('@logout', 'Logout (' + username + ')')
-            .assert.attributeEquals('@logout', 'href', 'http://web/logout.php')
+            .assert.attributeEquals('@logout', 'href', page.url() + '/logout.php')
 
         client.frame(null);
 
