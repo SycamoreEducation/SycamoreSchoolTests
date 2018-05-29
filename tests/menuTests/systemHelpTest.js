@@ -23,22 +23,27 @@ module.exports = {
 
             .click('@systemHelp')
             .assert.visible('@welcomeAboard')
-            .assert.visible('@onlineHelp')
-            .assert.visible('@trainingVideos')
-            .assert.visible('@webinarTraining')
-            .assert.visible('@sycamoreLeafNotes')
-            .assert.visible('@releaseNotes')
             .assert.containsText('@welcomeAboard', 'Welcome Aboard')
-            .assert.containsText('@onlineHelp', 'Online Help')
-            .assert.containsText('@trainingVideos', 'Training Videos')
-            .assert.containsText('@webinarTraining', 'Webinar Training')
-            .assert.containsText('@sycamoreLeafNotes', 'Sycamore Leaf Notes')
-            .assert.containsText('@releaseNotes', 'Release Notes')
             .assert.attributeEquals('@welcomeAboard', 'href', page.url() + '/welcome.php')
+            
+            .assert.visible('@onlineHelp')
+            .assert.containsText('@onlineHelp', 'Online Help')
             .assert.attributeEquals('@onlineHelp', 'onclick', 'doHelpExternal();')
+            
+            .assert.visible('@trainingVideos')
+            .assert.containsText('@trainingVideos', 'Training Videos')
             .assert.attributeEquals('@trainingVideos', 'href', page.url() + '/systemvideos.php')
+            
+            .assert.visible('@webinarTraining')
+            .assert.containsText('@webinarTraining', 'Webinar Training')
             .assert.attributeEquals('@webinarTraining', 'href', page.url() + '/webinartraining.php')
+            
+            .assert.visible('@sycamoreLeafNotes')
+            .assert.containsText('@sycamoreLeafNotes', 'Sycamore Leaf Notes')
             .assert.attributeEquals('@sycamoreLeafNotes', 'href', page.url() + '/systemleafnotes.php')
+            
+            .assert.visible('@releaseNotes')
+            .assert.containsText('@releaseNotes', 'Release Notes')
             .assert.attributeEquals('@releaseNotes', 'href', page.url() + '/systemenhancements.php')
 
             .click('@systemHelp')
