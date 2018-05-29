@@ -24,27 +24,31 @@ module.exports = {
 
             .click('@passANote')
             .assert.visible('@passANoteInbox')
-            .assert.visible('@passANoteOutbox')
-            .assert.visible('@passANoteEmployees')
-            .assert.visible('@passANoteAssociates')
-            .assert.visible('@passANoteFamilies')
-            .assert.visible('@passANoteStudents')
-            .assert.visible('@passANoteOptions')
-
             .assert.containsText('@passANoteInbox', 'Inbox')
-            .assert.containsText('@passANoteOutbox', 'Outbox')
-            .assert.containsText('@passANoteEmployees', 'Employees')
-            .assert.containsText('@passANoteAssociates', 'Associates')
-            .assert.containsText('@passANoteFamilies', 'Families')
-            .assert.containsText('@passANoteStudents', 'Students')
-            .assert.containsText('@passANoteOptions', 'Options')
-
             .assert.attributeEquals('@passANoteInbox', 'href', page.url() + '/pan.php?task=inbox')
+            
+            .assert.visible('@passANoteOutbox')
+            .assert.containsText('@passANoteOutbox', 'Outbox')
             .assert.attributeEquals('@passANoteOutbox', 'href', page.url() + '/pan.php?task=outbox')
+            
+            .assert.visible('@passANoteEmployees')
+            .assert.containsText('@passANoteEmployees', 'Employees')
             .assert.attributeEquals('@passANoteEmployees', 'href', page.url() + '/pan.php?task=sendstaff')
+            
+            .assert.visible('@passANoteAssociates')
+            .assert.containsText('@passANoteAssociates', 'Associates')
             .assert.attributeEquals('@passANoteAssociates', 'href', page.url() + '/pan.php?task=sendassociates')
+            
+            .assert.visible('@passANoteFamilies')
+            .assert.containsText('@passANoteFamilies', 'Families')
             .assert.attributeEquals('@passANoteFamilies', 'href', page.url() + '/pan.php?task=sendfamilies')
+            
+            .assert.visible('@passANoteStudents')
+            .assert.containsText('@passANoteStudents', 'Students')
             .assert.attributeEquals('@passANoteStudents', 'href', page.url() + '/pan.php?task=sendstudents')
+            
+            .assert.visible('@passANoteOptions')
+            .assert.containsText('@passANoteOptions', 'Options')
             .assert.attributeEquals('@passANoteOptions', 'href', page.url() + '/usercfg.php?task=pan&tab=2')
 
             .click('@passANote')
