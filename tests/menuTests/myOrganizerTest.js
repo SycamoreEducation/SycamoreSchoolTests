@@ -12,7 +12,7 @@ module.exports = {
         client.page.menu()
             .assert.visible('@myOrganizer')
             .assert.containsText('@myOrganizer', '\273 My Organizer')
-            .assert.attributeEquals('@myOrganizer', 'href', 'http://web/schoolmenu.php#')
+            .assert.attributeEquals('@myOrganizer', 'href', page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@myDesktop')
             .assert.hidden('@myTasks')
@@ -33,56 +33,71 @@ module.exports = {
 
             .click('@myOrganizer')
             .assert.visible('@myDesktop')
-            .assert.visible('@myTasks')
-            .assert.visible('@myCalendar')
-            .assert.visible('@myDocuments')
-            .assert.visible('@myAddressBook')
-            .assert.visible('@myPhotoAlbums')
-            .assert.visible('@myMemos')
-            .assert.visible('@myFavoriteLinks')
-            .assert.visible('@myDailyJournal')
-            .assert.visible('@myUtilities')
-            .assert.visible('@myPassword')
             .assert.containsText('@myDesktop', 'My Desktop')
+            .assert.attributeEquals('@myDesktop', 'href', page.url() + '/mydesktop.php?task=newtoday')
+            
+            .assert.visible('@myTasks')
             .assert.containsText('@myTasks', 'My Tasks')
+            .assert.attributeEquals('@myTasks', 'href', page.url() + '/mytasks.php')
+            
+            .assert.visible('@myCalendar')
             .assert.containsText('@myCalendar', 'My Calendar')
+            .assert.attributeEquals('@myCalendar', 'href', page.url() + '/mycalendar.php?overlayid=-1&uid=1')
+            
+            .assert.visible('@myDocuments')
             .assert.containsText('@myDocuments', 'My Documents')
+            .assert.attributeEquals('@myDocuments', 'href', page.url() + '/myexplorer.php?myfolderid=-1')
+            
+            .assert.visible('@myAddressBook')
             .assert.containsText('@myAddressBook', 'My Address Book')
+            .assert.attributeEquals('@myAddressBook', 'href', page.url() + '/mycontacts.php?mine=1')
+            
+            .assert.visible('@myPhotoAlbums')
             .assert.containsText('@myPhotoAlbums', 'My Photo Albums')
+            .assert.attributeEquals('@myPhotoAlbums', 'href', page.url() + '/myphotos.php')
+            
+            .assert.visible('@myMemos')
             .assert.containsText('@myMemos', 'My Memos')
+            .assert.attributeEquals('@myMemos', 'href', page.url() + '/notepad.php')
+            
+            .assert.visible('@myFavoriteLinks')
             .assert.containsText('@myFavoriteLinks', 'My Favorite Links')
+            .assert.attributeEquals('@myFavoriteLinks', 'href', page.url() + '/myfavorites.php')
+            
+            .assert.visible('@myDailyJournal')
             .assert.containsText('@myDailyJournal', 'My Daily Journal')
+            .assert.attributeEquals('@myDailyJournal', 'href', page.url() + '/myjournal.php')
+            
+            .assert.visible('@myUtilities')
             .assert.containsText('@myUtilities', 'Utilities')
+            .assert.attributeEquals('@myUtilities', 'href', page.url() + '/schoolmenu.php#')
+            
+            .assert.visible('@myPassword')
             .assert.containsText('@myPassword', 'Password')
-            .assert.attributeEquals('@myDesktop', 'href', 'http://web/mydesktop.php?task=newtoday')
-            .assert.attributeEquals('@myTasks', 'href', 'http://web/mytasks.php')
-            .assert.attributeEquals('@myCalendar', 'href', 'http://web/mycalendar.php?overlayid=-1&uid=1')
-            .assert.attributeEquals('@myDocuments', 'href', 'http://web/myexplorer.php?myfolderid=-1')
-            .assert.attributeEquals('@myAddressBook', 'href', 'http://web/mycontacts.php?mine=1')
-            .assert.attributeEquals('@myPhotoAlbums', 'href', 'http://web/myphotos.php')
-            .assert.attributeEquals('@myMemos', 'href', 'http://web/notepad.php')
-            .assert.attributeEquals('@myFavoriteLinks', 'href', 'http://web/myfavorites.php')
-            .assert.attributeEquals('@myDailyJournal', 'href', 'http://web/myjournal.php')
-            .assert.attributeEquals('@myUtilities', 'href', 'http://web/schoolmenu.php#')
-            .assert.attributeEquals('@myPassword', 'href', 'http://web/password.php')
+            .assert.attributeEquals('@myPassword', 'href', page.url() + '/password.php')
 
             .click('@myUtilities')
             .assert.visible('@myUtilitiesOptions')
+            .assert.containsText('@myUtilitiesOptions', 'Options')
+            .assert.attributeEquals('@myUtilitiesOptions', 'href', page.url() + '/usercfg.php')
+            
             .assert.visible('@myUtilitiesCategories')
+            .assert.containsText('@myUtilitiesCategories', 'Categories')
+            .assert.attributeEquals('@myUtilitiesCategories', 'href', page.url() + '/mycategories.php')
+            
             .assert.visible('@myUtilitiesImport')
+            .assert.containsText('@myUtilitiesImport', 'Import')
+            .assert.attributeEquals('@myUtilitiesImport', 'href', page.url() + '/import.php?task=in&tab=0')
+            
             .assert.visible('@myUtilitiesApplications')
+            .assert.containsText('@myUtilitiesApplications', 'Applications')
+            .assert.attributeEquals('@myUtilitiesApplications', 'href', page.url() + '/useroauth.php')
+            
             // TODO: Webhooks not working
             // .assert.visible('@myUtilitiesWebHooks')
-            .assert.containsText('@myUtilitiesOptions', 'Options')
-            .assert.containsText('@myUtilitiesCategories', 'Categories')
-            .assert.containsText('@myUtilitiesImport', 'Import')
-            .assert.containsText('@myUtilitiesApplications', 'Applications')
             // .assert.containsText('@myUtilitiesWebHooks', 'Webhooks')
-            .assert.attributeEquals('@myUtilitiesOptions', 'href', 'http://web/usercfg.php')
-            .assert.attributeEquals('@myUtilitiesCategories', 'href', 'http://web/mycategories.php')
-            .assert.attributeEquals('@myUtilitiesImport', 'href', 'http://web/import.php?task=in&tab=0')
-            .assert.attributeEquals('@myUtilitiesApplications', 'href', 'http://web/useroauth.php')
-            .assert.attributeEquals('@myUtilitiesWebHooks', 'href', 'http://web/webhooks.php?uid=1')
+            .assert.attributeEquals('@myUtilitiesWebHooks', 'href', page.url() + '/webhooks.php?uid=1')
+            
 
             .click('@myUtilities')
             .assert.hidden('@myUtilitiesOptions')
