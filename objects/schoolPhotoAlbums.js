@@ -1,8 +1,4 @@
 module.exports = {
-    url: function() {
-
-        return this.api.launchUrl + '/news.php';
-    },
     elements: {
         breadcrumb: 'body > form > ul.breadcrumb',
         albumsTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
