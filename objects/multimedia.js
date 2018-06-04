@@ -10,6 +10,7 @@ module.exports = {
         comments: 'body > div.tab-content > table > tbody > tr:nth-child(1) > td:nth-child(5)',
         //Video Tab
         addVideoLinkBtn: 'body > ul.nav.nav-tabs > input.btn.btn-mini.btn-primary.pull-right',
-
+        //Audio Tab
+        addAudioLinkBtn: 'body > ul.nav.nav-tabs > input.btn.btn-mini.btn-primary.pull-right'
     }
 };
