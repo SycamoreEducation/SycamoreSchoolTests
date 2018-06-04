@@ -30,6 +30,10 @@ module.exports = {
         w: 'body > form > table > tbody > tr > td:nth-child(24) > a',
         x: 'body > form > table > tbody > tr > td:nth-child(25) > a',
         y: 'body > form > table > tbody > tr > td:nth-child(26) > a',
-        z: 'body > form > table > tbody > tr > td:nth-child(27) > a'
+        z: 'body > form > table > tbody > tr > td:nth-child(27) > a',
+        //Search Results
+        searchName: 'body > form > div > table > tbody > tr > td > div > table > tbody > tr:nth-child(1) > td',
+        searchAddress: 'body > form > div > table > tbody > tr > td > div > table > tbody > tr:nth-child(2) > td:nth-child(2)',
+        searchInfo: 'body > form > div > table > tbody > tr > td > div > table > tbody > tr:nth-child(3)'
     }
 };
