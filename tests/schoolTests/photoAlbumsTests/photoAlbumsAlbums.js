@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['schoolTests', 'photoAlbumsTests', 'photoAlbumsAlbumsTest'],
 
-    'School News Archive Test': (client) => {
+    'School Photo Albums Albums Test': (client) => {
 
         var page = client.page.login();
 
