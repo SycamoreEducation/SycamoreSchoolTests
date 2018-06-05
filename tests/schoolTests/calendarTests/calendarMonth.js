@@ -3,7 +3,7 @@ var moment = require('moment');
 module.exports = {
     tags: ['schoolTests', 'calendarMonthTest', 'calendarTests'],
 
-    'School News Archive Test': (client) => {
+    'Calendar Month Test': (client) => {
 
         var page = client.page.login();
 
