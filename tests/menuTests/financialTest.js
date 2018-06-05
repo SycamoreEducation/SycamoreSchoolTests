@@ -103,7 +103,7 @@ module.exports = {
             .assert.hidden('@donationMgrDonations')
             .assert.hidden('@donationMgrDonationsReceive')
             .assert.hidden('@donationMgrDonationsProcess')
-            .assert.hidden('@donationMgrCampaigns')
+            .assert.hidden('@donationMgrCampaings')
             .assert.hidden('@donationMgrReports')
 
             .click('@financial')
@@ -539,9 +539,9 @@ module.exports = {
             .assert.containsText('@donationMgrDonations', '\273 Donations')
             .assert.attributeEquals('@donationMgrDonations', 'href', page.url() + '/schoolmenu.php#')
             
-            .assert.visible('@donationMgrCampaigns')
-            .assert.containsText('@donationMgrCampaigns', 'Campaigns')            
-            .assert.attributeEquals('@donationMgrCampaigns', 'href', page.url() + '/donorcampaigns.php')
+            .assert.visible('@donationMgrCampaings')
+            .assert.containsText('@donationMgrCampaings', 'Campaigns')            
+            .assert.attributeEquals('@donationMgrCampaings', 'href', page.url() + '/donorcampaigns.php')
             
             .assert.visible('@donationMgrReports')
             .assert.containsText('@donationMgrReports', 'Reports')
@@ -581,7 +581,7 @@ module.exports = {
             .click('@donationMgr')
             .assert.hidden('@donationMgrDonors')
             .assert.hidden('@donationMgrDonations')
-            .assert.hidden('@donationMgrCampaigns')
+            .assert.hidden('@donationMgrCampaings')
             .assert.hidden('@donationMgrReports')
 
             .click('@financial')
