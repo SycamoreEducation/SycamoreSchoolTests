@@ -282,8 +282,8 @@ module.exports = {
         donationMgrDonations: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > a:nth-child(3)',
         donationMgrDonationsReceive: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(1) > a',
         donationMgrDonationsProcess: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > ul:nth-child(4) > li:nth-child(2) > a',
-        //Donatoin Manager Menu Items
-        donationMgrCampaings: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(5) > a',
+        //Donation Manager Menu Items
+        donationMgrCampaigns: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(5) > a',
         donationMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(6) > a'
     }
 };
