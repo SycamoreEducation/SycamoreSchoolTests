@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/SycamoreEducation/SycamoreSchoolTests/issues"
   },
-  "homepage": "https://github.com/SycamoreEducation/SycamoreSchoolTests#readme"
+  "homepage": "https://github.com/SycamoreEducation/SycamoreSchoolTests#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
 }
