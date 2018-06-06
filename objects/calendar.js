@@ -39,6 +39,6 @@ module.exports = {
         fri: 'body > form > div > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(7)',
         sat: 'body > form > div > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(8)',
         birthdayBtn: 'body > form > div > table:nth-child(2) > tbody > tr > td:nth-child(1) > a:nth-child(1)',
-        listingBtn: 'body > form > div > table:nth-child(2) > tbody > tr > td:nth-child(1) > a:nth-child(2)',
+        listingBtn: 'body > form > div > table:nth-child(2) > tbody > tr > td:nth-child(1) > a:nth-child(2)'
     }
 };
