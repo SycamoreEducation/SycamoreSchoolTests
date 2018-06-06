@@ -19,7 +19,7 @@ module.exports = {
             .assert.hidden('@schoolDocuments')
             .assert.hidden('@schoolPhotoAlbums')
             .assert.hidden('@schoolMultimedia')
-            .assert.hidden('@schoolFarvorites')
+            .assert.hidden('@schoolFavorites')
 
             .click('@school')
             .assert.visible('@schoolNews')
@@ -27,19 +27,19 @@ module.exports = {
             .assert.visible('@schoolDocuments')
             .assert.visible('@schoolPhotoAlbums')
             .assert.visible('@schoolMultimedia')
-            .assert.visible('@schoolFarvorites')
+            .assert.visible('@schoolFavorites')
             .assert.containsText('@schoolNews', 'News')
             .assert.containsText('@schoolCalendar', 'Calendar')
             .assert.containsText('@schoolDocuments', 'Documents')
             .assert.containsText('@schoolPhotoAlbums', 'Photo Albums')
             .assert.containsText('@schoolMultimedia', 'Multimedia')
-            .assert.containsText('@schoolFarvorites', 'Favorites')
+            .assert.containsText('@schoolFavorites', 'Favorites')
             .assert.attributeEquals('@schoolNews', 'href', page.url() + '/news.php?classid=0')
             .assert.attributeEquals('@schoolCalendar', 'href', page.url() + '/calendar.php?classid=0')
             .assert.attributeEquals('@schoolDocuments', 'href', page.url() + '/explorer.php?classid=0')
             .assert.attributeEquals('@schoolPhotoAlbums', 'href', page.url() + '/photos.php?task=albums&classid=0')
             .assert.attributeEquals('@schoolMultimedia', 'href', page.url() + '/multimedia.php?classid=0')
-            .assert.attributeEquals('@schoolFarvorites', 'href', page.url() + '/favorites.php?classid=0')
+            .assert.attributeEquals('@schoolFavorites', 'href', page.url() + '/favorites.php?classid=0')
 
             .click('@school')
             .assert.hidden('@schoolNews')
@@ -47,7 +47,7 @@ module.exports = {
             .assert.hidden('@schoolDocuments')
             .assert.hidden('@schoolPhotoAlbums')
             .assert.hidden('@schoolMultimedia')
-            .assert.hidden('@schoolFarvorites')
+            .assert.hidden('@schoolFavorites')
 
         client.frame(null);
 
