@@ -35,7 +35,7 @@ module.exports = {
 
             .assert.visible('@exportiCalBtn')
             .assert.attributeEquals('@exportiCalBtn', 'value', 'Export iCal')
-            .assert.attributeEquals('@exportiCalBtn', 'onclick', `icalexport(${moment().subtract(1, 'days').format('MM, YYYY, D')})`)
+            .assert.attributeEquals('@exportiCalBtn', 'onclick', `icalexport(${moment().subtract(1, 'days').format('MM, YYYY')}, 4)`)
 
             .assert.visible('@searchField')
             .assert.attributeEquals('@searchField', 'type', 'text')
@@ -54,15 +54,15 @@ module.exports = {
 
             .assert.visible('@todayBtn')
             .assert.attributeEquals('@todayBtn', 'value', 'Today')
-            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment().add(1, 'days').format('DD, YYYY')})`)
+            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment().format('DD, YYYY')})`)
 
             .assert.visible('@leftArrowBtn')
             .assert.attributeEquals('@leftArrowBtn', 'value', '<')
-            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment().format('DD, YYYY')})`)
+            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment().subtract(1, 'days').format('DD, YYYY')})`)
 
             .assert.visible('@rightArrowBtn')
             .assert.attributeEquals('@rightArrowBtn', 'value', '>')
-            .assert.attributeEquals('@rightArrowBtn', 'onclick', `goto(${moment().add(2, 'days').format('DD, YYYY')})`)
+            .assert.attributeEquals('@rightArrowBtn', 'onclick', `goto(${moment().add(1, 'days').format('DD, YYYY')})`)
 
             .assert.visible('@monthSelector')
             .assert.containsText('@monthSelector', moment().format('MMMM'))
