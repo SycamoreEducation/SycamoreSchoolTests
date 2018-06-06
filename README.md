@@ -12,6 +12,13 @@ docker-compose -f docker-compose.yml -f docker-compose.selenium.yml up
 ```
 This command should be ran from SycamoreSchoolRails
 
+Populate the database by running the following commands in order:
+```
+docker-compose exec web su - dev
+rails db:migrate && rails db:seed
+rails populate:school:nightwatch
+```
+
 Ensure that the SycamoreSchool docker environment is up and that school 1 has been populated.
 
 ## Running Tests
