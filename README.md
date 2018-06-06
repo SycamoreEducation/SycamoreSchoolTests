@@ -5,6 +5,11 @@ Install nightwatch:
 ```
 npm install -g nightwatch
 ```
+Install test dependencies, run:
+```
+npm install
+```
+from within the directory.
 
 Start selenium container:
 ```
