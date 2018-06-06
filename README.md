@@ -18,7 +18,6 @@ docker-compose exec web su - dev
 rails db:migrate && rails db:seed
 rails populate:school:nightwatch
 ```
-
 Ensure that the SycamoreSchool docker environment is up and that school 1 has been populated.
 
 ## Running Tests
