@@ -5,6 +5,7 @@ Install nightwatch:
 ```
 npm install -g nightwatch
 ```
+
 Start selenium container:
 ```
 docker-compose -f docker-compose.yml -f docker-compose.selenium.yml up
