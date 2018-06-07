@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['infoCenterTests', 'libraryTests', 'infoCenterLibraryTest'],
+    tags: ['infoCenterTests', 'infoCenterLibraryTests', 'libraryLocalSearchTest'],
 
     'Info Center Library Local Search Test': (client) => {
 
