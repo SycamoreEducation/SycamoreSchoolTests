@@ -1,8 +1,6 @@
 var moment = require('moment')
-
 exports.command = function(month) {
     this.page.calendar()
-
         .assert.visible('@calendarBody')
         .assert.visible('@sun')
         .assert.containsText('@sun', 'Sun')
@@ -22,6 +20,5 @@ exports.command = function(month) {
         .assert.attributeEquals('@birthdayBtn', 'onclick', `birthdays(${month}); return false`)
         .assert.visible('@listingBtn')
         .assert.attributeEquals('@listingBtn', 'onclick', `listing(${month}, ${moment().format('YYYY')},0);return false;`)
-    
     return this;
 };
