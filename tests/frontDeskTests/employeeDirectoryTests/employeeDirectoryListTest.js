@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['frontDeskTests', 'employeeDirectoryTests', 'employeeDirectoryListTest'],
 
-    'Family Directory Search Test': (client) => {
+    'Employee Directory List Test': (client) => {
 
         var page = client.page.login();
 
