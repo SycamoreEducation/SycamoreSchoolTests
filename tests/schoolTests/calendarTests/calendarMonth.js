@@ -1,5 +1,7 @@
 var moment = require('moment');
 
+var year = moment().format('YYYY');
+
 module.exports = {
     tags: ['schoolTests', 'calendarMonthTest', 'calendarTests'],
 
@@ -68,7 +70,7 @@ module.exports = {
             .assert.containsText('@monthSelector', moment().format('MMMM'))
 
             .assert.visible('@yearSelector')
-            .assert.containsText('@yearSelector', moment().format('YYYY'))
+            .assert.containsText('@yearSelector', year)
 
             .assert.visible('@monthYearHeader')
             .assert.containsText('@monthYearHeader', moment().format('MMMM YYYY'))
@@ -81,73 +83,73 @@ module.exports = {
             .assert.visible('@janTab')
             .assert.containsText('@janTab', 'Jan')
             .click('@janTab')
-            .assert.containsText('@monthYearHeader', `January ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `January ${year}`)
             .schoolCalendar(1)
 
             .assert.visible('@febTab')
             .assert.containsText('@febTab', 'Feb')
             .click('@febTab')
-            .assert.containsText('@monthYearHeader', `February ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `February ${year}`)
             .schoolCalendar(2)
 
             .assert.visible('@marTab')
             .assert.containsText('@marTab', 'Mar')
             .click('@marTab')
-            .assert.containsText('@monthYearHeader', `March ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `March ${year}`)
             .schoolCalendar(3)
 
             .assert.visible('@aprTab')
             .assert.containsText('@aprTab', 'Apr')
             .click('@aprTab')
-            .assert.containsText('@monthYearHeader', `April ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `April ${year}`)
             .schoolCalendar(4)
 
             .assert.visible('@mayTab')
             .assert.containsText('@mayTab', 'May')
             .click('@mayTab')
-            .assert.containsText('@monthYearHeader', `May ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `May ${year}`)
             .schoolCalendar(5)
 
             .assert.visible('@junTab')
             .assert.containsText('@junTab', 'Jun')
             .click('@junTab')
-            .assert.containsText('@monthYearHeader', `June ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `June ${year}`)
             .schoolCalendar(6)
 
             .assert.visible('@julTab')
             .assert.containsText('@julTab', 'Jul')
             .click('@julTab')
-            .assert.containsText('@monthYearHeader', `July ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `July ${year}`)
             .schoolCalendar(7)
 
             .assert.visible('@augTab')
             .assert.containsText('@augTab', 'Aug')
             .click('@augTab')
-            .assert.containsText('@monthYearHeader', `August ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `August ${year}`)
             .schoolCalendar(8)
 
             .assert.visible('@sepTab')
             .assert.containsText('@sepTab', 'Sep')
             .click('@sepTab')
-            .assert.containsText('@monthYearHeader', `September ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `September ${year}`)
             .schoolCalendar(9)
 
             .assert.visible('@octTab')
             .assert.containsText('@octTab', 'Oct')
             .click('@octTab')
-            .assert.containsText('@monthYearHeader', `October ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `October ${year}`)
             .schoolCalendar(10)
 
             .assert.visible('@novTab')
             .assert.containsText('@novTab', 'Nov')
             .click('@novTab')
-            .assert.containsText('@monthYearHeader', `November ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `November ${year}`)
             .schoolCalendar(11)
 
             .assert.visible('@decTab')
             .assert.containsText('@decTab', 'Dec')
             .click('@decTab')
-            .assert.containsText('@monthYearHeader', `December ${moment().format('YYYY')}`)
+            .assert.containsText('@monthYearHeader', `December ${year}`)
             .schoolCalendar(12)
 
         client.frame(null)
