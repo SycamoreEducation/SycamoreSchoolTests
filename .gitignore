@@ -1,4 +1,3 @@
 *.swo
 *.swp
 /reports
-node_modules
