@@ -285,13 +285,13 @@ module.exports = {
         //Donation Manager Menu Items
         donationMgrCampaigns: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(5) > a',
         donationMgrReports: '#menu > li:nth-child(10) > ul > ul:nth-child(8) > li:nth-child(6) > a',
-        //Addmissions Menu
+        //Admissions Menu
         admissions: '#menu > li:nth-child(11) > a',
-        //Addmissions Inquiries
+        //Admissions Inquiries
         inquiries: '#menu > li:nth-child(11) > ul > a:nth-child(1)',
         inquiresStudents: '#menu > li:nth-child(11) > ul > ul:nth-child(2) > li:nth-child(1) > a',
         inquiriesFamilies: '#menu > li:nth-child(11) > ul > ul:nth-child(2) > li:nth-child(2) > a',
-        //Addmissions Enrollment
+        //Admissions Enrollment
         enrollment: '#menu > li:nth-child(11) > ul > a:nth-child(3)',
         enrollmentStudent: '#menu > li:nth-child(11) > ul > ul:nth-child(4) > li:nth-child(1) > a',
         enrollmentFamilies: '#menu > li:nth-child(11) > ul > ul:nth-child(4) > li:nth-child(2) > a',
@@ -307,7 +307,7 @@ module.exports = {
         courseMgrScheduler: '#menu > li:nth-child(11) > ul > ul:nth-child(8) > li:nth-child(5) > a',
         courseMgrConfiguration: '#menu > li:nth-child(11) > ul > ul:nth-child(8) > li:nth-child(6) > a',
         courseMgrReports: '#menu > li:nth-child(11) > ul > ul:nth-child(8) > li:nth-child(7) > a',
-        //Addmissions Communication
+        //Admissions Communication
         admissionsCommunication: '#menu > li:nth-child(11) > ul > a:nth-child(9)',
         admissionsCommunicationBatchEmail: '#menu > li:nth-child(11) > ul > ul:nth-child(10) > li > a',
         //Portal Manager
@@ -317,7 +317,7 @@ module.exports = {
         portalMgrApplications: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(3) > a',
         portalMgrEssayQuestions: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(4) > a',
         portalMgrRequestedDocs: '#menu > li:nth-child(11) > ul > ul:nth-child(12) > li:nth-child(5) > a',
-        //Addmissions Configuration
+        //Admissions Configuration
         admissionsConfiguration: '#menu > li:nth-child(11) > ul > a:nth-child(13)',
         admissionsConfigurationChecklist: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(1) > a',
         admissionsConfigurationDocuments: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(2) > a',
@@ -325,7 +325,7 @@ module.exports = {
         admissionsConfigurationTuitionPlans: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(4) > a',
         admissionsConfigurationEnrollStatus: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(5) > a',
         admissionsConfigurationSetup: '#menu > li:nth-child(11) > ul > ul:nth-child(14) > li:nth-child(6) > a',
-        //Addmissions Menu Items
+        //Admissions Menu Items
         admissionsReports: '#menu > li:nth-child(11) > ul > li > a'
     }
 };
