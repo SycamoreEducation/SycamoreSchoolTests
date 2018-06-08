@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['addressBookTests', 'addressBookByLastnameTests', 'addressBookByLastnameLastnameTest'],
 
-    'Family Directory Search Test': (client) => {
+    'By Lastname Lastname Test': (client) => {
 
         var page = client.page.login();
 
