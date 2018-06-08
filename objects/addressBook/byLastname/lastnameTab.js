@@ -11,7 +11,6 @@ module.exports = {
         companyTitle: 'body > form > table > tbody > tr > td > div > table > tbody > tr:nth-child(1) > td:nth-child(3)',
         descriptionTitle: 'body > form > table > tbody > tr > td > div > table > tbody > tr:nth-child(1) > td:nth-child(4)',
         phoneTitle: 'body > form > table > tbody > tr > td > div > table > tbody > tr:nth-child(1) > td:nth-child(5)',
-        //Last Name Tab Elements
         a: 'body > form > table > tbody > tr > td > table > tbody > tr > td:nth-child(2) > a',
         b: 'body > form > table > tbody > tr > td > table > tbody > tr > td:nth-child(3) > a',
         c: 'body > form > table > tbody > tr > td > table > tbody > tr > td:nth-child(4) > a',
