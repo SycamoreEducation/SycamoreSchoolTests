@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['commCenterTests', 'blogsTests', 'blogsTest'],
+    tags: ['commCenterTests', 'blogsTest'],
 
     'Blogs Test': (client) => {
 
