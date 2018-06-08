@@ -28,6 +28,6 @@ exports.command = function(month) {
         .assert.attributeEquals('@birthdayBtn', 'onclick', `birthdays(${month}); return false`)
 
         .assert.visible('@listingBtn')
-        .assert.attributeEquals('@listingBtn', 'onclick', `listing(${month}, ${moment().format('YYYY')},0);return false;`);
+        .assert.attributeEquals('@listingBtn', 'onclick', `listing(${month}, ${moment().format('YYYY')},0);return false;`) 
     return this;
 };
