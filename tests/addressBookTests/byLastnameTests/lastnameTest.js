@@ -17,7 +17,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.addressBook.byLastname()
+        client.page.addressBook.byLastname.byLastnameTab()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Address Book/ By Lastname')
