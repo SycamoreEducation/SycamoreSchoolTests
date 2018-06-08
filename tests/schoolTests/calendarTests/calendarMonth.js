@@ -56,15 +56,15 @@ module.exports = {
 
             .assert.visible('@todayBtn')
             .assert.attributeEquals('@todayBtn', 'value', 'Today')
-            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment().format('DD, YYYY')})`)
+            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment().format('MM, YYYY')})`)
 
             .assert.visible('@leftArrowBtn')
             .assert.attributeEquals('@leftArrowBtn', 'value', '<')
-            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment().subtract(1, 'days').format('DD, YYYY')})`)
+            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment().subtract(1, 'months').format('MM, YYYY')})`)
 
             .assert.visible('@rightArrowBtn')
             .assert.attributeEquals('@rightArrowBtn', 'value', '>')
-            .assert.attributeEquals('@rightArrowBtn', 'onclick', `goto(${moment().add(1, 'days').format('DD, YYYY')})`)
+            .assert.attributeEquals('@rightArrowBtn', 'onclick', `goto(${moment().add(1, 'months').format('MM, YYYY')})`)
 
             .assert.visible('@monthSelector')
             .assert.containsText('@monthSelector', moment().format('MMMM'))
