@@ -1,7 +1,7 @@
 module.exports = {
-    tags: ['commCenterTests', 'blogsTests', 'blogTest'],
+    tags: ['commCenterTests', 'blogsTests', 'blogsTest'],
 
-    'Blog Test': (client) => {
+    'Blogs Test': (client) => {
 
         var page = client.page.login();
 
