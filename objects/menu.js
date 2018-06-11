@@ -468,7 +468,7 @@ module.exports = {
         onlineHelp: '#menu > li:nth-child(15) > ul > li:nth-child(2) > a',
         trainingVideos: '#menu > li:nth-child(15) > ul > li:nth-child(3) > a',
         webinarTraining: '#menu > li:nth-child(15) > ul > li:nth-child(4) > a',
-        sycamoreLeafNotes: '#menu > li:nth-child(15) > ul > li:nth-child(5) > a',
+        leafNotes: '#menu > li:nth-child(15) > ul > li:nth-child(5) > a',
         releaseNotes: '#menu > li:nth-child(15) > ul > li:nth-child(6) > a'
     }
 };

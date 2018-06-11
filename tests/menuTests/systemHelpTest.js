@@ -18,7 +18,7 @@ module.exports = {
             .assert.hidden('@onlineHelp')
             .assert.hidden('@trainingVideos')
             .assert.hidden('@webinarTraining')
-            .assert.hidden('@sycamoreLeafNotes')
+            .assert.hidden('@leafNotes')
             .assert.hidden('@releaseNotes')
 
             .click('@systemHelp')
@@ -38,9 +38,9 @@ module.exports = {
             .assert.containsText('@webinarTraining', 'Webinar Training')
             .assert.attributeEquals('@webinarTraining', 'href', page.url() + '/webinartraining.php')
             
-            .assert.visible('@sycamoreLeafNotes')
-            .assert.containsText('@sycamoreLeafNotes', 'Sycamore Leaf Notes')
-            .assert.attributeEquals('@sycamoreLeafNotes', 'href', page.url() + '/systemleafnotes.php')
+            .assert.visible('@leafNotes')
+            .assert.containsText('@leafNotes', 'Sycamore Leaf Notes')
+            .assert.attributeEquals('@leafNotes', 'href', page.url() + '/systemleafnotes.php')
             
             .assert.visible('@releaseNotes')
             .assert.containsText('@releaseNotes', 'Release Notes')
@@ -54,7 +54,7 @@ module.exports = {
             .assert.hidden('@onlineHelp')
             .assert.hidden('@trainingVideos')
             .assert.hidden('@webinarTraining')
-            .assert.hidden('@sycamoreLeafNotes')
+            .assert.hidden('@leafNotes')
             .assert.hidden('@releaseNotes')
 
         client.frame(null);
