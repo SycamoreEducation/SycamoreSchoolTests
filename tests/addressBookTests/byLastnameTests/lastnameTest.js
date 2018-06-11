@@ -5,6 +5,8 @@ module.exports = {
 
         var page = client.page.login();
 
+        var name = 'Current, Jane'
+
         page.navigate()
             .schoolLogin();
 
@@ -134,37 +136,21 @@ module.exports = {
 
             .click('@c')
 
-            .assert.visible('@janeName')
-            .assert.containsText('@janeName', 'Current, Jane')
-            .assert.attributeEquals('@janeName', 'onclick', 'viewcontact(2); return false;')
+            .assert.visible('@name')
+            .assert.containsText('@name', name)
+            .assert.attributeEquals('@name', 'onclick', 'viewcontact(2); return false;')
 
-            .assert.visible('@janeEnvelope')
-            .assert.attributeEquals('@janeEnvelope', 'onclick', 'envelope(2); return false;')
+            .assert.visible('@envelope')
+            .assert.attributeEquals('@envelope', 'onclick', 'envelope(2); return false;')
 
-            .assert.visible('@janeNote')
-            .assert.attributeEquals('@janeNote', 'onclick', 'addnote(2); return false;')
+            .assert.visible('@note')
+            .assert.attributeEquals('@note', 'onclick', 'addnote(2); return false;')
 
-            .assert.visible('@janeDocs')
-            .assert.attributeEquals('@janeDocs', 'onclick', 'doMerge(2); return false;')
+            .assert.visible('@docs')
+            .assert.attributeEquals('@docs', 'onclick', 'doMerge(2); return false;')
 
-            .assert.visible('@janeCard')
-            .assert.attributeEquals('@janeCard', 'onclick', 'vcard(2); return false;')
-
-            .assert.visible('@johnName')
-            .assert.containsText('@johnName', 'Current, John')
-            .assert.attributeEquals('@johnName', 'onclick', 'viewcontact(1); return false;')
-
-            .assert.visible('@johnEnvelope')
-            .assert.attributeEquals('@johnEnvelope', 'onclick', 'envelope(1); return false;')
-
-            .assert.visible('@johnNote')
-            .assert.attributeEquals('@johnNote', 'onclick', 'addnote(1); return false;')
-
-            .assert.visible('@johnDocs')
-            .assert.attributeEquals('@johnDocs', 'onclick', 'doMerge(1); return false;')
-
-            .assert.visible('@johnCard')
-            .assert.attributeEquals('@johnCard', 'onclick', 'vcard(1); return false;')
+            .assert.visible('@card')
+            .assert.attributeEquals('@card', 'onclick', 'vcard(2); return false;')
 
         client.frame(null)
 
