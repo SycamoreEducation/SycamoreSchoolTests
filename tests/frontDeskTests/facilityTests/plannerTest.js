@@ -39,9 +39,9 @@ module.exports = {
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')
 
-            .assert.visible('@dateInput')
-            .assert.attributeEquals('@dateInput', 'value', moment().format('MM/DD/YYYY'))
-            .assert.attributeEquals('@dateInput', 'type', 'text')
+            .assert.visible('@plannerDateInput')
+            .assert.attributeEquals('@plannerDateInput', 'value', moment().format('MM/DD/YYYY'))
+            .assert.attributeEquals('@plannerDateInput', 'type', 'text')
 
             .assert.visible('@goBtn')
             .assert.attributeEquals('@goBtn', 'value', 'Go')
