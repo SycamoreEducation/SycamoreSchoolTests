@@ -27,7 +27,25 @@ module.exports = {
         sevenPm: 'body > form:nth-child(6) > div > table > tbody > tr.se-bg-gray > td:nth-child(16)',
         eightPm: 'body > form:nth-child(6) > div > table > tbody > tr.se-bg-gray > td:nth-child(17)',
         ninePm: 'body > form:nth-child(6) > div > table > tbody > tr.se-bg-gray > td:nth-child(18)',
-        //ActiviesTab
-        activitiesDateInput: '#actdate'
+        //Activies Tab
+        activitiesDateInput: '#actdate',
+        //Search Tab
+        sBreadcrumb: 'body > form > ul.breadcrumb',
+        sBrowseTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
+        sPlannerTab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
+        sActivitiesTab: 'body > form > ul.nav.nav-tabs > li:nth-child(3) > a',
+        sSearchTab: 'body > form > ul.nav.nav-tabs > li:nth-child(4) > a',
+        nameLabel: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(1)',
+        nameInput: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > input[type="text"]',
+        descriptionLabel: 'body > form > div > table > tbody > tr:nth-child(2) > td:nth-child(1)',
+        descriptionInput: 'body > form > div > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type="text"]',
+        buildingLabel: 'body > form > div > table > tbody > tr:nth-child(3) > td:nth-child(1)',
+        buildingInput: 'body > form > div > table > tbody > tr:nth-child(3) > td:nth-child(2) > select',
+        roomLabel: 'body > form > div > table > tbody > tr:nth-child(4) > td:nth-child(1)',
+        roomInput: 'body > form > div > table > tbody > tr:nth-child(4) > td:nth-child(2) > input',
+        capacityLabel: 'body > form > div > table > tbody > tr:nth-child(5) > td:nth-child(1)',
+        capacityInput: 'body > form > div > table > tbody > tr:nth-child(5) > td:nth-child(2) > input',
+        ownerLabel: 'body > form > div > table > tbody > tr:nth-child(6) > td:nth-child(1)',
+        ownerInput: '#ownerid'
     }
 };
