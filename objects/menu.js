@@ -1,6 +1,5 @@
 module.exports = {
     elements: {
-        //School Menu
         school: '#menu > li:nth-child(1) > a',
         schoolNews: '#menu > li:nth-child(1) > ul > li:nth-child(1) > a',
         schoolCalendar: '#menu > li:nth-child(1) > ul > li:nth-child(2) > a',
@@ -459,6 +458,9 @@ module.exports = {
         //Knowledge Base
         knowledgeBase: '#menu > li:nth-child(13) > ul > a:nth-child(15)',
         knowledgeBasePublished: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(1) > a',
-        knowledgeBasePending: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(2) > a'
+        knowledgeBasePending: '#menu > li:nth-child(13) > ul > ul:nth-child(16) > li:nth-child(2) > a',
+        //Breakroom Menu
+        breakRoom: '#menu > li:nth-child(14) > a',
+        classifiedAds: '#menu > li:nth-child(14) > ul > li > a'
     }
 };
