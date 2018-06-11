@@ -1,7 +1,7 @@
 module.exports = {
     tags: ['frontDeskTests', 'facilityTests', 'browseTabTest'],
 
-    'School News Archive Test': (client) => {
+    'Facility Browse Test': (client) => {
 
         var page = client.page.login();
 
