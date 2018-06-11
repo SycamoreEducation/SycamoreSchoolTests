@@ -37,6 +37,10 @@ module.exports = {
             .assert.visible('@sSearchTab')
             .assert.containsText('@sSearchTab', 'Search')
 
+            .assert.visible('@searchBtn')
+            .assert.attributeEquals('@searchBtn', 'value', 'Search')
+            .assert.attributeEquals('@searchBtn', 'type', 'submit')
+
             .assert.visible('@nameLabel')
             .assert.containsText('@nameLabel', 'Name')
 
