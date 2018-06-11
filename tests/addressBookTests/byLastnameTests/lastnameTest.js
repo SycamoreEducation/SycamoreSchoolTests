@@ -132,9 +132,7 @@ module.exports = {
             .assert.visible('@phoneTitle')
             .assert.containsText('@phoneTitle', 'Phone')
 
-            .click('@c');
-
-            client.page.addressBook.byLastname.users()
+            .click('@c')
 
             .assert.visible('@janeName')
             .assert.containsText('@janeName', 'Current, Jane')
