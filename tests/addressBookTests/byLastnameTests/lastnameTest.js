@@ -5,8 +5,6 @@ module.exports = {
 
         var page = client.page.login();
 
-        var name = 'Current, Jane'
-
         page.navigate()
             .schoolLogin();
 
@@ -137,7 +135,7 @@ module.exports = {
             .click('@c')
 
             .assert.visible('@name')
-            .assert.containsText('@name', name)
+            .assert.containsText('@name', 'Current, Jane')
             .assert.attributeEquals('@name', 'onclick', 'viewcontact(2); return false;')
 
             .assert.visible('@envelope')
