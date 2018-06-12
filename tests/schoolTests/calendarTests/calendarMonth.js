@@ -21,7 +21,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.calendar()
+        client.page.school.calendar()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Calendar/ Month')

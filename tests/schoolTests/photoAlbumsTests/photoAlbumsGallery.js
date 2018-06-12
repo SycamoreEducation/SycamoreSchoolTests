@@ -17,7 +17,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.schoolPhotoAlbums()
+        client.page.school.photoAlbums()
             .waitForElementVisible('@breadcrumb', 10000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Photos/ Albums')
