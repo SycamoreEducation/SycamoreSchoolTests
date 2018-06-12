@@ -30,11 +30,11 @@ module.exports = {
         //Activies Tab
         activitiesDateInput: '#actdate',
         //Search Tab
-        sBreadcrumb: 'body > form > ul.breadcrumb',
-        sBrowseTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
-        sPlannerTab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
-        sActivitiesTab: 'body > form > ul.nav.nav-tabs > li:nth-child(3) > a',
-        sSearchTab: 'body > form > ul.nav.nav-tabs > li:nth-child(4) > a',
+        searchBreadcrumb: 'body > form > ul.breadcrumb',
+        searchBrowseTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
+        searchPlannerTab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
+        searchActivitiesTab: 'body > form > ul.nav.nav-tabs > li:nth-child(3) > a',
+        searchSearchTab: 'body > form > ul.nav.nav-tabs > li:nth-child(4) > a',
         searchBtn: 'body > form > ul.nav.nav-tabs > input',
         nameLabel: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(1)',
         nameInput: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > input[type="text"]',

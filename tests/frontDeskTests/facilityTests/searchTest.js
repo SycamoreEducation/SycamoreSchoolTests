@@ -21,22 +21,22 @@ module.exports = {
             .waitForElementVisible('@searchTab', 5000)
             .click('@searchTab')
 
-            .waitForElementVisible('@sBreadcrumb', 5000)
-            .assert.visible('@sBreadcrumb')
-            .assert.containsText('@sBreadcrumb', 
+            .waitForElementVisible('@searchBreadcrumb', 5000)
+            .assert.visible('@searchBreadcrumb')
+            .assert.containsText('@searchBreadcrumb', 
                 'Utilities/Facility Mgr/ Search')
 
-            .assert.visible('@sBrowseTab')
-            .assert.containsText('@sBrowseTab', 'Browse')
+            .assert.visible('@searchBrowseTab')
+            .assert.containsText('@searchBrowseTab', 'Browse')
 
-            .assert.visible('@sPlannerTab')
-            .assert.containsText('@sPlannerTab', 'Planner')
+            .assert.visible('@searchPlannerTab')
+            .assert.containsText('@searchPlannerTab', 'Planner')
 
-            .assert.visible('@sActivitiesTab')
-            .assert.containsText('@sActivitiesTab', 'Activities')
+            .assert.visible('@searchActivitiesTab')
+            .assert.containsText('@searchActivitiesTab', 'Activities')
 
-            .assert.visible('@sSearchTab')
-            .assert.containsText('@sSearchTab', 'Search')
+            .assert.visible('@searchSearchTab')
+            .assert.containsText('@searchSearchTab', 'Search')
 
             .assert.visible('@searchBtn')
             .assert.attributeEquals('@searchBtn', 'value', 'Search')
