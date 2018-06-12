@@ -1,12 +1,5 @@
 module.exports = {
     elements: {
-<<<<<<< HEAD
-        
-||||||| merged common ancestors
-        home: {
-            selector: 'ul.breadcrumb li.active a'
-        }
-=======
         school: '#menu > li:nth-child(1) > a',
         schoolNews: '#menu > li:nth-child(1) > ul > li:nth-child(1) > a',
         schoolCalendar: '#menu > li:nth-child(1) > ul > li:nth-child(2) > a',
@@ -552,7 +545,6 @@ module.exports = {
         //My Communications Menu
         myCommunication: '#menu > li:nth-child(24) > a',
         myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
-        myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
->>>>>>> master
+        myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a'
     }
 };
