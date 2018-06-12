@@ -93,9 +93,8 @@ module.exports = {
             .assert.containsText('@myUtilitiesApplications', 'Applications')
             .assert.attributeEquals('@myUtilitiesApplications', 'href', page.url() + '/useroauth.php')
             
-            // TODO: Webhooks not working
-            // .assert.visible('@myUtilitiesWebHooks')
-            // .assert.containsText('@myUtilitiesWebHooks', 'Webhooks')
+            .assert.visible('@myUtilitiesWebHooks')
+            .assert.containsText('@myUtilitiesWebHooks', 'Webhooks')
             .assert.attributeEquals('@myUtilitiesWebHooks', 'href', page.url() + '/webhooks.php?uid=1')
 
             .click('@myUtilities')
