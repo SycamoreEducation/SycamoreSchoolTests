@@ -530,6 +530,10 @@ module.exports = {
         myUtilitiesApplications: '#menu > li:nth-child(21) > ul > ul > li:nth-child(4) > a',
         myUtilitiesWebHooks: '#menu > li:nth-child(21) > ul > ul > li:nth-child(5) > a',
         //My Organizer Menu Items
-        myPassword: '#menu > li:nth-child(21) > ul > li:nth-child(12) > a'
+        myPassword: '#menu > li:nth-child(21) > ul > li:nth-child(12) > a',
+        //My Accounting Menu
+        myAccounting: '#menu > li:nth-child(22) > a',
+        myAccountingCafetieria: '#menu > li:nth-child(22) > ul > li:nth-child(1) > a',
+        myAccountingExpenseReports: '#menu > li:nth-child(22) > ul > li:nth-child(2) > a'
     }
 };
