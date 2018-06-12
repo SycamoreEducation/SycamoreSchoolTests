@@ -17,7 +17,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.schoolFavorites()
+        client.page.school.favorites()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/ Favorites')

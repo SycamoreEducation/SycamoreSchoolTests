@@ -17,7 +17,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.news()
+        client.page.school.news()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/News/ Browse')

@@ -1,6 +1,6 @@
 var moment = require('moment')
 exports.command = function(month) {
-    this.page.calendar()
+    this.page.school.calendar()
         .assert.visible('@calendarBody')
 
         .assert.visible('@sun')
