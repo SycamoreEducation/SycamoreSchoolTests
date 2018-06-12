@@ -23,7 +23,8 @@ module.exports = {
 
             .waitForElementVisible('@sBreadcrumb', 5000)
             .assert.visible('@sBreadcrumb')
-            .assert.containsText('@sBreadcrumb', 'Utilities/Facility Mgr/ Search')
+            .assert.containsText('@sBreadcrumb', 
+                'Utilities/Facility Mgr/ Search')
 
             .assert.visible('@sBrowseTab')
             .assert.containsText('@sBrowseTab', 'Browse')

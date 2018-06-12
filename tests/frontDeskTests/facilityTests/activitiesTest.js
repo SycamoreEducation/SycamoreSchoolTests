@@ -25,7 +25,8 @@ module.exports = {
 
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Utilities/Facility Mgr/ Activities')
+            .assert.containsText('@breadcrumb', 
+                'Utilities/Facility Mgr/ Activities')
 
             .assert.visible('@browseTab')
             .assert.containsText('@browseTab', 'Browse')
@@ -40,7 +41,8 @@ module.exports = {
             .assert.containsText('@searchTab', 'Search')
 
             .assert.visible('@activitiesDateInput')
-            .assert.attributeEquals('@activitiesDateInput', 'value', moment().format('MM/DD/YYYY'))
+            .assert.attributeEquals('@activitiesDateInput', 'value', 
+                moment().format('MM/DD/YYYY'))
             .assert.attributeEquals('@activitiesDateInput', 'type', 'text')
 
             .assert.visible('@goBtn')
@@ -48,15 +50,22 @@ module.exports = {
             .assert.attributeEquals('@goBtn', 'onclick', 'changeDate()')
 
             .assert.visible('@backDayBtn')
-            .assert.containsText('@backDayBtn', moment().subtract(1, 'days').format('MMMM DD, YYYY'))
-            .assert.attributeEquals('@backDayBtn', 'href', `${page.url()}/facilityactivities.php?selectdate=${moment().subtract(1, 'days').format('MM/DD/YYYY')}`)
+            .assert.containsText('@backDayBtn', 
+                moment().subtract(1, 'days').format('MMMM DD, YYYY'))
+            .assert.attributeEquals('@backDayBtn', 'href', 
+                `${page.url()}/facilityactivities.php?selectdate=${moment()
+                .subtract(1, 'days').format('MM/DD/YYYY')}`)
 
             .assert.visible('@forwardDayBtn')
-            .assert.containsText('@forwardDayBtn', moment().add(1, 'days').format('MMMM DD, YYYY'))
-            .assert.attributeEquals('@forwardDayBtn', 'href', `${page.url()}/facilityactivities.php?selectdate=${moment().add(1, 'days').format('MM/DD/YYYY')}`)
+            .assert.containsText('@forwardDayBtn', 
+                moment().add(1, 'days').format('MMMM DD, YYYY'))
+            .assert.attributeEquals('@forwardDayBtn', 'href', 
+                `${page.url()}/facilityactivities.php?selectdate=${moment()
+                .add(1, 'days').format('MM/DD/YYYY')}`)
 
             .assert.visible('@dayHeader')
-            .assert.containsText('@dayHeader', moment().format('dddd MMMM DD, YYYY'))
+            .assert.containsText('@dayHeader', 
+                moment().format('dddd MMMM DD, YYYY'))
 
         client.frame(null)
 
