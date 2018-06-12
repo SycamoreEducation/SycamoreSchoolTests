@@ -1,10 +1,10 @@
 module.exports = {
     elements: {
-        breadcrumb: 'body > ul.breadcrumb',
-        browseTab: 'body > ul.nav.nav-tabs > li:nth-child(1) > a',
-        plannerTab: 'body > ul.nav.nav-tabs > li:nth-child(2) > a',
-        activitiesTab: 'body > ul.nav.nav-tabs > li:nth-child(3) > a',
-        searchTab: 'body > ul.nav.nav-tabs > li:nth-child(4) > a',
+        breadcrumb: 'ul.breadcrumb',
+        browseTab: 'ul.nav.nav-tabs > li:nth-child(1) > a',
+        plannerTab: 'ul.nav.nav-tabs > li:nth-child(2) > a',
+        activitiesTab: 'ul.nav.nav-tabs > li:nth-child(3) > a',
+        searchTab: 'ul.nav.nav-tabs > li:nth-child(4) > a',
         goBtn: 'body > form:nth-child(5) > table > tbody > tr > td > input.btn.btn-mini.btn-primary.pull-right',
         backDayBtn: 'body > form:nth-child(6) > table > tbody > tr > td:nth-child(1) > a',
         forwardDayBtn: 'body > form:nth-child(6) > table > tbody > tr > td.se-right > a',
@@ -30,11 +30,6 @@ module.exports = {
         //Activies Tab
         activitiesDateInput: '#actdate',
         //Search Tab
-        searchBreadcrumb: 'body > form > ul.breadcrumb',
-        searchBrowseTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
-        searchPlannerTab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
-        searchActivitiesTab: 'body > form > ul.nav.nav-tabs > li:nth-child(3) > a',
-        searchSearchTab: 'body > form > ul.nav.nav-tabs > li:nth-child(4) > a',
         searchBtn: 'body > form > ul.nav.nav-tabs > input',
         nameLabel: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(1)',
         nameInput: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > input[type="text"]',

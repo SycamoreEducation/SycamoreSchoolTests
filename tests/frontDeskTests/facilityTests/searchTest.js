@@ -21,22 +21,22 @@ module.exports = {
             .waitForElementVisible('@searchTab', 5000)
             .click('@searchTab')
 
-            .waitForElementVisible('@searchBreadcrumb', 5000)
-            .assert.visible('@searchBreadcrumb')
-            .assert.containsText('@searchBreadcrumb', 
+            .waitForElementVisible('@breadcrumb', 5000)
+            .assert.visible('@breadcrumb')
+            .assert.containsText('@breadcrumb', 
                 'Utilities/Facility Mgr/ Search')
 
-            .assert.visible('@searchBrowseTab')
-            .assert.containsText('@searchBrowseTab', 'Browse')
+            .assert.visible('@browseTab')
+            .assert.containsText('@browseTab', 'Browse')
 
-            .assert.visible('@searchPlannerTab')
-            .assert.containsText('@searchPlannerTab', 'Planner')
+            .assert.visible('@plannerTab')
+            .assert.containsText('@plannerTab', 'Planner')
 
-            .assert.visible('@searchActivitiesTab')
-            .assert.containsText('@searchActivitiesTab', 'Activities')
+            .assert.visible('@activitiesTab')
+            .assert.containsText('@activitiesTab', 'Activities')
 
-            .assert.visible('@searchSearchTab')
-            .assert.containsText('@searchSearchTab', 'Search')
+            .assert.visible('@searchTab')
+            .assert.containsText('@searchTab', 'Search')
 
             .assert.visible('@searchBtn')
             .assert.attributeEquals('@searchBtn', 'value', 'Search')
