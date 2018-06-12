@@ -32,12 +32,20 @@ module.exports = {
             .assert.attributeEquals('@printBtn', 'onclick', 'doPrint()')
 
             .assert.visible('@backMonthBtn')
-            .assert.containsText('@backMonthBtn', moment().subtract(1, 'months').format('MMMM YYYY'))
-            .assert.attributeEquals('@backMonthBtn', 'href', `${page.url()}/lunch.php?viewyear=${moment().subtract(1, 'months').format('YYYY')}&viewmonth=${moment().subtract(1, 'months').format('MM')}`)
+            .assert.containsText('@backMonthBtn', 
+                moment().subtract(1, 'months').format('MMMM YYYY'))
+            .assert.attributeEquals('@backMonthBtn', 'href', 
+                `${page.url()}/lunch.php?viewyear=${moment()
+                .subtract(1, 'months').format('YYYY')}&viewmonth=${moment()
+                .subtract(1, 'months').format('MM')}`)
             
             .assert.visible('@forwardMonthBtn')
-            .assert.containsText('@forwardMonthBtn', moment().add(1, 'months').format('MMM YYYY'))
-            .assert.attributeEquals('@forwardMonthBtn', 'href', `${page.url()}/lunch.php?viewyear=${moment().add(1, 'months').format('YYYY')}&viewmonth=${moment().add(1, 'months').format('MM')}`)
+            .assert.containsText('@forwardMonthBtn', 
+            moment().add(1, 'months').format('MMM YYYY'))
+            .assert.attributeEquals('@forwardMonthBtn', 'href', 
+                `${page.url()}/lunch.php?viewyear=${moment().add(1, 'months')
+                .format('YYYY')}&viewmonth=${moment().add(1, 'months')
+                .format('MM')}`)
 
             .assert.visible('@monthHeader')
             .assert.containsText('@monthHeader', moment().format('MMMM YYYY'))
