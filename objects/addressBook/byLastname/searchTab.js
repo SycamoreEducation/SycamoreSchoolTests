@@ -1,0 +1,33 @@
+module.exports = {
+    elements: {
+        breadcrumb: 'body > form > ul.breadcrumb',
+        lastNameTab: 'body > form > ul.nav.nav-tabs > li:nth-child(1) > a',
+        categoriesTab: 'body > form > ul.nav.nav-tabs > li:nth-child(2) > a',
+        searchTab: 'body > form > ul.nav.nav-tabs > li:nth-child(3) > a',
+        searchBtn: 'body > form > ul.nav.nav-tabs > input',
+        categoryLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(1)',
+        categorySelect: 'body > form > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(2) > select',
+        companyLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(1)',
+        companyInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input',
+        descriptionLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(1)',
+        descriptionInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(4) > td:nth-child(2) > input',
+        firstNameLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(1)',
+        firstNameInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(2) > input',
+        lastNameLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(1)',
+        lastNameInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(6) > td:nth-child(2) > input',
+        address1Label: 'body > form > table:nth-child(5) > tbody > tr:nth-child(7) > td:nth-child(1)',
+        address1Input: 'body > form > table:nth-child(5) > tbody > tr:nth-child(7) > td:nth-child(2) > input',
+        address2Label: 'body > form > table:nth-child(5) > tbody > tr:nth-child(8) > td:nth-child(1)',
+        address2Input: 'body > form > table:nth-child(5) > tbody > tr:nth-child(8) > td:nth-child(2) > input',
+        cityLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(9) > td:nth-child(1)',
+        cityInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(9) > td:nth-child(2) > input',
+        stateLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(10) > td:nth-child(1)',
+        stateSelect: 'body > form > table:nth-child(5) > tbody > tr:nth-child(10) > td:nth-child(2) > select',
+        zipLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(11) > td:nth-child(1)',
+        zipInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(11) > td:nth-child(2) > input',
+        phoneLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(12) > td:nth-child(1)',
+        phoneInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(12) > td:nth-child(2) > input',
+        emailLabel: 'body > form > table:nth-child(5) > tbody > tr:nth-child(13) > td:nth-child(1)',
+        emailInput: 'body > form > table:nth-child(5) > tbody > tr:nth-child(13) > td:nth-child(2) > input'
+    }
+};
