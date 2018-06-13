@@ -561,6 +561,8 @@ module.exports = {
         emailFolders: '#menu > li:nth-child(26) > ul > li:nth-child(2) > a',
         emailCompose: '#menu > li:nth-child(26) > ul > li:nth-child(3) > a',
         emailPreferences: '#menu > li:nth-child(26) > ul > li:nth-child(4) > a',
-        emailAccounts: '#menu > li:nth-child(26) > ul > li:nth-child(5) > a'
+        emailAccounts: '#menu > li:nth-child(26) > ul > li:nth-child(5) > a',
+        //Logout
+        logout: '#menu > li:nth-child(28) > a'
     }
 };
