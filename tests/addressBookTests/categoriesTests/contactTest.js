@@ -1,8 +1,8 @@
 module.exports = {
     tags: ['addressBookTests', 'addressBookCategoriesTests', 
-        'addressBookCategoriesTabTest'],
+        'addressBookContactTabTest'],
 
-    'Address Book Categories Tab Test': (client) => {
+    'Address Book Contact Tab Test': (client) => {
 
         var page = client.page.login();
 
