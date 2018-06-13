@@ -1,6 +1,5 @@
 module.exports = {
-    tags: ['addressBookTests', 'addressBookByCompaniesTests', 
-        'addressBookByCompaniesCompaniesTest'],
+    tags: ['addressBookTests', 'addressBookByCompaniesTests'],
 
     'By Companies Companies Test': (client) => {
 
