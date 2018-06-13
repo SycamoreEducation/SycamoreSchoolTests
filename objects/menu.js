@@ -554,6 +554,13 @@ module.exports = {
         PANAssociates: '#menu > li:nth-child(25) > ul > li:nth-child(4) > a',
         PANFamilies: '#menu > li:nth-child(25) > ul > li:nth-child(5) > a',
         PANStudents: '#menu > li:nth-child(25) > ul > li:nth-child(6) > a',
-        PANOptions: '#menu > li:nth-child(25) > ul > li:nth-child(7) > a'
+        PANOptions: '#menu > li:nth-child(25) > ul > li:nth-child(7) > a',
+        //Email Menu
+        email: '#menu > li:nth-child(26) > a',
+        emailInbox: '#menu > li:nth-child(26) > ul > li:nth-child(1) > a',
+        emailFolders: '#menu > li:nth-child(26) > ul > li:nth-child(2) > a',
+        emailCompose: '#menu > li:nth-child(26) > ul > li:nth-child(3) > a',
+        emailPreferences: '#menu > li:nth-child(26) > ul > li:nth-child(4) > a',
+        emailAccounts: '#menu > li:nth-child(26) > ul > li:nth-child(5) > a'
     }
 };
