@@ -545,6 +545,15 @@ module.exports = {
         //My Communications Menu
         myCommunication: '#menu > li:nth-child(24) > a',
         myBatchEmail: '#menu > li:nth-child(24) > ul > li:nth-child(1) > a',
-        myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a'
+        myBlogs: '#menu > li:nth-child(24) > ul > li:nth-child(2) > a',
+        //Pass-A-Note Menu
+        PAN: '#menu > li:nth-child(25) > a',
+        PANInbox: '#menu > li:nth-child(25) > ul > li:nth-child(1) > a',
+        PANOutbox: '#menu > li:nth-child(25) > ul > li:nth-child(2) > a',
+        PANEmployees: '#menu > li:nth-child(25) > ul > li:nth-child(3) > a',
+        PANAssociates: '#menu > li:nth-child(25) > ul > li:nth-child(4) > a',
+        PANFamilies: '#menu > li:nth-child(25) > ul > li:nth-child(5) > a',
+        PANStudents: '#menu > li:nth-child(25) > ul > li:nth-child(6) > a',
+        PANOptions: '#menu > li:nth-child(25) > ul > li:nth-child(7) > a'
     }
 };
