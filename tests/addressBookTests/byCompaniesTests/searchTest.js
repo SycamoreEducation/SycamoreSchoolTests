@@ -2,7 +2,7 @@ module.exports = {
     tags: ['addressBookTests', 'addressBookByCompaniesTests',
         'companiesSearchTest'],
 
-    'By Companies Companies Test': (client) => {
+    'By Companies Search Test': (client) => {
 
         var page = client.page.login();
 
