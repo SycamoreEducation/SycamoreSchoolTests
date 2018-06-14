@@ -52,9 +52,9 @@ module.exports = {
             .assert.visible('@companyNameHeader')
             .assert.containsText('@companyNameHeader', 'Company Name')
 
-            .assert.visible('@pound')
-            .assert.containsText('@pound', '#')
-            .assert.attributeEquals('@pound', 'href', page.url() + 
+            .assert.visible('@numeric')
+            .assert.containsText('@numeric', '#')
+            .assert.attributeEquals('@numeric', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=num')
 
             .assert.visible('@a')

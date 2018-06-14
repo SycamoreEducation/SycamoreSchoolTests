@@ -9,7 +9,7 @@ module.exports = {
         newCompanyBtn: 'body > form > ul > input[type="button"]:nth-child(7)',
         newContactBtn: 'body > form > ul > input[type="button"]:nth-child(6)',
         companyNameHeader: 'body > form > div > table > tbody > tr:nth-child(1) > td:nth-child(2)',
-        pound: 'body > form > table > tbody > tr > td:nth-child(1) > a',
+        numeric: 'body > form > table > tbody > tr > td:nth-child(1) > a',
         a: 'body > form > table > tbody > tr > td:nth-child(2) > a',
         b: 'body > form > table > tbody > tr > td:nth-child(3) > a',
         c: 'body > form > table > tbody > tr > td:nth-child(4) > a',
