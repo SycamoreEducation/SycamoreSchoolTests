@@ -38,8 +38,8 @@ module.exports = {
             .assert.attributeEquals('@groupsBtn', 'value', 'Groups')
             .assert.attributeEquals('@groupsBtn', 'onclick', 'groups()')
 
-            .assert.visible('@poundHeader')
-            .assert.containsText('@poundHeader', '#')
+            .assert.visible('@numericHeader')
+            .assert.containsText('@numericHeader', '#')
 
             .assert.visible('@nameHeader')
             .assert.containsText('@nameHeader', 'Name')
