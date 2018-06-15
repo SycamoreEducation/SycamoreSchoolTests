@@ -49,7 +49,8 @@ module.exports = {
             .assert.containsText('@communicationBatchEmail', 'Batch Email')
             
             .assert.visible('@communicationTextMessaging')
-            .assert.containsText('@communicationTextMessaging', 'Text Messaging')
+            .assert.containsText('@communicationTextMessaging', 
+                'Text Messaging')
 
             .assert.visible('@communicationTemplates')
             .assert.containsText('@communicationTemplates', 'Templates')
@@ -67,7 +68,8 @@ module.exports = {
                 page.url() + '/memomaker.php')
 
             .assert.visible('@communicationEVerification')
-            .assert.containsText('@communicationEVerification', 'E-Verification')
+            .assert.containsText('@communicationEVerification', 
+                'E-Verification')
             .assert.attributeEquals('@communicationEVerification', 'href', 
                 page.url() + '/e-verify.php')
 
@@ -77,7 +79,8 @@ module.exports = {
                 page.url() + '/checklist.php')
 
             .assert.visible('@communicationNotificationLists')
-            .assert.containsText('@communicationNotificationLists', 'Notification List')
+            .assert.containsText('@communicationNotificationLists', 
+                'Notification List')
             .assert.attributeEquals('@communicationNotificationLists', 'href', 
                 page.url() + '/commnotifylist.php')
 
@@ -99,7 +102,8 @@ module.exports = {
                 page.url() + '/poll.php')
 
             .assert.visible('@communicationHomepageFlashNews')
-            .assert.containsText('@communicationHomepageFlashNews', 'Flash News')
+            .assert.containsText('@communicationHomepageFlashNews', 
+                'Flash News')
             .assert.attributeEquals('@communicationHomepageFlashNews', 'href', 
                 page.url() + '/flash.php')
 
