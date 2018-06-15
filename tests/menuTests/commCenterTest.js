@@ -12,7 +12,8 @@ module.exports = {
         client.page.menu()
             .assert.visible('@commCenter')
             .assert.containsText('@commCenter', '\273 Comm Center')
-            .assert.attributeEquals('@commCenter', 'href', page.url() + '/schoolmenu.php#')
+            .assert.attributeEquals('@commCenter', 'href', 
+                page.url() + '/schoolmenu.php#')
 
             .assert.hidden('@commCenterBlogs')
             .assert.hidden('@commCenterBlogs')
@@ -20,14 +21,16 @@ module.exports = {
             .click('@commCenter')
 
             .assert.visible('@commCenter')
+
             .assert.visible('@commCenterBlogs')
-            .assert.visible('@commCenterDiscussions')
-
             .assert.containsText('@commCenterBlogs', 'Blogs')
-            .assert.containsText('@commCenterDiscussions', 'Discussions')
+            .assert.attributeEquals('@commCenterBlogs', 'href', 
+                page.url() + '/blogs.php')
 
-            .assert.attributeEquals('@commCenterBlogs', 'href', page.url() + '/blogs.php')
-            .assert.attributeEquals('@commCenterDiscussions', 'href', page.url() + '/forumboard.php?pid=0')
+            .assert.visible('@commCenterDiscussions')
+            .assert.containsText('@commCenterDiscussions', 'Discussions')
+            .assert.attributeEquals('@commCenterDiscussions', 'href', 
+                page.url() + '/forumboard.php?pid=0')
 
             .click('@commCenter')
 
