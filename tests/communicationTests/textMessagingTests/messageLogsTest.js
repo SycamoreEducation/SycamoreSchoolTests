@@ -1,7 +1,7 @@
 var moment = require('moment');
 
 module.exports = {
-    tags: ['communicationTests', 'textMessagingTets', 'messageLogsTest'],
+    tags: ['communicationTests', 'textMessagingTests', 'messageLogsTest'],
 
     'Message Logs Test': (client) => {
 
