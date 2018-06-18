@@ -3,7 +3,8 @@ var moment = require('moment');
 var year = moment().format('YYYY');
 
 module.exports = {
-    tags: ['communicationTets', 'homepageTests', 'pollingTest'],
+    tags: ['communicationTests', 'homepageTests', 'pollingTests', 
+        'pollingQuestionsTabTest'],
 
     'Polling Test': (client) => {
 
