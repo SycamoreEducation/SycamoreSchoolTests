@@ -1,6 +1,6 @@
 module.exports = {
     tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeStudentTests',
-        'backOfficeStudentAllTests'],
+        'backOfficeStudentAllTabTest'],
 
     'Back Office Student All Test': (client) => {
 
