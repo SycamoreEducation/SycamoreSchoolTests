@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['communicationTets', 'homepageTests', 'msgOfDayTests', 
+    tags: ['communicationTests', 'homepageTests', 'msgOfDayTests', 
         'msgOfDayGeneralTabTest'],
 
     'Msg of the Day Test': (client) => {
