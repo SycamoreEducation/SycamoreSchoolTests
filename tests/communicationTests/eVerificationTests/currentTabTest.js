@@ -2,7 +2,7 @@ module.exports = {
     tags: ['communicationTests', 'eVerificationTests', 
         'eVerificationCurrentTabTest'],
 
-    'Message Logs Test': (client) => {
+    'E-Verification Test': (client) => {
 
         var page = client.page.login();
 
