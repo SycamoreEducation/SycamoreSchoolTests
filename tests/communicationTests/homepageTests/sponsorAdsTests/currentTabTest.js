@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['communicationTets', 'homepageTests', 'sponsorAdsTests', 
+    tags: ['communicationTests', 'homepageTests', 'sponsorAdsTests', 
         'sponsorAdsCurrentTabTest'],
 
     'Sponsor Ads Current Tab Test': (client) => {
