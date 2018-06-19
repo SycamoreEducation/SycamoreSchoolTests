@@ -1,0 +1,33 @@
+module.exports = {
+    elements: {
+        breadcrumb: 'body > ul.breadcrumb',
+        attendanceTab: 'body > ul.nav.nav-tabs > li > a',
+        backMonth: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(1) > a',
+        monthBtn: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(2) > input',
+        forwardMonth: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(3) > a',
+        dayStatus: 'body > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(1)',
+        printBtn: 'body > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > button',
+        sun: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(1)',
+        mon: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(2)',
+        tue: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(3)',
+        wed: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(4)',
+        thu: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(5)',
+        fri: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(6)',
+        sat: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td:nth-child(7)',
+        classHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(3)',
+        sectionHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(4)',
+        presentHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(5)',
+        absentHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(6)',
+        tardyHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(7)',
+        totalHeader: 'body > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(8)',
+        attendanceTitle: '#printattendance > table',
+        hrTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(1)',
+        nameTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(2)',
+        presentTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(3)',
+        tardyTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(4)',
+        excusedTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(5)',
+        unExcusedTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(6)',
+        typeTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(7)',
+        notesTitle: '#printattendance > div > table > tbody > tr:nth-child(1) > td:nth-child(8)'
+    }
+};
