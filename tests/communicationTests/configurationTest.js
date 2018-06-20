@@ -77,11 +77,11 @@ module.exports = {
             .assert.visible('@PANLabel')
             .assert.containsText('@PANLabel', 'Pass-A-Note Bridge')
 
-            .assert.visible('@BTMCheckbox')
-            .assert.attributeEquals('@BTMCheckbox', 'type', 'checkbox')
+            .assert.visible('@batchTextCheckbox')
+            .assert.attributeEquals('@batchTextCheckbox', 'type', 'checkbox')
 
-            .assert.visible('@BTMLabel')
-            .assert.containsText('@BTMLabel', 'Batch Text Messaging')
+            .assert.visible('@batchTextLabel')
+            .assert.containsText('@batchTextLabel', 'Batch Text Messaging')
 
             .assert.visible('@voiceMessagingLabel')
             .assert.containsText('@voiceMessagingLabel', 'Voice Messaging')

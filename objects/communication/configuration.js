@@ -18,8 +18,8 @@ module.exports = {
         PANCheckbox: '#tw_pan',
         PANLabel: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > font:nth-child(2)',
         //Batch Text Messaging
-        BTMCheckbox: '#tw_batch_sms',
-        BTMLabel: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > font:nth-child(4)',
+        batchTextCheckbox: '#tw_batch_sms',
+        batchTextLabel: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > font:nth-child(4)',
         voiceMessagingLabel: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(7) > td:nth-child(1)',
         voiceMessagingCheckbox: '#tw_batch_voice',
         schoolLabel: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(7) > td:nth-child(2) > font',
