@@ -55,8 +55,8 @@ module.exports = {
             .assert.visible('@profileHeader')
             .assert.containsText('@profileHeader', 'Profile')
 
-            .assert.visible('@rpIdHeader')
-            .assert.containsText('@rpIdHeader', 'RPID')
+            .assert.visible('@RPIDHeader')
+            .assert.containsText('@RPIDHeader', 'RPID')
 
         client.frame(null)
 

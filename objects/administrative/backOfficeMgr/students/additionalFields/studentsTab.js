@@ -9,7 +9,7 @@ module.exports = {
         typeHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(3)',
         descriptionHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(4)',
         profileHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(5)',
-        addmissionsHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(6)',
-        rpIdHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(7)'
+        admissionsHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(6)',
+        RPIDHeader: 'body > div.tab-content > table > tbody > tr.se-bold.se-bg-gray > td:nth-child(7)'
     }
 };
