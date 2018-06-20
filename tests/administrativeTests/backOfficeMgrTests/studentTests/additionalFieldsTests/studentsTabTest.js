@@ -55,6 +55,9 @@ module.exports = {
             .assert.visible('@profileHeader')
             .assert.containsText('@profileHeader', 'Profile')
 
+            .assert.visible('@admissionsHeader')
+            .assert.containsText('@admissionsHeader', 'Admissions')
+
             .assert.visible('@RPIDHeader')
             .assert.containsText('@RPIDHeader', 'RPID')
 
