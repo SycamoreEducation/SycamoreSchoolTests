@@ -32,9 +32,6 @@ module.exports = {
             .assert.visible('@commonTab')
             .assert.containsText('@commonTab', 'Common')
 
-            .assert.visible('@customTab')
-            .assert.containsText('@customTab', 'Custom')
-
             .assert.visible('@nameHeader')
             .assert.containsText('@nameHeader', 'Name')
 
