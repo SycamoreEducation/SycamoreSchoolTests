@@ -1,6 +1,7 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
+        activeTab: '.active',
         currentTab: 'body > form:nth-child(15) > ul > li:nth-child(1) > a',
         allTab: 'body > form:nth-child(15) > ul > li:nth-child(2) > a',
         barCodeLabel: 'body > form:nth-child(15) > ul > img',

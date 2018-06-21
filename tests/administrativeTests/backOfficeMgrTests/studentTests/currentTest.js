@@ -28,6 +28,9 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Back Office/ Students')
 
+            .assert.visible('@activeTab')
+            .assert.containsText('@activeTab', 'Current')
+
             .assert.visible('@currentTab')
             .assert.containsText('@currentTab', 'Current')
 
