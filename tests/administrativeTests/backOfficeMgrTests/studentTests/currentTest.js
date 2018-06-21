@@ -31,9 +31,6 @@ module.exports = {
             .assert.visible('@activeTab')
             .assert.containsText('@activeTab', 'Current')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
-
             .assert.visible('@allTab')
             .assert.containsText('@allTab', 'All')
 
