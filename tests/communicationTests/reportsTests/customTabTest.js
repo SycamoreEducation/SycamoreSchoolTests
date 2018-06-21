@@ -26,6 +26,9 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/ Reports')
 
+            .assert.visible('@activeTab')
+            .assert.containsText('@activeTab', 'Custom')
+
             .assert.visible('@commonTab')
             .assert.containsText('@commonTab', 'Common')
 
