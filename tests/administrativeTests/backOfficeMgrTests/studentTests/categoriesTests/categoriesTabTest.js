@@ -33,9 +33,6 @@ module.exports = {
             .assert.visible('@activeTab')
             .assert.containsText('@activeTab', 'Categories')
 
-            .assert.visible('@categoriesTab')
-            .assert.containsText('@categoriesTab', 'Categories')
-
             .assert.visible('@groupsBtn')
             .assert.attributeEquals('@groupsBtn', 'value', 'Groups')
             .assert.attributeEquals('@groupsBtn', 'onclick', 'groups()')
