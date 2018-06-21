@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        activeTab: '.active',
         employeesTab: 'body > ul.nav.nav-tabs > li:nth-child(1) > a',
         parentsTab: 'body > ul.nav.nav-tabs > li:nth-child(2) > a',
         studentsTab: 'body > ul.nav.nav-tabs > li:nth-child(3) > a',

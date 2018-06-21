@@ -24,8 +24,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Registration/ Event Registration')
 
-            .assert.visible('@openTab')
-            .assert.containsText('@openTab', 'Open')
+            .activeTab('Open')
 
             .assert.visible('@dayHeader')
             .assert.containsText('@dayHeader', 'Day')

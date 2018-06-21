@@ -26,11 +26,10 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Address Book/ Categories')
 
+            .activeTab('Companies')
+
             .assert.visible('@contactTab')
             .assert.containsText('@contactTab', 'Contact')
-
-            .assert.visible('@companiesTab')
-            .assert.containsText('@companiesTab', 'Companies')
 
             .assert.visible('@newCategoryBtn')
             .assert.attributeEquals('@newCategoryBtn', 'value', 'New Category')

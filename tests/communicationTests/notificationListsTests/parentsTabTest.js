@@ -27,14 +27,10 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Communication/ Notification Lists')
 
-            .assert.visible('@activeTab')
-            .assert.containsText('@activeTab', 'Parents')
+            .activeTab('Parents')
 
             .assert.visible('@employeesTab')
             .assert.containsText('@employeesTab', 'Employees')
-
-            .assert.visible('@parentsTab')
-            .assert.containsText('@parentsTab', 'Parents')
 
             .assert.visible('@studentsTab')
             .assert.containsText('@studentsTab', 'Students')

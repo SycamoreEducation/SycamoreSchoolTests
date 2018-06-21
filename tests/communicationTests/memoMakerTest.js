@@ -50,8 +50,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/ Memo Maker')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
+            .activeTab('Current')
 
             .assert.visible('@saveBtn')
             .assert.attributeEquals('@saveBtn', 'value', 'Save')

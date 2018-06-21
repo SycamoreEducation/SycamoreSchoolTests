@@ -33,11 +33,10 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Photos/ Gallery')
 
+            .activeTab('Gallery')
+
             .assert.visible('@albumsTab')
             .assert.containsText('@albumsTab', 'Albums')
-
-            .assert.visible('@galleryTab')
-            .assert.visible('@galleryTab', 'Gallery')
 
             .assert.visible('@thumbnailListSelector')
             .assert.containsText('@thumbnailListSelector', 'Thumbnail | List')

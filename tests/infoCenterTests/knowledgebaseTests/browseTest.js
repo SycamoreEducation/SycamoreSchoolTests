@@ -23,8 +23,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Knowledge Base')
 
-            .assert.visible('@browseTab')
-            .assert.containsText('@browseTab', 'Browse')
+            .activeTab('Browse')
 
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')

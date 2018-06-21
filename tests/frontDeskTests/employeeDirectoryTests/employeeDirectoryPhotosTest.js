@@ -23,13 +23,13 @@ module.exports = {
             .click('@photosTab')
 
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Front Desk/ Employee Directory')
+            .assert.containsText('@breadcrumb', 
+                'Front Desk/ Employee Directory')
+
+            .activeTab('Photos')
 
             .assert.visible('@listTab')
             .assert.containsText('@listTab', 'List')
-
-            .assert.visible('@photosTab')
-            .assert.visible('@photosTab', 'Photos')
 
             .assert.visible('@tomPhoto')
             .assert.attributeEquals('@tomPhoto', 'onclick', 'DoUser(2)')

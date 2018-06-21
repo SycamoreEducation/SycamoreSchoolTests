@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/ Multimedia')
 
-            .assert.visible('@videoTab')
-            .assert.containsText('@videoTab', 'Video')
+            .activeTab('Video')
             
             .assert.visible('@audioTab')
             .assert.containsText('@audioTab', 'Audio')

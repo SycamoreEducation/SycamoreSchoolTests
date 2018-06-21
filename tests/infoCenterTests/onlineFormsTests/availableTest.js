@@ -23,8 +23,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Info Center/ Online Forms')
 
-            .assert.visible('@availableTab')
-            .assert.containsText('@availableTab', 'Available')
+            .activeTab('Available')
 
             .assert.visible('@submittedTab')
             .assert.containsText('@submittedTab', 'Submitted')

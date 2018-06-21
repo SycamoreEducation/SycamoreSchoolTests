@@ -26,11 +26,10 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Knowledge Base')
 
+            .activeTab('Search')
+
             .assert.visible('@browseTab')
             .assert.containsText('@browseTab', 'Browse')
-
-            .assert.visible('@searchTab')
-            .assert.containsText('@searchTab', 'Search')
 
             .assert.visible('@searchInput')
             .assert.attributeEquals('@searchInput', 'type', 'text')

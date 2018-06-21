@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Front Desk/ Family Directory')
 
-            .assert.visible('@byFamiliesTab')
-            .assert.containsText('@byFamiliesTab', 'by Families')
+            .activeTab('by Families')
 
             .assert.visible('@inputField')
             .assert.attributeEquals('@inputField', 'type', 'text')

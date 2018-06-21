@@ -24,8 +24,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Address Book/ Additional Fields')
 
-            .assert.visible('@contactsTab')
-            .assert.containsText('@contactsTab', 'Contacts')
+            .activeTab('Contacts')
 
             .assert.visible('@companyTab')
             .assert.containsText('@companyTab', 'Company')

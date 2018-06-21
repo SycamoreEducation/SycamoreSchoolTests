@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Front Desk/ Facility')
 
-            .assert.visible('@browseTab')
-            .assert.containsText('@browseTab', 'Browse')
+            .activeTab('Browse')
 
             .assert.visible('@plannerTab')
             .assert.containsText('@plannerTab', 'Planner')

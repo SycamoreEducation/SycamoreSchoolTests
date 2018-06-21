@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Specialties/Library/ Library Search')
 
-            .assert.visible('@localSearchTab')
-            .assert.containsText('@localSearchTab', 'Local Search')
+            .activeTab('Local Search')
 
             .assert.visible('@googleSearchTab')
             .assert.containsText('@googleSearchTab', 'Google Search')

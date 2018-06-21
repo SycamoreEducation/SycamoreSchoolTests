@@ -25,8 +25,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Administration/ School Years')
 
-            .assert.visible('@generalTab')
-            .assert.containsText('@generalTab', 'General')
+            .activeTab('General')
 
             .assert.visible('@newSchoolYearBtn')
             .assert.attributeEquals('@newSchoolYearBtn', 'value', 

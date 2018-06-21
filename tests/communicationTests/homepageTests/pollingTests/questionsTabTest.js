@@ -29,8 +29,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/Homepage/ Polling')
 
-            .assert.visible('@questionsTab')
-            .assert.containsText('@questionsTab', 'Questions')
+            .activeTab('Questions')
 
             .assert.visible('@newPollBtn')
             .assert.attributeEquals('@newPollBtn', 'value', 'New Poll')
