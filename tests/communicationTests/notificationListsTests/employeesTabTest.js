@@ -1,6 +1,6 @@
 module.exports = {
     tags: ['communicationTests', 'notificationListsTests', 
-        'notificationListsemployeesTabTest'],
+        'notificationListsEmployeesTabTest'],
 
     'Notification Lists Employees Tab Test': (client) => {
 
