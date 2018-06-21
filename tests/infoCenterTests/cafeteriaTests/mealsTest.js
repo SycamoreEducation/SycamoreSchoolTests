@@ -24,8 +24,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Info Center/ Cafeteria')
 
-            .assert.visible('@mealsTab')
-            .assert.containsText('@mealsTab', 'Meals')
+            .activeTab('Meals')
 
             .assert.visible('@printBtn')
             .assert.attributeEquals('@printBtn', 'value', ' Print ')

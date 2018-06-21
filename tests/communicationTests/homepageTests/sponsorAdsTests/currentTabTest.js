@@ -26,8 +26,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Communication/Homepage/ Sponsor Ads')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
+            .activeTab('Current')
 
             .assert.visible('@newAdBtn')
             .assert.attributeEquals('@newAdBtn', 'value', 'New Ad')

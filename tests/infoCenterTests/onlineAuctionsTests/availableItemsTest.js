@@ -23,8 +23,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Info Center/ Online Auction')
 
-            .assert.visible('@availableItemsTab')
-            .assert.containsText('@availableItemsTab', 'Available Items')
+            .activeTab('Available Items')
 
             .assert.visible('@categoryLabel')
             .assert.containsText('@categoryLabel', 'Browse by Category')

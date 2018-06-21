@@ -26,8 +26,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Human Resources/ Departments')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
+            .activeTab('Current')
 
             .assert.visible('@newDepartmentBtn')
             .assert.attributeEquals('@newDepartmentBtn', 'value', 

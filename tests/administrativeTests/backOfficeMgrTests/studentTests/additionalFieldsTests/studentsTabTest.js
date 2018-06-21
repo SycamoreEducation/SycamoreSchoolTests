@@ -29,8 +29,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Back Office/Students/ Additional Fields')
 
-            .assert.visible('@studentsTab')
-            .assert.containsText('@studentsTab', 'Students')
+            .activeTab('Students')
 
             .assert.visible('@newFieldBtn')
             .assert.containsText('@newFieldBtn', 'New Field')

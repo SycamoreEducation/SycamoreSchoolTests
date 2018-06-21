@@ -25,12 +25,11 @@ module.exports = {
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Address Book/ Reports')
+
+            .activeTab('Custom')
             
             .assert.visible('@commonTab')
             .assert.containsText('@commonTab', 'Common')
-
-            .assert.visible('@customTab')
-            .assert.containsText('@customTab', 'Custom')
 
             .assert.visible('@nameHeader')
             .assert.containsText('@nameHeader', 'Name')

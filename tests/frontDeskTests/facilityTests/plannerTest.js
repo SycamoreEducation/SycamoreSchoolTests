@@ -28,11 +28,10 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Utilities/Facility Mgr/ Planner')
 
+            .activeTab('Planner')
+
             .assert.visible('@browseTab')
             .assert.containsText('@browseTab', 'Browse')
-
-            .assert.visible('@plannerTab')
-            .assert.containsText('@plannerTab', 'Planner')
 
             .assert.visible('@activitiesTab')
             .assert.containsText('@activitiesTab', 'Activities')

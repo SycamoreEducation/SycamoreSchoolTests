@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Info Center/ Databases')
 
-            .assert.visible('@tablesTab')
-            .assert.containsText('@tablesTab', 'Tables')
+            .activeTab('Tables')
 
             .assert.visible('@tableNameHeader')
             .assert.containsText('@tableNameHeader', 'Table Name')

@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Comm Center/ Discussions')
 
-            .assert.visible('@boardsTab')
-            .assert.containsText('@boardsTab', 'Boards')
+            .activeTab('Boards')
 
             .assert.visible('@newBoardBtn')
             .assert.attributeEquals('@newBoardBtn', 'value', 'New Board')

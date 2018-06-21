@@ -28,11 +28,10 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Back Office/ Students')
 
+            .activeTab('All')
+
             .assert.visible('@currentTab')
             .assert.containsText('@currentTab', 'Current')
-
-            .assert.visible('@allTab')
-            .assert.containsText('@allTab', 'All')
 
             .assert.visible('@barCodeLabel')
             .assert.attributeEquals('@barCodeLabel', 'src', 

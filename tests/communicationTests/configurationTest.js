@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/ Configuration')
 
-            .assert.visible('@optionsTab')
-            .assert.containsText('@optionsTab', 'Options')
+            .activeTab('Options')
 
             .assert.visible('@twilioHeader')
             .assert.containsText('@twilioHeader', 'Twilio')

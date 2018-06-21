@@ -25,11 +25,10 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Library Manager/Book/ Google Search')
 
+            .activeTab('Google Search')
+
             .assert.visible('@localSearchTab')
             .assert.containsText('@localSearchTab', 'Local Search')
-
-            .assert.visible('@googleSearchTab')
-            .assert.containsText('@googleSearchTab', 'Google Search')
 
             .assert.visible('@googleBooksHeader')
             .assert.containsText('@googleBooksHeader', 'Powered by Google Books')

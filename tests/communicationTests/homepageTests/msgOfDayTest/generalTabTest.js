@@ -25,9 +25,8 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 
                 'Communication/ Message Of The Day')
-                
-            .assert.visible('@generalTab')
-            .assert.containsText('@generalTab', 'General')
+
+            .activeTab('General')
 
             .assert.visible('@newMessageBtn')
             .assert.attributeEquals('@newMessageBtn', 'value', 'New Message')

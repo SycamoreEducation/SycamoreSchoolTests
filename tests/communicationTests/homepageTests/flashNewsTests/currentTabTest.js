@@ -26,8 +26,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Communication/Homepage/ Flash News')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
+            .activeTab('Current')
 
             .assert.visible('@newFlashBtn')
             .assert.attributeEquals('@newFlashBtn', 'value', 'New Flash')

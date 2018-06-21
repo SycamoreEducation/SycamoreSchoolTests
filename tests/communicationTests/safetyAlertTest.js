@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/ Safety Alert')
 
-            .assert.visible('@standbyTab')
-            .assert.containsText('@standbyTab', 'Standby')
+            .activeTab('Standby')
 
             .assert.visible('@clearBtn')
             .assert.attributeEquals('@clearBtn', 'value', ' Clear ')

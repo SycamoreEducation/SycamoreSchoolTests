@@ -27,6 +27,8 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Address Book/ Company Search')
 
+            .activeTab('Search')
+
             .assert.visible('@companiesTab')
             .assert.containsText('@companiesTab', 'Companies')
 

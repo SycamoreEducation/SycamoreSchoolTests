@@ -28,12 +28,11 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/News/ Browse')
 
+            .activeTab('Archive')
+
             .assert.visible('@currentTab')
             .assert.containsText('@currentTab', 'Current')
             .assert.attributeEquals('@currentTab', 'href', page.url() + '/news.php?type=2&classid=0&display=browse&tab=0')
-
-            .assert.visible('@archiveTab')
-            .assert.containsText('@archiveTab', 'Archive')
 
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')

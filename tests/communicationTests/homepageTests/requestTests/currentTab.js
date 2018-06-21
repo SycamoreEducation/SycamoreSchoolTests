@@ -25,8 +25,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'Communication/ Request')
 
-            .assert.visible('@currentTab')
-            .assert.containsText('@currentTab', 'Current')
+            .activeTab('Current')
 
             .assert.visible('@newRequestBtn')
             .assert.attributeEquals('@newRequestBtn', 'value', 'New Request')

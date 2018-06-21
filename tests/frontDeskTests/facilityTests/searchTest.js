@@ -26,6 +26,8 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Utilities/Facility Mgr/ Search')
 
+            .activeTab('Search')
+
             .assert.visible('@browseTab')
             .assert.containsText('@browseTab', 'Browse')
 
@@ -34,9 +36,6 @@ module.exports = {
 
             .assert.visible('@activitiesTab')
             .assert.containsText('@activitiesTab', 'Activities')
-
-            .assert.visible('@searchTab')
-            .assert.containsText('@searchTab', 'Search')
 
             .assert.visible('@searchBtn')
             .assert.attributeEquals('@searchBtn', 'value', 'Search')

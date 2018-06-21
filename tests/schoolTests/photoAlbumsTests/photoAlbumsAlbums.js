@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Photos/ Albums')
 
-            .assert.visible('@albumsTab')
-            .assert.containsText('@albumsTab', 'Albums')
+            .activeTab('Albums')
 
             .assert.visible('@galleryTab')
             .assert.visible('@galleryTab', 'Gallery')

@@ -22,8 +22,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/ Favorites')
 
-            .assert.visible('@linksTab')
-            .assert.containsText('@linksTab', 'Links')
+            .activeTab('Links')
 
             .assert.visible('@newLinkBtn')
             .assert.attributeEquals('@newLinkBtn', 'value', 'New Link')

@@ -26,8 +26,7 @@ module.exports = {
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 'School/Calendar/ Month')
 
-            .assert.visible('@monthTab')
-            .assert.containsText('@monthTab', 'Month')
+            .activeTab('Month')
 
             .assert.visible('@weekTab')
             .assert.containsText('@weekTab', 'Week')

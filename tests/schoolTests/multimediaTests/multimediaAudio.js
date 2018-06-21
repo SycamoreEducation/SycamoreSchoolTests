@@ -30,11 +30,10 @@ module.exports = {
 
             .click('@audioTab')
 
+            .activeTab('Audio')
+
             .assert.visible('@videoTab')
             .assert.containsText('@videoTab', 'Video')
-            
-            .assert.visible('@audioTab')
-            .assert.containsText('@audioTab', 'Audio')
 
             .assert.visible('@groupsBtn')
             .assert.attributeEquals('@groupsBtn', 'value', 'Groups')

@@ -27,8 +27,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Attendance/ Homeroom')
 
-            .assert.visible('@attendanceTab')
-            .assert.containsText('@attendanceTab', 'Attendance')
+            .activeTab('Attendance')
 
             .assert.visible('@backMonth')
             .assert.attributeEquals('@backMonth', 'href', page.url() +
