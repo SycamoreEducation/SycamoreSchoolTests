@@ -3,7 +3,7 @@ module.exports = {
         'backOfficeStudentChecklistTests', 
         'backOfficeStudentChecklistItemsTabTest'],
 
-    'Back Office Student Types Current Tab Test': (client) => {
+    'Back Office Student Checklist Items Tab Test': (client) => {
 
         var page = client.page.login();
 
