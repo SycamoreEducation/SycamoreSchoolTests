@@ -2,7 +2,7 @@ module.exports = {
     tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeStudentTests',
         'backOfficeStudentActivitiesTest'],
 
-    'Back Office Student All Test': (client) => {
+    'Back Office Student Activities Test': (client) => {
 
         var page = client.page.login();
 
