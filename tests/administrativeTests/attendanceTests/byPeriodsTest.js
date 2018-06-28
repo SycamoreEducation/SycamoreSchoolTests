@@ -3,7 +3,7 @@ var moment = require('moment');
 module.exports = {
     tags: ['administrativeTests', 'attendanceTests', 'attendancePeriodsTest'],
 
-    'Attendance Homeroom Test': (client) => {
+    'Attendance By Periods Test': (client) => {
 
         var page = client.page.login();
 
