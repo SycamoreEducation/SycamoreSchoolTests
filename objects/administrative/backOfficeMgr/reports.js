@@ -25,6 +25,6 @@ module.exports = {
         studentNameLabel: 'body > form > div > table > tbody > tr.se-bg-gray.se-font.se-bold > td:nth-child(3)',
         testStudentCheckbox: 'body > form > div > table > tbody > tr:nth-child(2) > td.se-center > input',
         testStudentCode: 'body > form > div > table > tbody > tr:nth-child(2) > td:nth-child(2)',
-        testStudetName: 'body > form > div > table > tbody > tr:nth-child(2) > td:nth-child(3)'.
+        testStudetName: 'body > form > div > table > tbody > tr:nth-child(2) > td:nth-child(3)'
     }
 };
