@@ -1,7 +1,8 @@
 var moment = require('moment');
 
 module.exports = {
-    tags: ['administrativeTests', 'attendanceTests', 'attendanceByClassTest'],
+    tags: ['administrativeTests', 'attendanceTests', 
+        'attendanceByClassroomTest'],
 
     'Attendance Homeroom Test': (client) => {
 
