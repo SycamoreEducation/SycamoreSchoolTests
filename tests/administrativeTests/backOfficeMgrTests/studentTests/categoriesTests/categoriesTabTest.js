@@ -30,8 +30,7 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Administrative/Back Office/Students/ Categories')
 
-            .assert.visible('@activeTab')
-            .assert.containsText('@activeTab', 'Categories')
+            .activeTab('Categories')
 
             .assert.visible('@groupsBtn')
             .assert.attributeEquals('@groupsBtn', 'value', 'Groups')
