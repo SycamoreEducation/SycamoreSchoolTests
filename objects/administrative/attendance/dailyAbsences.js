@@ -9,5 +9,3 @@ module.exports = {
         studentNameHeader: '.table > tbody:nth-child(1) > tr:nth-child(1)'
     }
 };
-//http://web/attendabsents.php/?day=30&month=06&year=2018
-//http://web/attendabsents.php?day=30&month=06&year=2018
