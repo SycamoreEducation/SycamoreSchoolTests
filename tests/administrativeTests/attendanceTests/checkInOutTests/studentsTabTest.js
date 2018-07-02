@@ -22,7 +22,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.page.administrative.attendance.checkInOut()
+        client.page.administrative.attendance.checkInOut.studentsTab()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 
