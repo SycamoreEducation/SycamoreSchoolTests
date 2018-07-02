@@ -12,11 +12,11 @@ module.exports = {
         typeHeader: '.table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(4)',
         hoursHeader: '.table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(5)',
         notesHeader: '.table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(6)',
-        testViewBtn: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > img:nth-child(1)',
-        testEmployeeName: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)',
-        testCheckbox: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > input:nth-child(2)',
-        testType: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(4) > select:nth-child(1)',
-        testHours: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(5) > input:nth-child(1)',
-        testNotes: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(6) > input:nth-child(1)'
+        viewBtn: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > img:nth-child(1)',
+        employeeName: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)',
+        checkbox: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > input:nth-child(2)',
+        type: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(4) > select:nth-child(1)',
+        hours: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(5) > input:nth-child(1)',
+        notes: '.table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(6) > input:nth-child(1)'
     }
 };

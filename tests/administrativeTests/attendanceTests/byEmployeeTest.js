@@ -71,19 +71,19 @@ module.exports = {
             .assert.visible('@notesHeader')
             .assert.containsText('@notesHeader', 'Notes')
 
-            .assert.visible('@testViewBtn')
-            .assert.attributeEquals('@testViewBtn', 'src', page.url() + 
+            .assert.visible('@viewBtn')
+            .assert.attributeEquals('@viewBtn', 'src', page.url() + 
                 '/images/history.gif')
 
-            .assert.visible('@testEmployeeName')
+            .assert.visible('@employeeName')
 
-            .assert.visible('@testCheckbox')
+            .assert.visible('@checkbox')
 
-            .assert.visible('@testType')
+            .assert.visible('@type')
 
-            .assert.visible('@testHours')
+            .assert.visible('@hours')
 
-            .assert.visible('@testNotes')
+            .assert.visible('@notes')
 
         client.frame(null)
 
