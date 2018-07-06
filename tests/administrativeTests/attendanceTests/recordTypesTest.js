@@ -22,6 +22,7 @@ module.exports = {
         client.frame(2);
         client.page.administrative.attendance.recordTypes()
             .waitForElementVisible('@breadcrumb', 5000)
+            .assert.visible('@breadcrumb')
             .assert.containsText('@breadcrumb', 
                 'Administrative/Attendance/ Record Types')
 
