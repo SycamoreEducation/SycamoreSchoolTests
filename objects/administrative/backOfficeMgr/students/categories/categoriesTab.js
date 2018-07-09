@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        categoriesTab: 'body > ul.nav.nav-tabs > li > a',
         groupsBtn: 'body > ul.nav.nav-tabs > input[type="button"]:nth-child(3)',
         newCategoryBtn: 'body > ul.nav.nav-tabs > input[type="button"]:nth-child(2)',
         numericHeader: 'body > div.tab-content > table > tbody > tr:nth-child(1) > td:nth-child(1)',

@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        byFamiliesTab: 'body > form > ul > li > a',
         inputField: 'body > form > ul > input[type="text"]:nth-child(4)',
         studentSearchBtn: 'body > form > ul > input.btn.btn-mini.btn-primary.pull-right',
         printBtn: 'body > form > ul > button',

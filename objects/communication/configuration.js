@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        optionsTab: 'body > ul.nav.nav-tabs > li > a',
         twilioHeader: 'body > div.tab-content > div:nth-child(1) > form > font',
         twilioImage: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(1) > td:nth-child(1) > img',
         twilioDescription: 'body > div.tab-content > div:nth-child(1) > form > table > tbody > tr:nth-child(1) > td:nth-child(2)',

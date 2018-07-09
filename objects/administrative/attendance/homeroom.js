@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        attendanceTab: 'body > ul.nav.nav-tabs > li > a',
         backMonth: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(1) > a',
         monthBtn: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(2) > input',
         forwardMonth: 'body > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr > td:nth-child(3) > a',
