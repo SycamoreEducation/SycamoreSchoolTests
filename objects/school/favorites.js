@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        linksTab: 'body > ul.nav.nav-tabs > li > a',
         newLinkBtn: 'body > ul.nav.nav-tabs > input',
         folderLabel: 'body > div.tab-content > table.se-font.se-bold.se-nowrap > tbody > tr > td:nth-child(1)',
         folderSelect: '#folderid',

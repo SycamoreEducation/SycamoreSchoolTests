@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > form > ul.breadcrumb',
-        standbyTab: 'body > form > ul.nav.nav-tabs > li > a',
         clearBtn: 'body > form > ul.nav.nav-tabs > input',
         typeLabel: 'body > form > div > table:nth-child(1) > tbody > tr:nth-child(1)',
         timeLabel: 'body > form > div > table:nth-child(1) > tbody > tr:nth-child(2)',

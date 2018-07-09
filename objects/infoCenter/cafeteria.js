@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        mealsTab: 'body > ul.nav.nav-tabs > li > a',
         printBtn: 'body > ul.nav.nav-tabs > input',
         backMonthBtn: 'body > div > table:nth-child(1) > tbody > tr > td:nth-child(1) > a',
         forwardMonthBtn: 'body > div > table:nth-child(1) > tbody > tr > td:nth-child(3) > a',

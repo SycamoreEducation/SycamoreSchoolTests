@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        currentTab: 'body > ul.nav.nav-tabs > li > a',
         newRequestBtn: 'body > ul.nav.nav-tabs > input',
         startHeader: 'body > div.tab-content > table > tbody > tr:nth-child(1) > td:nth-child(2)',
         stopHeader: 'body > div.tab-content > table > tbody > tr:nth-child(1) > td:nth-child(3)',

@@ -1,7 +1,6 @@
 module.exports = {
     elements: {
         breadcrumb: 'body > ul.breadcrumb',
-        generalTab: 'body > ul.nav.nav-tabs > li > a',
         newSchoolYearBtn: 'body > ul.nav.nav-tabs > input[type="button"]:nth-child(4)',
         setCurrentYearBtn: 'body > ul.nav.nav-tabs > input[type="button"]:nth-child(2)',
         nameHeader: 'body > div.tab-content > table > tbody > tr:nth-child(1) > td:nth-child(3)',
