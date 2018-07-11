@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['administrativeTests', 'administrationTests', 'gradeLevelsTest',],
+    tags: ['administrativeTests', 'administrationTests', 'gradeLevelsTest'],
 
     'Administration Grade Levels Test': (client) => {
 
