@@ -1,8 +1,8 @@
 module.exports = {
     tags: ['administrativeTests', 'administrationTests', 'calendarOptionsTests',
-        'calendarOptionsCategoriesTabTest'],
+        'calendarOptionsSpecialsDaysTabTest'],
 
-    'Calendar Options Categoreis Tab Test': (client) => {
+    'Calendar Options Specials Days Tab Test': (client) => {
 
         var page = client.page.login();
 
@@ -23,12 +23,20 @@ module.exports = {
         client.page.administrative.administration.calendarOptions
             .categoriesTab()
 
+            .waitForElementVisible('@specialsDaysTab', 5000)
+            .click('@specialsDaysTab');
+
+        client.page.administrative.administration.calendarOptions
+            .specialsDaysTab()
+
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 
-                'Administrative/Administration/ Calendar Options')
+            .assert.containsText('@breadcrumb', 'Calendar Specials Days')
 
-            .activeTab('Categories')
+            .activeTab('Specials Days')
+
+            .assert.visible('@categoriesTab')
+            .assert.containsText('@categoriesTab', 'Categories')
 
             .assert.visible('@importsTab')
             .assert.containsText('@importsTab', 'Imports')
@@ -36,16 +44,15 @@ module.exports = {
             .assert.visible('@daysOfWeekTab')
             .assert.containsText('@daysOfWeekTab', 'Days of Week')
 
-            .assert.visible('@specialsDaysTab')
-            .assert.containsText('@specialsDaysTab', 'Specials Days')
+            .assert.visible('@addDateBtn')
+            .assert.attributeEquals('@addDateBtn', 'value', 'Add Date')
+            .assert.attributeEquals('@addDateBtn', 'onclick', 'viewdate()')
 
-            .assert.visible('@addCategoryBtn')
-            .assert.attributeEquals('@addCategoryBtn', 'value', 'Add Category')
-            .assert.attributeEquals('@addCategoryBtn', 'onclick', 
-                'addcategory()')
+            .assert.visible('@dateHeader')
+            .assert.containsText('@dateHeader', 'Date')
 
-            .assert.visible('@nameHeader')
-            .assert.containsText('@nameHeader', 'Name')
+            .assert.visible('@shortHeader')
+            .assert.containsText('@shortHeader', 'Short')
 
             .assert.visible('@descriptionHeader')
             .assert.containsText('@descriptionHeader', 'Description')
