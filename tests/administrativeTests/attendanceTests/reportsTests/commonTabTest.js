@@ -1,5 +1,3 @@
-var moment = require('moment');
-
 module.exports = {
     tags: ['administrativeTests', 'attendanceTests', 'attendanceReportsTest',
         'attendanceReportsCommonTabTest'],
