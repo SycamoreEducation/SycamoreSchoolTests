@@ -62,6 +62,9 @@ module.exports = {
             .assert.visible('@presentHeader')
             .assert.containsText('@presentHeader', 'Present')
 
+            .assert.visible('@tardyHeader')
+            .assert.containsText('@tardyHeader', 'Tardy')
+
             .assert.visible('@typeHeader')
             .assert.containsText('@typeHeader', 'Type')
 
@@ -77,7 +80,9 @@ module.exports = {
 
             .assert.visible('@employeeName')
 
-            .assert.visible('@checkbox')
+            .assert.visible('@presentCheckbox')
+
+            .assert.visible('@tardyCheckbox')
 
             .assert.visible('@type')
 
