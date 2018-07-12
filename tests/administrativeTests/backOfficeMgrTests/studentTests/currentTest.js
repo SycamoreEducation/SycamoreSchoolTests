@@ -168,7 +168,7 @@ module.exports = {
             .assert.containsText('@testStudentName', 'Current, Stan')
 
             .assert.visible('@testStudentGrade')
-            .assert.containsText('@testStudentGrade', 'N/A')
+            .assert.containsText('@testStudentGrade', 'Sophomore')
 
         client.frame(null)
 
