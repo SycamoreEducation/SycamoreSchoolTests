@@ -1,7 +1,6 @@
 module.exports = {
     tags: ['administrativeTests', 'humanResourcesTests',
-        'humanResourcesSubstitutesTest'
-    ],
+        'humanResourcesSubstitutesTest'],
 
     'Human Resources Substitutes Test': (client) => {
 
