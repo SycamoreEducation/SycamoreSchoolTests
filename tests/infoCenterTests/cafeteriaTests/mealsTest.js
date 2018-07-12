@@ -32,7 +32,7 @@ module.exports = {
 
             .assert.visible('@backMonthBtn')
             .assert.containsText('@backMonthBtn', 
-                moment().subtract(1, 'months').format('MMMM YYYY'))
+                moment().subtract(1, 'months').format('MMM YYYY'))
             .assert.attributeEquals('@backMonthBtn', 'href', 
                 `${page.url()}/lunch.php?viewyear=${moment()
                 .subtract(1, 'months').format('YYYY')}&viewmonth=${moment()
