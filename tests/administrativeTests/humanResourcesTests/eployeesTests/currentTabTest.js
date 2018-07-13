@@ -1,3 +1,5 @@
+var pauseTime = require('../../../../globalVariables').pauseTime;
+
 module.exports = {
     tags: ['administrativeTests', 'humanResourcesTests', 
         'humanResourcesEmployeesTests', 'employeesCurrentTabTest'],
@@ -5,7 +7,7 @@ module.exports = {
     'Human Resources Employees Current Tab Test': (client) => {
 
         var page = client.page.login();
-
+        
         page.navigate()
             .schoolLogin();
 
@@ -20,7 +22,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(100);
+        client.pause(pauseTime);
         client.page.administrative.humanResources.employees()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
