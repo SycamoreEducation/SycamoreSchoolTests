@@ -1,4 +1,5 @@
 var moment = require('moment');
+var pauseTime = require('../../../globalVariables').pauseTime;
 
 module.exports = {
     tags: ['frontDeskTests', 'facilityTests', 'plannerTabTest'],
@@ -19,6 +20,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
+        client.pause(pauseTime);
         client.page.frontDesk.facility()
             .waitForElementVisible('@plannerTab', 5000)
             .click('@plannerTab')

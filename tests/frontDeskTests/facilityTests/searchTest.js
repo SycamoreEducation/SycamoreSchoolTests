@@ -1,3 +1,5 @@
+var pauseTime = require('../../../globalVariables').pauseTime;
+
 module.exports = {
     tags: ['frontDeskTests', 'facilityTests', 'searchTabTest'],
 
@@ -17,6 +19,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
+        client.pause(pauseTime);
         client.page.frontDesk.facility()
             .waitForElementVisible('@searchTab', 5000)
             .click('@searchTab')
