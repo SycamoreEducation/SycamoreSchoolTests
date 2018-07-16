@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@gradeMgr')
             .click('@gradeMgr')
             .assert.visible('@gradeMgrGradingScales')
-            .click('@gradeMgrGradingScales');
+            .click('@gradeMgrGradingScales')
         client.frame(null);
 
         client.frame(2);
@@ -42,9 +42,9 @@ module.exports = {
             .assert.containsText('@globalHeader', 'Global')
 
             .assert.visible('@roundingHeader')
-            .assert.containsText('@roundingHeader', 'Rounding');
+            .assert.containsText('@roundingHeader', 'Rounding')
 
-        client.frame(null);
+        client.frame(null)
 
         client.end();
     }
