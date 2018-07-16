@@ -16,11 +16,11 @@ module.exports = {
             .assert.visible('@gradeMgr')
             .click('@gradeMgr')
             .assert.visible('@gradeMgrGpaScales')
-            .click('@gradeMgrGpaScales')
+            .click('@gradeMgrGpaScales');
         client.frame(null);
 
         client.frame(2);
-        client.pause(100);
+        client.pause(client.globals.pauseTime);
         client.page.academic.gradeMgr.gpaScales()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
@@ -112,9 +112,9 @@ module.exports = {
             .assert.visible('@fMinusLabel')
             .assert.containsText('@fMinusLabel', 'F -')
 
-            .assert.visible('@fMinusValue')
+            .assert.visible('@fMinusValue');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
