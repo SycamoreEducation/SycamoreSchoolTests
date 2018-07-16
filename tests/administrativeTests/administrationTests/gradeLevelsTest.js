@@ -1,13 +1,9 @@
-var pauseTime = require('../../../globalVariables').pauseTime;
-
 module.exports = {
     tags: ['administrativeTests', 'administrationTests', 'gradeLevelsTest'],
 
     'Administration Grade Levels Test': (client) => {
 
         var page = client.page.login();
-
-        console.log(pauseTime);
 
         page.navigate()
             .schoolLogin();
