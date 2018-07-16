@@ -21,6 +21,16 @@ docker-compose exec web su - dev
 rails db:migrate && rails db:seed
 rails populate:school:nightwatch
 ```
+
+## Setting up Environment Variables
+
+Create a `.env` file in the root of the directory.
+
+Available variables:
+```
+FRAME_PAUSE
+```
+
 ## Running Tests
 From within this directory, calling `nightwatch` will run all tests. You can also run individual tests by name:
 ```
