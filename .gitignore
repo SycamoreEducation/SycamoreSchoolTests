@@ -2,3 +2,4 @@
 *.swp
 /reports
 node_modules
+.env
