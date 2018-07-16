@@ -1,5 +1,3 @@
-var pauseTime = require('../../../globalVariables').pauseTime;
-
 module.exports = {
     tags: ['academicTests', 'academicGradeMgrTests', 
         'academicGradeMgrGradingScalesTest'],
@@ -22,7 +20,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(pauseTime);
+        client.pause(client.globals.pauseTime);
         client.page.academic.gradeMgr.gradingScales()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
