@@ -27,8 +27,8 @@ rails populate:school:nightwatch
 Create a `.env` file in the root of the directory.
 
 Available variables:
-```javascript
-FAME_PAUSE //Amount of time to wait between frame changes.
+```
+FAME_PAUSE
 ```
 
 ## Running Tests
