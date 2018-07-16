@@ -20,7 +20,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(100);
+        client.pause(client.globals.pauseTime);
         client.page.administrative.humanResources.positions()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
