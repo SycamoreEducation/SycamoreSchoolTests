@@ -1,3 +1,5 @@
+require('dotenv').load();
+
 module.exports = {
-    pauseTime: 500
-}
+    pauseTime: process.env.PAUSE || 500
+};
