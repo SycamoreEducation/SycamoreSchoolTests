@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@humanReources')
             .click('@humanReources')
             .assert.visible('@humanResourcesAdditionalFields')
-            .click('@humanResourcesAdditionalFields')
+            .click('@humanResourcesAdditionalFields');
         client.frame(null);
 
         client.frame(2);
@@ -52,9 +52,9 @@ module.exports = {
             .assert.containsText('@profileHeader', 'Profile')
 
             .assert.visible('@DBIDHeader')
-            .assert.containsText('@DBIDHeader', 'DBID')
+            .assert.containsText('@DBIDHeader', 'DBID');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
