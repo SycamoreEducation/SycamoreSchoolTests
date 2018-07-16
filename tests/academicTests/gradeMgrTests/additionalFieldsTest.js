@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@gradeMgr')
             .click('@gradeMgr')
             .assert.visible('@gradeMgrAdditionalFields')
-            .click('@gradeMgrAdditionalFields')
+            .click('@gradeMgrAdditionalFields');
         client.frame(null);
 
         client.frame(2);
@@ -49,9 +49,9 @@ module.exports = {
             .assert.containsText('@descriptionHeader', 'Description')
 
             .assert.visible('@DBIDHeader')
-            .assert.containsText('@DBIDHeader', 'DB ID')
+            .assert.containsText('@DBIDHeader', 'DB ID');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
