@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@administration')
             .click('@administration')
             .assert.visible('@administrationCalendarOptions')
-            .click('@administrationCalendarOptions')
+            .click('@administrationCalendarOptions');
         client.frame(null);
 
         client.frame(2);
@@ -86,9 +86,9 @@ module.exports = {
             .assert.visible('@saturdayLabel')
             .assert.containsText('@saturdayLabel', 'Saturday')
 
-            .assert.visible('@saturdayInput')
+            .assert.visible('@saturdayInput');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
