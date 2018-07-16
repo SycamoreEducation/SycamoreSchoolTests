@@ -22,7 +22,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(pauseTime);
+        client.pause(client.globals.pauseTime);
         client.page.administrative.humanResources.employees()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
