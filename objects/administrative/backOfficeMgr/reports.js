@@ -7,7 +7,7 @@ module.exports = {
         nameHeader: 'body > div.tab-content > table > tbody > tr.se-bg-gray.se-bold > td:nth-child(1)',
         descriptionHeader: 'body > div.tab-content > table > tbody > tr.se-bg-gray.se-bold > td:nth-child(2)',
         //Common Report
-        testReportName: 'body > div.tab-content > table > tbody > tr:nth-child(2) > td:nth-child(1)',
+        testReportName: 'body > div.tab-content > table > tbody > tr:nth-child(2) > td:nth-child(1) > a',
         testReportDescription: 'body > div.tab-content > table > tbody > tr:nth-child(2) > td:nth-child(2)',
         //Templates Tab
         generateBtn: '#theButton',
