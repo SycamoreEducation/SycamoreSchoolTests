@@ -8,7 +8,6 @@ module.exports = {
         descriptionHeader: '.se-bg-gray > td:nth-child(2)',
         testReportName: '.se-font > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > a',
         testReportDescription: '.se-font > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)',
-        //Templates Tab
         generateBtn: '#theButton',
         reportTemplateLabel: 'td.se-right:nth-child(1)',
         reportTemplateSelect: '#rtid',
