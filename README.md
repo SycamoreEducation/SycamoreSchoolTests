@@ -5,7 +5,7 @@ Install nightwatch:
 ```
 npm install -g nightwatch
 ```
-Install test dependecies:
+Install test dependencies:
 ```
 npm install
 ```
