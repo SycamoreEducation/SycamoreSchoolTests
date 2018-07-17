@@ -1,5 +1,5 @@
 require('dotenv').load();
 
 module.exports = {
-    pauseTime: process.env.FRAME_PAUSE || 500
+    FRAME_PAUSE: process.env.FRAME_PAUSE || 500
 };
