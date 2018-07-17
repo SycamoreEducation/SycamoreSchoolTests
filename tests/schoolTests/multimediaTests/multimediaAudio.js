@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolMultimedia')
-            .click('@schoolMultimedia')
+            .click('@schoolMultimedia');
         client.frame(null);
 
         client.frame(2);
@@ -40,8 +40,10 @@ module.exports = {
             .assert.attributeEquals('@groupsBtn', 'onclick', 'groups()')
 
             .assert.visible('@addAudioLinkBtn')
-            .assert.attributeEquals('@addAudioLinkBtn', 'value', 'Add Audio Link')
-            .assert.attributeEquals('@addAudioLinkBtn', 'onclick', 'addmedia(0)')
+            .assert.attributeEquals('@addAudioLinkBtn', 'value', 
+                'Add Audio Link')
+            .assert.attributeEquals('@addAudioLinkBtn', 'onclick', 
+                'addmedia(0)')
 
             .assert.visible('@date')
             .assert.containsText('@date', 'Date')
@@ -53,9 +55,9 @@ module.exports = {
             .assert.containsText('@source', 'Source')
 
             .assert.visible('@comments')
-            .assert.visible('@comments', 'Comments')
+            .assert.visible('@comments', 'Comments');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

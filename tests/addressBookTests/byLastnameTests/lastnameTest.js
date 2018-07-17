@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['addressBookTests', 'addressBookByLastnameTests', 'addressBookByLastnameLastnameTest'],
+    tags: ['addressBookTests', 'addressBookByLastnameTests', 
+        'addressBookByLastnameLastnameTest'],
 
     'By Lastname Lastname Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByLastName')
-            .click('@addressBookByLastName')
+            .click('@addressBookByLastName');
         client.frame(null);
 
         client.frame(2);
@@ -135,21 +136,26 @@ module.exports = {
 
             .assert.visible('@name')
             .assert.containsText('@name', 'Current, Jane')
-            .assert.attributeEquals('@name', 'onclick', 'viewcontact(2); return false;')
+            .assert.attributeEquals('@name', 'onclick', 
+                'viewcontact(2); return false;')
 
             .assert.visible('@envelope')
-            .assert.attributeEquals('@envelope', 'onclick', 'envelope(2); return false;')
+            .assert.attributeEquals('@envelope', 'onclick', 
+                'envelope(2); return false;')
 
             .assert.visible('@note')
-            .assert.attributeEquals('@note', 'onclick', 'addnote(2); return false;')
+            .assert.attributeEquals('@note', 'onclick', 
+                'addnote(2); return false;')
 
             .assert.visible('@docs')
-            .assert.attributeEquals('@docs', 'onclick', 'doMerge(2); return false;')
+            .assert.attributeEquals('@docs', 'onclick', 
+                'doMerge(2); return false;')
 
             .assert.visible('@card')
-            .assert.attributeEquals('@card', 'onclick', 'vcard(2); return false;')
+            .assert.attributeEquals('@card', 'onclick', 
+                'vcard(2); return false;');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

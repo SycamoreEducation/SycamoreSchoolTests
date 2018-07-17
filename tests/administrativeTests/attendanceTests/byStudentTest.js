@@ -17,7 +17,7 @@ module.exports = {
             .assert.visible('@attendance')
             .click('@attendance')
             .assert.visible('@attendanceByStudent')
-            .click('@attendanceByStudent')
+            .click('@attendanceByStudent');
         client.frame(null);
 
         client.frame(2);
@@ -37,13 +37,13 @@ module.exports = {
 
             .assert.visible('@backMonthBtn')
             .assert.attributeEquals('@backMonthBtn', 'href', page.url() +
-                `/attendstudents.php?grade=-99&year=${moment().format('YYYY')}` + 
-                `&month=${moment().subtract(1, 'months').format('M')}`)
+                `/attendstudents.php?grade=-99&year=${moment().format('YYYY')}`
+                 + `&month=${moment().subtract(1, 'months').format('M')}`)
 
             .assert.visible('@forwardMonthBtn')
             .assert.attributeEquals('@forwardMonthBtn', 'href', page.url() +
-                `/attendstudents.php?grade=-99&year=${moment().format('YYYY')}` + 
-                `&month=${moment().add(1, 'months').format('M')}`)
+                `/attendstudents.php?grade=-99&year=${moment().format('YYYY')}` 
+                + `&month=${moment().add(1, 'months').format('M')}`)
 
             .assert.visible('@dateHeader')
             .assert.containsText('@dateHeader', moment().format('MMMM YYYY'))
@@ -125,9 +125,9 @@ module.exports = {
                 page.url() + '/images/check_mark.gif')
 
             .assert.visible('@studentNameHeader')
-            .assert.containsText('@studentNameHeader', 'Student Name')
+            .assert.containsText('@studentNameHeader', 'Student Name');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

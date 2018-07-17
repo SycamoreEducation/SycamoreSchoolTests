@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolPhotoAlbums')
-            .click('@schoolPhotoAlbums')
+            .click('@schoolPhotoAlbums');
         client.frame(null);
 
         client.frame(2);
@@ -41,9 +41,9 @@ module.exports = {
             .assert.visible('@thumbnailListSelector')
             .assert.containsText('@thumbnailListSelector', 'Thumbnail | List')
             
-            .assert.visible('@photoList')            
+            .assert.visible('@photoList');            
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

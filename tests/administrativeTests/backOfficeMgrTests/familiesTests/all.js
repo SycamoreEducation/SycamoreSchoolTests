@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeFamiliesTests',
-        'backOfficeFamiliesAllTabTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeFamiliesTests', 'backOfficeFamiliesAllTabTest'],
 
     'Back Office Families All Test': (client) => {
 
@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@backOfficeMgrFamilies')
             .click('@backOfficeMgrFamilies')
             .assert.visible('@backOfficeMgrFamiliesAll')
-            .click('@backOfficeMgrFamiliesAll')
+            .click('@backOfficeMgrFamiliesAll');
         client.frame(null);
 
         client.frame(2);
@@ -128,7 +128,8 @@ module.exports = {
             .assert.containsText('@familyCount', 'Count: 2')
 
             .assert.visible('@checkbox')
-            .assert.attributeEquals('@checkbox', 'onclick', `setChecked('.setCheckedBox','')`)
+            .assert.attributeEquals('@checkbox', 'onclick', 
+                `setChecked('.setCheckedBox','')`)
 
             .assert.visible('@familyCodeHeader')
             .assert.containsText('@familyCodeHeader', 'Family Code')
@@ -156,9 +157,10 @@ module.exports = {
             .assert.containsText('@testFamilyName', 'Current, John and Jane')
 
             .assert.visible('@testFamilyAddress')
-            .assert.containsText('@testFamilyAddress', '321 First St, Someplace, 54321')
+            .assert.containsText('@testFamilyAddress', 
+                '321 First St, Someplace, 54321');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@attendance')
             .click('@attendance')
             .assert.visible('@attendanceScale')
-            .click('@attendanceScale')
+            .click('@attendanceScale');
         client.frame(null);
 
         client.frame(2);
@@ -63,7 +63,8 @@ module.exports = {
             .assert.attributeEquals('@scale1EditBtn', 'onclick', 'doEdit(1)')
 
             .assert.visible('@scale1DeleteBtn')
-            .assert.attributeEquals('@scale1DeleteBtn', 'onclick', 'doDelete(1)')
+            .assert.attributeEquals('@scale1DeleteBtn', 'onclick', 
+                'doDelete(1)')
 
             .assert.visible('@scale2Numeric')
             .assert.containsText('@scale2Numeric', '2')
@@ -85,7 +86,8 @@ module.exports = {
             .assert.attributeEquals('@scale2EditBtn', 'onclick', 'doEdit(2)')
 
             .assert.visible('@scale2DeleteBtn')
-            .assert.attributeEquals('@scale2DeleteBtn', 'onclick', 'doDelete(2)')
+            .assert.attributeEquals('@scale2DeleteBtn', 'onclick', 
+                'doDelete(2)')
 
             .assert.visible('@scale3Numeric')
             .assert.containsText('@scale3Numeric', '3')
@@ -107,7 +109,8 @@ module.exports = {
             .assert.attributeEquals('@scale3EditBtn', 'onclick', 'doEdit(3)')
 
             .assert.visible('@scale3DeleteBtn')
-            .assert.attributeEquals('@scale3DeleteBtn', 'onclick', 'doDelete(3)')
+            .assert.attributeEquals('@scale3DeleteBtn', 'onclick', 
+                'doDelete(3)')
 
             .assert.visible('@scale4Numeric')
             .assert.containsText('@scale4Numeric', '4')
@@ -129,7 +132,8 @@ module.exports = {
             .assert.attributeEquals('@scale4EditBtn', 'onclick', 'doEdit(4)')
 
             .assert.visible('@scale4DeleteBtn')
-            .assert.attributeEquals('@scale4DeleteBtn', 'onclick', 'doDelete(4)')
+            .assert.attributeEquals('@scale4DeleteBtn', 'onclick', 
+                'doDelete(4)')
 
             .assert.visible('@scale5Numeric')
             .assert.containsText('@scale5Numeric', '5')
@@ -151,7 +155,8 @@ module.exports = {
             .assert.attributeEquals('@scale5EditBtn', 'onclick', 'doEdit(5)')
 
             .assert.visible('@scale5DeleteBtn')
-            .assert.attributeEquals('@scale5DeleteBtn', 'onclick', 'doDelete(5)')
+            .assert.attributeEquals('@scale5DeleteBtn', 'onclick', 
+                'doDelete(5)')
 
             .assert.visible('@newScaleNumeric')
 
@@ -164,9 +169,9 @@ module.exports = {
             .assert.visible('@newScaleLabel')
 
             .assert.visible('@newScaleAddBtn')
-            .assert.attributeEquals('@newScaleAddBtn', 'value', 'Add')
+            .assert.attributeEquals('@newScaleAddBtn', 'value', 'Add');
             
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

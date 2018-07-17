@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@communicationHomepage')
             .click('@communicationHomepage')
             .assert.visible('@communicationHomepageMsgOfTheDay')
-            .click('@communicationHomepageMsgOfTheDay')
+            .click('@communicationHomepageMsgOfTheDay');
         client.frame(null);
 
         client.frame(2);
@@ -36,9 +36,9 @@ module.exports = {
             .assert.containsText('@dateHeader', 'Date')
 
             .assert.visible('@titleHeader')
-            .assert.containsText('@titleHeader', 'Title')
+            .assert.containsText('@titleHeader', 'Title');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

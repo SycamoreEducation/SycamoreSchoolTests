@@ -127,7 +127,8 @@ module.exports = {
                 page.url() + '/schoolscale.php')
 
             .assert.visible('@gradeMgrAttributesGrades')
-            .assert.containsText('@gradeMgrAttributesGrades', 'Attributes Grades')
+            .assert.containsText('@gradeMgrAttributesGrades', 
+                'Attributes Grades')
             .assert.attributeEquals('@gradeMgrAttributesGrades', 'href', 
                 page.url() + '/studenthabits.php')
 
@@ -137,7 +138,8 @@ module.exports = {
                 page.url() + '/classcomments.php')
 
             .assert.visible('@gradeMgrAdditionalFields')
-            .assert.containsText('@gradeMgrAdditionalFields', 'Additional Fields')
+            .assert.containsText('@gradeMgrAdditionalFields', 
+                'Additional Fields')
             .assert.attributeEquals('@gradeMgrAdditionalFields', 'href', 
                 page.url() + '/classgradestatistics.php?task=list')
 
@@ -336,7 +338,8 @@ module.exports = {
                 page.url() + '/schoollesson.php?view=byclass')
 
             .assert.visible('@assessmentMgrLessonPlansConfiguration')
-            .assert.containsText('@assessmentMgrLessonPlansConfiguration', 'Configuration')
+            .assert.containsText('@assessmentMgrLessonPlansConfiguration', 
+                'Configuration')
             .assert.attributeEquals('@assessmentMgrLessonPlansConfiguration', 
                 'href', page.url() + '/schoollessoncfg.php')
 
@@ -455,7 +458,7 @@ module.exports = {
 
             .assert.hidden('@collegeCreditMgr')
             .assert.hidden('@collegeCreditMgrStudents')
-            .assert.hidden('@collegeCreditMgrColleges')
+            .assert.hidden('@collegeCreditMgrColleges');
 
         client.frame(null);
 

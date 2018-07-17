@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookAdditionalFields')
-            .click('@addressBookAdditionalFields')
+            .click('@addressBookAdditionalFields');
         client.frame(null);
 
         client.frame(2);
@@ -50,9 +50,9 @@ module.exports = {
             .assert.containsText('@descriptionHeader', 'Description')
 
             .assert.visible('@dbIdHeader')
-            .assert.containsText('@dbIdHeader', 'DB ID')
+            .assert.containsText('@dbIdHeader', 'DB ID');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

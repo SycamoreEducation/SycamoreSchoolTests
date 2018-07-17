@@ -13,14 +13,15 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskClassroomDirectory')
-            .click('@frontDeskClassroomDirectory')
+            .click('@frontDeskClassroomDirectory');
         client.frame(null);
 
         client.frame(2);
         client.page.frontDesk.classroomDirectory()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Front Desk/ Classroom Directory')
+            .assert.containsText('@breadcrumb', 
+                'Front Desk/ Classroom Directory')
 
             .activeTab('Open Classes')
 
@@ -28,9 +29,9 @@ module.exports = {
             .assert.containsText('@nameHeader', 'Name')
 
             .assert.visible('@descriptionHeader')
-            .assert.containsText('@descriptionHeader', 'Description')
+            .assert.containsText('@descriptionHeader', 'Description');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

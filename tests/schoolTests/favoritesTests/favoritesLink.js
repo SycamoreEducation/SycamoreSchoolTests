@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolFavorites')
-            .click('@schoolFavorites')
+            .click('@schoolFavorites');
         client.frame(null);
 
         client.frame(2);
@@ -36,12 +36,13 @@ module.exports = {
             .assert.attributeEquals('@folderSelect', 'onchange', 'doRefresh()')
 
             .assert.visible('@folderIcon')
-            .assert.attributeEquals('@folderIcon', 'src', page.url() + '/images/newfolder.gif')
+            .assert.attributeEquals('@folderIcon', 'src', page.url() + 
+                '/images/newfolder.gif')
             .assert.attributeEquals('@folderIcon', 'onclick', 'addcatagory()')
 
-            .assert.visible('@linkTable')
+            .assert.visible('@linkTable');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

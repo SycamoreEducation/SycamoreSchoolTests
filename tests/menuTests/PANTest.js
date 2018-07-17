@@ -12,7 +12,8 @@ module.exports = {
         client.page.menu()
             .assert.visible('@PAN')
             .assert.containsText('@PAN', '\273 Pass-A-Note')
-            .assert.attributeEquals('@PAN', 'href', page.url() + '/schoolmenu.php#')
+            .assert.attributeEquals('@PAN', 'href', page.url() + 
+                '/schoolmenu.php#')
 
             .assert.hidden('@PANInbox')
             .assert.hidden('@PANOutbox')
@@ -25,31 +26,38 @@ module.exports = {
             .click('@PAN')
             .assert.visible('@PANInbox')
             .assert.containsText('@PANInbox', 'Inbox')
-            .assert.attributeEquals('@PANInbox', 'href', page.url() + '/pan.php?task=inbox')
+            .assert.attributeEquals('@PANInbox', 'href', page.url() + 
+                '/pan.php?task=inbox')
             
             .assert.visible('@PANOutbox')
             .assert.containsText('@PANOutbox', 'Outbox')
-            .assert.attributeEquals('@PANOutbox', 'href', page.url() + '/pan.php?task=outbox')
+            .assert.attributeEquals('@PANOutbox', 'href', page.url() + 
+                '/pan.php?task=outbox')
             
             .assert.visible('@PANEmployees')
             .assert.containsText('@PANEmployees', 'Employees')
-            .assert.attributeEquals('@PANEmployees', 'href', page.url() + '/pan.php?task=sendstaff')
+            .assert.attributeEquals('@PANEmployees', 'href', page.url() + 
+                '/pan.php?task=sendstaff')
             
             .assert.visible('@PANAssociates')
             .assert.containsText('@PANAssociates', 'Associates')
-            .assert.attributeEquals('@PANAssociates', 'href', page.url() + '/pan.php?task=sendassociates')
+            .assert.attributeEquals('@PANAssociates', 'href', page.url() + 
+                '/pan.php?task=sendassociates')
             
             .assert.visible('@PANFamilies')
             .assert.containsText('@PANFamilies', 'Families')
-            .assert.attributeEquals('@PANFamilies', 'href', page.url() + '/pan.php?task=sendfamilies')
+            .assert.attributeEquals('@PANFamilies', 'href', page.url() + 
+                '/pan.php?task=sendfamilies')
             
             .assert.visible('@PANStudents')
             .assert.containsText('@PANStudents', 'Students')
-            .assert.attributeEquals('@PANStudents', 'href', page.url() + '/pan.php?task=sendstudents')
+            .assert.attributeEquals('@PANStudents', 'href', page.url() + 
+                '/pan.php?task=sendstudents')
             
             .assert.visible('@PANOptions')
             .assert.containsText('@PANOptions', 'Options')
-            .assert.attributeEquals('@PANOptions', 'href', page.url() + '/usercfg.php?task=pan&tab=2')
+            .assert.attributeEquals('@PANOptions', 'href', page.url() + 
+                '/usercfg.php?task=pan&tab=2')
 
             .click('@PAN')
             .assert.hidden('@PANInbox')
@@ -58,7 +66,7 @@ module.exports = {
             .assert.hidden('@PANAssociates')
             .assert.hidden('@PANFamilies')
             .assert.hidden('@PANStudents')
-            .assert.hidden('@PANOptions')
+            .assert.hidden('@PANOptions');
 
         client.frame(null);
 

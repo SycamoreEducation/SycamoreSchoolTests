@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeStudentTests',
-        'backOfficeStudentCurrentTabTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeStudentTests', 'backOfficeStudentCurrentTabTest'],
 
     'Back Office Student Current Test': (client) => {
 
@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@backOfficeMgrStudents')
             .click('@backOfficeMgrStudents')
             .assert.visible('@backOfficeMgrStudentsCurrent')
-            .click('@backOfficeMgrStudentsCurrent')
+            .click('@backOfficeMgrStudentsCurrent');
         client.frame(null);
 
         client.frame(2);
@@ -168,9 +168,9 @@ module.exports = {
             .assert.containsText('@testStudentName', 'Current, Stan')
 
             .assert.visible('@testStudentGrade')
-            .assert.containsText('@testStudentGrade', 'Sophomore')
+            .assert.containsText('@testStudentGrade', 'Sophomore');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

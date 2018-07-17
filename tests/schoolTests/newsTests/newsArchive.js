@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolNews')
-            .click('@schoolNews')
+            .click('@schoolNews');
         client.frame(null);
 
         client.frame(2);
@@ -32,11 +32,13 @@ module.exports = {
 
             .assert.visible('@currentTab')
             .assert.containsText('@currentTab', 'Current')
-            .assert.attributeEquals('@currentTab', 'href', page.url() + '/news.php?type=2&classid=0&display=browse&tab=0')
+            .assert.attributeEquals('@currentTab', 'href', page.url() + 
+                '/news.php?type=2&classid=0&display=browse&tab=0')
 
             .assert.visible('@searchTab')
             .assert.containsText('@searchTab', 'Search')
-            .assert.attributeEquals('@searchTab', 'href', page.url() + '/news.php?task=search&classid=0&display=browse&tab=2')
+            .assert.attributeEquals('@searchTab', 'href', page.url() + 
+                '/news.php?task=search&classid=0&display=browse&tab=2')
 
             .assert.visible('@newArticleBtn')
             .assert.attributeEquals('@newArticleBtn', 'value', 'New Article')
@@ -56,7 +58,8 @@ module.exports = {
             .assert.containsText('@resultMsg', 'No news articles found')
 
             .assert.visible('@checkbox')
-            .assert.attributeEquals('@checkbox', 'onclick', 'setChecked(\'.setCheckedBox\',\'\')')
+            .assert.attributeEquals('@checkbox', 'onclick', 
+                'setChecked(\'.setCheckedBox\',\'\')')
 
             .assert.visible('@date')
             .assert.containsText('@date', 'Date')
@@ -72,9 +75,9 @@ module.exports = {
 
             .assert.visible('@deleteBtn')
             .assert.attributeEquals('@deleteBtn', 'value', 'Delete')
-            .assert.attributeEquals('@deleteBtn', 'onclick', 'MakeSure()')
+            .assert.attributeEquals('@deleteBtn', 'onclick', 'MakeSure()');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

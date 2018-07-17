@@ -17,7 +17,7 @@ module.exports = {
             .assert.visible('@attendance')
             .click('@attendance')
             .assert.visible('@attendanceByPeriods')
-            .click('@attendanceByPeriods')
+            .click('@attendanceByPeriods');
         client.frame(null);
 
         client.frame(2);
@@ -106,9 +106,9 @@ module.exports = {
             .assert.containsText('@attendanceUnExcused', 'UnExcused')
 
             .assert.visible('@attendanceNotes')
-            .assert.containsText('@attendanceNotes', 'Notes')
+            .assert.containsText('@attendanceNotes', 'Notes');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

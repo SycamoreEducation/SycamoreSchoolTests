@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['frontDeskTests', 'employeeDirectoryTests', 'employeeDirectoryPhotosTest'],
+    tags: ['frontDeskTests', 'employeeDirectoryTests', 
+        'employeeDirectoryPhotosTest'],
 
     'Employee Directory List Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskEmployeeDirectory')
-            .click('@frontDeskEmployeeDirectory')
+            .click('@frontDeskEmployeeDirectory');
         client.frame(null);
 
         client.frame(2);
@@ -41,9 +42,9 @@ module.exports = {
             .assert.attributeEquals('@johnPhoto', 'onclick', 'DoUser(1)')
 
             .assert.visible('@johnCaption')
-            .assert.containsText('@johnCaption', 'John Superuser')
+            .assert.containsText('@johnCaption', 'John Superuser');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

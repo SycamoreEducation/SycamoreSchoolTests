@@ -15,7 +15,7 @@ module.exports = {
             .assert.visible('@administration')
             .click('@administration')
             .assert.visible('@administrationGradeLevels')
-            .click('@administrationGradeLevels')
+            .click('@administrationGradeLevels');
         client.frame(null);
 
         client.frame(2);
@@ -55,9 +55,9 @@ module.exports = {
             .assert.containsText('@labelHeader', 'Label')
 
             .assert.visible('@externalHeader')
-            .assert.containsText('@externalHeader', 'External')
+            .assert.containsText('@externalHeader', 'External');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

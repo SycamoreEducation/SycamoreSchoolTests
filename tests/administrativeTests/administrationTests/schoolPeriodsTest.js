@@ -15,7 +15,7 @@ module.exports = {
             .assert.visible('@administration')
             .click('@administration')
             .assert.visible('@administrationSchoolPeriods')
-            .click('@administrationSchoolPeriods')
+            .click('@administrationSchoolPeriods');
         client.frame(null);
 
         client.frame(2);
@@ -47,9 +47,9 @@ module.exports = {
             .assert.containsText('@stopTimeHeader', 'Stop Time')
 
             .assert.visible('@valueHeader')
-            .assert.containsText('@valueHeader', 'Value')
+            .assert.containsText('@valueHeader', 'Value');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

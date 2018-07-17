@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@communicationHomepage')
             .click('@communicationHomepage')
             .assert.visible('@communicationHomepageRequest')
-            .click('@communicationHomepageRequest')
+            .click('@communicationHomepageRequest');
         client.frame(null);
 
         client.frame(2);
@@ -41,9 +41,9 @@ module.exports = {
             .assert.containsText('@headlineHeader', 'Headline')
 
             .assert.visible('@authorHeader')
-            .assert.containsText('@authorHeader', 'Author')
+            .assert.containsText('@authorHeader', 'Author');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

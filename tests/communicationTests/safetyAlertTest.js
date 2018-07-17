@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@communication')
             .click('@communication')
             .assert.visible('@communicationSafetyAlerts')
-            .click('@communicationSafetyAlerts')
+            .click('@communicationSafetyAlerts');
         client.frame(null);
 
         client.frame(2);
@@ -44,9 +44,9 @@ module.exports = {
             .assert.containsText('@timeHeader', 'Time')
 
             .assert.visible('@userHeader')
-            .assert.containsText('@userHeader', 'User')
+            .assert.containsText('@userHeader', 'User');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

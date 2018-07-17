@@ -12,7 +12,8 @@ module.exports = {
         client.page.menu()
             .assert.visible('@myCommunication')
             .assert.containsText('@myCommunication', '\273 My Communication')
-            .assert.attributeEquals('@myCommunication', 'href', page.url() + '/schoolmenu.php#')
+            .assert.attributeEquals('@myCommunication', 'href', page.url() + 
+                '/schoolmenu.php#')
 
             .assert.hidden('@myBatchEmail')
             .assert.hidden('@myBlogs')
@@ -20,15 +21,17 @@ module.exports = {
             .click('@myCommunication')
             .assert.visible('@myBatchEmail')
             .assert.containsText('@myBatchEmail', 'My Batch Email')
-            .assert.attributeEquals('@myBatchEmail', 'href', page.url() + '/batchemail3.php?classid=-1')
+            .assert.attributeEquals('@myBatchEmail', 'href', page.url() + 
+                '/batchemail3.php?classid=-1')
             
             .assert.visible('@myBlogs')
             .assert.containsText('@myBlogs', 'My Blogs')
-            .assert.attributeEquals('@myBlogs', 'href', page.url() + '/blogs.php?task=mine')
+            .assert.attributeEquals('@myBlogs', 'href', page.url() + 
+                '/blogs.php?task=mine')
 
             .click('@myCommunication')
             .assert.hidden('@myBatchEmail')
-            .assert.hidden('@myBlogs')
+            .assert.hidden('@myBlogs');
 
         client.frame(null);
 

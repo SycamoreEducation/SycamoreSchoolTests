@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@communication')
             .click('@communication')
             .assert.visible('@communicationConfiguration')
-            .click('@communicationConfiguration')
+            .click('@communicationConfiguration');
         client.frame(null);
 
         client.frame(2);
@@ -130,9 +130,9 @@ module.exports = {
             .assert.containsText('@defaultEmailLabel', 'Default Email')
 
             .assert.visible('@defaultEmailInput')
-            .assert.attributeEquals('@defaultEmailInput', 'type', 'text')
+            .assert.attributeEquals('@defaultEmailInput', 'type', 'text');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

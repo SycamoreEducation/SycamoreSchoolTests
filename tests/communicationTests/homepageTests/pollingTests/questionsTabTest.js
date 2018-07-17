@@ -1,7 +1,3 @@
-var moment = require('moment');
-
-var year = moment().format('YYYY');
-
 module.exports = {
     tags: ['communicationTests', 'homepageTests', 'pollingTests', 
         'pollingQuestionsTabTest'],
@@ -20,14 +16,15 @@ module.exports = {
             .assert.visible('@communicationHomepage')
             .click('@communicationHomepage')
             .assert.visible('@communicationHomepagePolling')
-            .click('@communicationHomepagePolling')
+            .click('@communicationHomepagePolling');
         client.frame(null);
 
         client.frame(2);
         client.page.communication.homepage.polling()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Communication/Homepage/ Polling')
+            .assert.containsText('@breadcrumb', 
+                'Communication/Homepage/ Polling')
 
             .activeTab('Questions')
 
@@ -42,9 +39,9 @@ module.exports = {
             .assert.containsText('@votesHeader', 'Votes')
 
             .assert.visible('@questionHeader')
-            .assert.containsText('@questionHeader', 'Question')
+            .assert.containsText('@questionHeader', 'Question');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -1,5 +1,5 @@
 module.exports = {
-    tags: ['addressBookTests', 'addressBookByCompaniesTests',
+    tags: ['addressBookTests', 'addressBookByCompaniesTests', 
         'companiesSearchTest'],
 
     'By Companies Search Test': (client) => {
@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByCompany')
-            .click('@addressBookByCompany')
+            .click('@addressBookByCompany');
         client.frame(null);
 
         client.frame(2);
@@ -87,9 +87,9 @@ module.exports = {
             .assert.attributeEquals('@emailInput', 'type', 'text')
 
             .assert.visible('@resultsHeader')
-            .assert.containsText('@resultsHeader', 'Results')
+            .assert.containsText('@resultsHeader', 'Results');
             
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -15,7 +15,7 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskFacility')
-            .click('@frontDeskFacility')
+            .click('@frontDeskFacility');
         client.frame(null);
 
         client.frame(2);
@@ -54,14 +54,14 @@ module.exports = {
                 moment().subtract(1, 'days').format('MMMM DD, YYYY'))
             .assert.attributeEquals('@backDayBtn', 'href', 
                 `${page.url()}/facilityplanner.php?selectdate=${moment()
-                .subtract(1, 'days').format('MM/DD/YYYY')}`)
+                    .subtract(1, 'days').format('MM/DD/YYYY')}`)
 
             .assert.visible('@forwardDayBtn')
             .assert.containsText('@forwardDayBtn', 
                 moment().add(1, 'days').format('MMMM DD, YYYY'))
             .assert.attributeEquals('@forwardDayBtn', 'href', 
                 `${page.url()}/facilityplanner.php?selectdate=${moment()
-                .add(1, 'days').format('MM/DD/YYYY')}`)
+                    .add(1, 'days').format('MM/DD/YYYY')}`)
 
             .assert.visible('@dayHeader')
             .assert.containsText('@dayHeader', 
@@ -113,9 +113,9 @@ module.exports = {
             .assert.containsText('@eightPm', '8PM')
 
             .assert.visible('@ninePm')
-            .assert.containsText('@ninePm', '9PM')
+            .assert.containsText('@ninePm', '9PM');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

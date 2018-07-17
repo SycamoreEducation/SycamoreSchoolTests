@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeReportsTests',
-        'backOfficeReportsCustomTabTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeReportsTests', 'backOfficeReportsCustomTabTest'],
 
     'Back Office Reports Custom Tab Test': (client) => {
 
@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@backOfficeMgr')
             .click('@backOfficeMgr')
             .assert.visible('@backOfficeReports')
-            .click('@backOfficeReports')
+            .click('@backOfficeReports');
         client.frame(null);
 
         client.frame(2);
@@ -41,9 +41,9 @@ module.exports = {
             .assert.containsText('@nameHeader', 'Name')
 
             .assert.visible('@descriptionHeader')
-            .assert.containsText('@descriptionHeader', 'Description')
+            .assert.containsText('@descriptionHeader', 'Description');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

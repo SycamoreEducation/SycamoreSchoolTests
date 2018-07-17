@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterKnowledgebase')
-            .click('@infoCenterKnowledgebase')
+            .click('@infoCenterKnowledgebase');
         client.frame(null);
 
         client.frame(2);
@@ -31,9 +31,9 @@ module.exports = {
             .assert.visible('@newQuestionBtn')
             .assert.attributeEquals('@newQuestionBtn', 'value', 'New Question')
             .assert.attributeEquals('@newQuestionBtn', 'onclick', 
-                'newquestion()')
+                'newquestion()');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

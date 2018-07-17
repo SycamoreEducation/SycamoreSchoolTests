@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['addressBookTests', 'addressBookByLastnameTests', 'addressBookByLastnameSearchTest'],
+    tags: ['addressBookTests', 'addressBookByLastnameTests', 
+        'addressBookByLastnameSearchTest'],
 
     'By Last Name Search Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByLastName')
-            .click('@addressBookByLastName')
+            .click('@addressBookByLastName');
         client.frame(null);
 
         client.frame(2);
@@ -109,9 +110,9 @@ module.exports = {
             .assert.containsText('@emailLabel', 'EMail')
 
             .assert.visible('@emailInput')
-            .assert.attributeEquals('@emailInput', 'type', 'text')
+            .assert.attributeEquals('@emailInput', 'type', 'text');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

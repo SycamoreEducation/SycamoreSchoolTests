@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterOnlineForms')
-            .click('@infoCenterOnlineForms')
+            .click('@infoCenterOnlineForms');
         client.frame(null);
 
         client.frame(2);
@@ -38,9 +38,9 @@ module.exports = {
             .assert.containsText('@submittedNameHeader', 'Name')
 
             .assert.visible('@submittedDescriptionHeader')
-            .assert.containsText('@submittedDescriptionHeader', 'Description')
+            .assert.containsText('@submittedDescriptionHeader', 'Description');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

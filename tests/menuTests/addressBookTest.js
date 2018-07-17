@@ -39,7 +39,8 @@ module.exports = {
                 page.url() + '/contactcatagories.php')
 
             .assert.visible('@addressBookAdditionalFields')
-            .assert.containsText('@addressBookAdditionalFields', 'Additional Fields')
+            .assert.containsText('@addressBookAdditionalFields', 
+                'Additional Fields')
             .assert.attributeEquals('@addressBookAdditionalFields', 'href', 
                 page.url() + '/contactstatistics.php')
 
@@ -53,7 +54,7 @@ module.exports = {
             .assert.hidden('@addressBookByCompany')
             .assert.hidden('@addressBookCategories')
             .assert.hidden('@addressBookAdditionalFields')
-            .assert.hidden('@addressBookReports')
+            .assert.hidden('@addressBookReports');
 
         client.frame(null);
 

@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByCompany')
-            .click('@addressBookByCompany')
+            .click('@addressBookByCompany');
         client.frame(null);
 
         client.frame(2);
@@ -61,9 +61,9 @@ module.exports = {
                 'GetCatagory()')
 
             .assert.visible('@companyNameHeader')
-            .assert.containsText('@companyNameHeader', 'Company Name')
+            .assert.containsText('@companyNameHeader', 'Company Name');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

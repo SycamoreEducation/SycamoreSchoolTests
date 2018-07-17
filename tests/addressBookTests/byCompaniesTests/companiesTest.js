@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByCompany')
-            .click('@addressBookByCompany')
+            .click('@addressBookByCompany');
         client.frame(null);
 
         client.frame(2);
@@ -66,127 +66,127 @@ module.exports = {
             .assert.attributeEquals('@b', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=B')
 
-                .assert.visible('@c')
+            .assert.visible('@c')
             .assert.containsText('@c', 'C')
             .assert.attributeEquals('@c', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=C')
 
-                .assert.visible('@d')
+            .assert.visible('@d')
             .assert.containsText('@d', 'D')
             .assert.attributeEquals('@d', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=D')
 
-                .assert.visible('@e')
+            .assert.visible('@e')
             .assert.containsText('@e', 'E')
             .assert.attributeEquals('@e', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=E')
 
-                .assert.visible('@f')
+            .assert.visible('@f')
             .assert.containsText('@f', 'F')
             .assert.attributeEquals('@f', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=F')
 
-                .assert.visible('@g')
+            .assert.visible('@g')
             .assert.containsText('@g', 'G')
             .assert.attributeEquals('@g', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=G')
 
-                .assert.visible('@h')
+            .assert.visible('@h')
             .assert.containsText('@h', 'H')
             .assert.attributeEquals('@h', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=H')
 
-                .assert.visible('@i')
+            .assert.visible('@i')
             .assert.containsText('@i', 'I')
             .assert.attributeEquals('@i', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=I')
 
-                .assert.visible('@j')
+            .assert.visible('@j')
             .assert.containsText('@j', 'J')
             .assert.attributeEquals('@j', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=J')
 
-                .assert.visible('@k')
+            .assert.visible('@k')
             .assert.containsText('@k', 'K')
             .assert.attributeEquals('@k', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=K')
 
-                .assert.visible('@l')
+            .assert.visible('@l')
             .assert.containsText('@l', 'L')
             .assert.attributeEquals('@l', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=L')
 
-                .assert.visible('@m')
+            .assert.visible('@m')
             .assert.containsText('@m', 'M')
             .assert.attributeEquals('@m', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=M')
 
-                .assert.visible('@n')
+            .assert.visible('@n')
             .assert.containsText('@n', 'N')
             .assert.attributeEquals('@n', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=N')
 
-                .assert.visible('@o')
+            .assert.visible('@o')
             .assert.containsText('@o', 'O')
             .assert.attributeEquals('@o', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=O')
 
-                .assert.visible('@p')
+            .assert.visible('@p')
             .assert.containsText('@p', 'P')
             .assert.attributeEquals('@p', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=P')
 
-                .assert.visible('@q')
+            .assert.visible('@q')
             .assert.containsText('@q', 'Q')
             .assert.attributeEquals('@q', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=Q')
 
-                .assert.visible('@r')
+            .assert.visible('@r')
             .assert.containsText('@r', 'R')
             .assert.attributeEquals('@r', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=R')
 
-                .assert.visible('@s')
+            .assert.visible('@s')
             .assert.containsText('@s', 'S')
             .assert.attributeEquals('@s', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=S')
 
-                .assert.visible('@t')
+            .assert.visible('@t')
             .assert.containsText('@t', 'T')
             .assert.attributeEquals('@t', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=T')
 
-                .assert.visible('@u')
+            .assert.visible('@u')
             .assert.containsText('@u', 'U')
             .assert.attributeEquals('@u', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=U')
 
-                .assert.visible('@v')
+            .assert.visible('@v')
             .assert.containsText('@v', 'V')
             .assert.attributeEquals('@v', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=V')
 
-                .assert.visible('@w')
+            .assert.visible('@w')
             .assert.containsText('@w', 'W')
             .assert.attributeEquals('@w', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=W')
 
-                .assert.visible('@x')
+            .assert.visible('@x')
             .assert.containsText('@x', 'X')
             .assert.attributeEquals('@x', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=X')
 
-                .assert.visible('@y')
+            .assert.visible('@y')
             .assert.containsText('@y', 'Y')
             .assert.attributeEquals('@y', 'href', page.url() + 
                 '/contactcompanies.php?tab=0&task=bycompany&select_letter=Y')
 
-                .assert.visible('@z')
+            .assert.visible('@z')
             .assert.containsText('@z', 'Z')
             .assert.attributeEquals('@z', 'href', page.url() + 
-                '/contactcompanies.php?tab=0&task=bycompany&select_letter=Z')
+                '/contactcompanies.php?tab=0&task=bycompany&select_letter=Z');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
