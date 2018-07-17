@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['infoCenterTests', 'infoCenterLibraryTests', 'libraryLocalSearchTest'],
+    tags: ['infoCenterTests', 'infoCenterLibraryTests', 
+        'libraryLocalSearchTest'],
 
     'Info Center Library Local Search Test': (client) => {
 
@@ -13,14 +14,15 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterLibrary')
-            .click('@infoCenterLibrary')
+            .click('@infoCenterLibrary');
         client.frame(null);
 
         client.frame(2);
         client.page.infoCenter.library()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Specialties/Library/ Library Search')
+            .assert.containsText('@breadcrumb', 
+                'Specialties/Library/ Library Search')
 
             .activeTab('Local Search')
 
@@ -39,17 +41,20 @@ module.exports = {
             .assert.visible('@inputField')
             
             .assert.visible('@searchBooksBtn')
-            .assert.attributeEquals('@searchBooksBtn', 'value', ' Search Books ')
+            .assert.attributeEquals('@searchBooksBtn', 'value', 
+                ' Search Books ')
             .assert.attributeEquals('@searchBooksBtn', 'type', 'submit')
 
             .assert.visible('@librariesSelect')
             .assert.containsText('@librariesSelect', 'All Libraries')
-            .assert.attributeEquals('@librariesSelect', 'onchange', 'newlibrary()')
+            .assert.attributeEquals('@librariesSelect', 'onchange', 
+                'newlibrary()')
 
             .assert.visible('@libraryBreadcrumb')
-            .assert.containsText('@libraryBreadcrumb', 'Library Search/ Recently Added Books')
+            .assert.containsText('@libraryBreadcrumb', 
+                'Library Search/ Recently Added Books');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

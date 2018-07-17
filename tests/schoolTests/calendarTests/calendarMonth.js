@@ -17,7 +17,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolCalendar')
-            .click('@schoolCalendar')
+            .click('@schoolCalendar');
         client.frame(null);
 
         client.frame(2);
@@ -36,7 +36,9 @@ module.exports = {
 
             .assert.visible('@exportiCalBtn')
             .assert.attributeEquals('@exportiCalBtn', 'value', 'Export iCal')
-            .assert.attributeEquals('@exportiCalBtn', 'onclick', `icalexport(${moment().subtract(1, 'days').format('MM, YYYY')}, 4)`)
+            .assert.attributeEquals('@exportiCalBtn', 'onclick', 
+                `icalexport(${moment().subtract(1, 'days')
+                    .format('MM, YYYY')}, 4)`)
 
             .assert.visible('@searchField')
             .assert.attributeEquals('@searchField', 'type', 'text')
@@ -50,20 +52,25 @@ module.exports = {
             .assert.attributeEquals('@printBtn', 'onclick', 'doPrint()')
 
             .assert.visible('@meetingMakerBtn')
-            .assert.attributeEquals('@meetingMakerBtn', 'value', 'Meeting Maker')
-            .assert.attributeEquals('@meetingMakerBtn', 'onclick', 'meetingmaker()')
+            .assert.attributeEquals('@meetingMakerBtn', 'value', 
+                'Meeting Maker')
+            .assert.attributeEquals('@meetingMakerBtn', 'onclick', 
+                'meetingmaker()')
 
             .assert.visible('@todayBtn')
             .assert.attributeEquals('@todayBtn', 'value', 'Today')
-            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment().format('MM, YYYY')})`)
+            .assert.attributeEquals('@todayBtn', 'onclick', `goto(${moment()
+                .format('MM, YYYY')})`)
 
             .assert.visible('@leftArrowBtn')
             .assert.attributeEquals('@leftArrowBtn', 'value', '<')
-            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment().subtract(1, 'months').format('MM, YYYY')})`)
+            .assert.attributeEquals('@leftArrowBtn', 'onclick', `goto(${moment()
+                .subtract(1, 'months').format('MM, YYYY')})`)
 
             .assert.visible('@rightArrowBtn')
             .assert.attributeEquals('@rightArrowBtn', 'value', '>')
-            .assert.attributeEquals('@rightArrowBtn', 'onclick', `goto(${moment().add(1, 'months').format('MM, YYYY')})`)
+            .assert.attributeEquals('@rightArrowBtn', 'onclick', 
+                `goto(${moment().add(1, 'months').format('MM, YYYY')})`)
 
             .assert.visible('@monthSelector')
             .assert.containsText('@monthSelector', moment().format('MMMM'))
@@ -72,7 +79,8 @@ module.exports = {
             .assert.containsText('@yearSelector', year)
 
             .assert.visible('@monthYearHeader')
-            .assert.containsText('@monthYearHeader', moment().format('MMMM YYYY'))
+            .assert.containsText('@monthYearHeader', 
+                moment().format('MMMM YYYY'))
 
             .assert.visible('@categoryLabel')
             .assert.containsText('@categoryLabel', 'Category')
@@ -149,9 +157,9 @@ module.exports = {
             .assert.containsText('@decTab', 'Dec')
             .click('@decTab')
             .assert.containsText('@monthYearHeader', `December ${year}`)
-            .schoolCalendar(12)
+            .schoolCalendar(12);
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -17,7 +17,7 @@ module.exports = {
             .assert.visible('@communicationTextMessaging')
             .click('@communicationTextMessaging')
             .assert.visible('@communicationTextMessagingMessageLogs')
-            .click('@communicationTextMessagingMessageLogs')
+            .click('@communicationTextMessagingMessageLogs');
         client.frame(null);
 
         client.frame(2);
@@ -93,9 +93,9 @@ module.exports = {
             .assert.containsText('@vendorHeader', 'Vendor')
 
             .assert.visible('@statusHeader')
-            .assert.containsText('@statusHeader', 'Status')
+            .assert.containsText('@statusHeader', 'Status');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

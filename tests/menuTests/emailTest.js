@@ -12,7 +12,8 @@ module.exports = {
         client.page.menu()
             .assert.visible('@email')
             .assert.containsText('@email', '\273 Email')
-            .assert.attributeEquals('@email', 'href', page.url() + '/schoolmenu.php#')
+            .assert.attributeEquals('@email', 'href', page.url() + 
+                '/schoolmenu.php#')
 
             .assert.hidden('@emailInbox')
             .assert.hidden('@emailFolders')
@@ -23,30 +24,35 @@ module.exports = {
             .click('@email')
             .assert.visible('@emailInbox')
             .assert.containsText('@emailInbox', 'Inbox')
-            .assert.attributeEquals('@emailInbox', 'href', page.url() + '/rclogin.php?_task=mail')
+            .assert.attributeEquals('@emailInbox', 'href', page.url() + 
+                '/rclogin.php?_task=mail')
             
             .assert.visible('@emailFolders')
             .assert.containsText('@emailFolders', 'Folders')
-            .assert.attributeEquals('@emailFolders', 'href', page.url() + '/rclogin.php?_task=settings&_action=folders')
+            .assert.attributeEquals('@emailFolders', 'href', page.url() + 
+                '/rclogin.php?_task=settings&_action=folders')
             
             .assert.visible('@emailCompose')
             .assert.containsText('@emailCompose', 'Compose')
-            .assert.attributeEquals('@emailCompose', 'href', page.url() + '/rclogin.php?_task=mail&_action=compose')
+            .assert.attributeEquals('@emailCompose', 'href', page.url() + 
+                '/rclogin.php?_task=mail&_action=compose')
             
             .assert.visible('@emailPreferences')
             .assert.containsText('@emailPreferences', 'Preferences')
-            .assert.attributeEquals('@emailPreferences', 'href', page.url() + '/rclogin.php?_task=settings')
+            .assert.attributeEquals('@emailPreferences', 'href', page.url() + 
+                '/rclogin.php?_task=settings')
             
             .assert.visible('@emailAccounts')
             .assert.containsText('@emailAccounts', 'Accounts')
-            .assert.attributeEquals('@emailAccounts', 'href', page.url() + '/rcaccounts.php')
+            .assert.attributeEquals('@emailAccounts', 'href', page.url() + 
+                '/rcaccounts.php')
 
             .click('@email')
             .assert.hidden('@emailInbox')
             .assert.hidden('@emailFolders')
             .assert.hidden('@emailCompose')
             .assert.hidden('@emailPreferences')
-            .assert.hidden('@emailAccounts')
+            .assert.hidden('@emailAccounts');
 
         client.frame(null);
 

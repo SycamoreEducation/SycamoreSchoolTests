@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskFacility')
-            .click('@frontDeskFacility')
+            .click('@frontDeskFacility');
         client.frame(null);
 
         client.frame(2);
@@ -32,9 +32,9 @@ module.exports = {
             .assert.containsText('@activitiesTab', 'Activities')
 
             .assert.visible('@searchTab')
-            .assert.containsText('@searchTab', 'Search')
+            .assert.containsText('@searchTab', 'Search');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

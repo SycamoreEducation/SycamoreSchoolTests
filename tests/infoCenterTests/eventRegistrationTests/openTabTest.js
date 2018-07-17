@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterEventRegistration')
-            .click('@infoCenterEventRegistration')
+            .click('@infoCenterEventRegistration');
         client.frame(null);
 
         client.frame(2);
@@ -36,9 +36,9 @@ module.exports = {
             .assert.containsText('@titleHeader', 'Title')
 
             .assert.visible('@locationHeader')
-            .assert.containsText('@locationHeader', 'Location')
+            .assert.containsText('@locationHeader', 'Location');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

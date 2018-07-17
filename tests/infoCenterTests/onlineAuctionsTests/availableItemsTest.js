@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterOnlineAuctions')
-            .click('@infoCenterOnlineAuctions')
+            .click('@infoCenterOnlineAuctions');
         client.frame(null);
 
         client.frame(2);
@@ -32,9 +32,9 @@ module.exports = {
             .assert.attributeEquals('@categorySelect', 'onchange', 'dogroup()')
 
             .assert.visible('@popularHeader')
-            .assert.containsText('@popularHeader', 'Popular')
+            .assert.containsText('@popularHeader', 'Popular');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

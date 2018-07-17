@@ -12,7 +12,8 @@ module.exports = {
         client.page.menu()
             .assert.visible('@breakRoom')
             .assert.containsText('@breakRoom', '\273 Break Room')
-            .assert.attributeEquals('@breakRoom', 'href', page.url() + '/schoolmenu.php#')
+            .assert.attributeEquals('@breakRoom', 'href', page.url() + 
+                '/schoolmenu.php#')
 
             .assert.hidden('@classifiedAds')
 
@@ -20,13 +21,14 @@ module.exports = {
 
             .assert.visible('@classifiedAds')
             .assert.containsText('@classifiedAds', 'Classified Ads')
-            .assert.attributeEquals('@classifiedAds', 'href', page.url() + '/classified.php')
+            .assert.attributeEquals('@classifiedAds', 'href', page.url() + 
+                '/classified.php')
 
             .click('@breakRoom')
 
             .assert.visible('@breakRoom')
 
-            .assert.hidden('@classifiedAds')
+            .assert.hidden('@classifiedAds');
 
         client.frame(null);
 

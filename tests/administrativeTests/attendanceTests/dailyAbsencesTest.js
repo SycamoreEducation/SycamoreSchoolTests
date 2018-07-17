@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@attendance')
             .click('@attendance')
             .assert.visible('@attendanceDailyAbsences')
-            .click('@attendanceDailyAbsences')
+            .click('@attendanceDailyAbsences');
         client.frame(null);
 
         client.frame(2);
@@ -49,15 +49,17 @@ module.exports = {
                 `year=${moment().add(1, 'days').format('YYYY')}`)
 
             .assert.visible('@dateTitle')
-            .assert.containsText('@dateTitle', moment().format('dddd MMMM DD YYYY'))
+            .assert.containsText('@dateTitle', moment()
+                .format('dddd MMMM DD YYYY'))
 
             .assert.visible('@dateSelect')
-            .assert.attributeEquals('@dateSelect', 'value', moment().format('MM/DD/YYYY'))
+            .assert.attributeEquals('@dateSelect', 'value', moment()
+                .format('MM/DD/YYYY'))
 
             .assert.visible('@studentNameHeader')
-            .assert.containsText('@studentNameHeader', 'Student Name')
+            .assert.containsText('@studentNameHeader', 'Student Name');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -209,7 +209,7 @@ module.exports = {
             .assert.hidden('@communicationChecklist')
             .assert.hidden('@communicationNotificationLists')
             .assert.hidden('@communicationConfiguration')
-            .assert.hidden('@communicationReports')
+            .assert.hidden('@communicationReports');
 
         client.frame(null);
 

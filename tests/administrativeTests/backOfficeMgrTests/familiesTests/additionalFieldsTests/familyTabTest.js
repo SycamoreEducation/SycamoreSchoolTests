@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeFamliliesTests',
-        'backOfficeFamiliesAdditionalFieldsTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeFamliliesTests', 'backOfficeFamiliesAdditionalFieldsTest'],
 
     'Back Office Families Additional Fields Student Tab Test': (client) => {
 
@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@backOfficeMgrFamilies')
             .click('@backOfficeMgrFamilies')
             .assert.visible('@backOfficeMgrFamiliesAdditionalFields')
-            .click('@backOfficeMgrFamiliesAdditionalFields')
+            .click('@backOfficeMgrFamiliesAdditionalFields');
         client.frame(null);
 
         client.frame(2);
@@ -58,10 +58,9 @@ module.exports = {
             .assert.containsText('@admissionsHeader', 'Admissions')
 
             .assert.visible('@inquiriesHeader')
-            .assert.containsText('@inquiriesHeader', 'Inquiries')
-            
+            .assert.containsText('@inquiriesHeader', 'Inquiries');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

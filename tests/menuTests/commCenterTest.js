@@ -37,7 +37,7 @@ module.exports = {
             .assert.visible('@commCenter')
 
             .assert.hidden('@commCenterBlogs')
-            .assert.hidden('@commCenterDiscussions')
+            .assert.hidden('@commCenterDiscussions');
 
         client.frame(null);
 

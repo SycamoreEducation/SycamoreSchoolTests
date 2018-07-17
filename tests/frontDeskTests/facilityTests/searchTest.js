@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskFacility')
-            .click('@frontDeskFacility')
+            .click('@frontDeskFacility');
         client.frame(null);
 
         client.frame(2);
@@ -76,9 +76,9 @@ module.exports = {
             .assert.containsText('@ownerLabel', 'Owner')
 
             .assert.visible('@ownerInput')
-            .assert.containsText('@ownerInput', 'Choose User')
+            .assert.containsText('@ownerInput', 'Choose User');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

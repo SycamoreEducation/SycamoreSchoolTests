@@ -61,7 +61,7 @@ module.exports = {
             .assert.hidden('@schoolDocuments')
             .assert.hidden('@schoolPhotoAlbums')
             .assert.hidden('@schoolMultimedia')
-            .assert.hidden('@schoolFavorites')
+            .assert.hidden('@schoolFavorites');
 
         client.frame(null);
 

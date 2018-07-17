@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@communication')
             .click('@communication')
             .assert.visible('@communicationReports')
-            .click('@communicationReports')
+            .click('@communicationReports');
         client.frame(null);
 
         client.frame(2);
@@ -36,9 +36,9 @@ module.exports = {
 
             .assert.visible('@testReportName')
 
-            .assert.visible('@testReportDescription')
+            .assert.visible('@testReportDescription');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

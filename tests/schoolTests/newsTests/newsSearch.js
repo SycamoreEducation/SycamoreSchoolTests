@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@school')
             .click('@school')
             .assert.visible('@schoolNews')
-            .click('@schoolNews')
+            .click('@schoolNews');
         client.frame(null);
 
         client.frame(2);
@@ -28,11 +28,13 @@ module.exports = {
 
             .assert.visible('@searchCurrentTab')
             .assert.containsText('@searchCurrentTab', 'Current')
-            .assert.attributeEquals('@searchCurrentTab', 'href', page.url() + '/news.php?type=2&classid=0&tab=0')
+            .assert.attributeEquals('@searchCurrentTab', 'href', page.url() + 
+                '/news.php?type=2&classid=0&tab=0')
 
             .assert.visible('@searchArchivetab')
             .assert.containsText('@searchArchivetab', 'Archive')
-            .assert.attributeEquals('@searchArchivetab', 'href', page.url() + '/news.php?type=3&classid=0&tab=1')
+            .assert.attributeEquals('@searchArchivetab', 'href', page.url() + 
+                '/news.php?type=3&classid=0&tab=1')
 
             .assert.visible('@searchField')
 
@@ -43,9 +45,9 @@ module.exports = {
             .assert.containsText('@searchDate', 'Date')
 
             .assert.visible('@searchHeadline')
-            .assert.containsText('@searchHeadline', 'Headline')
+            .assert.containsText('@searchHeadline', 'Headline');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

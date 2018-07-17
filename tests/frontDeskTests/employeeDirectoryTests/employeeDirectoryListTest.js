@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['frontDeskTests', 'employeeDirectoryTests', 'employeeDirectoryListTest'],
+    tags: ['frontDeskTests', 'employeeDirectoryTests', 
+        'employeeDirectoryListTest'],
 
     'Employee Directory List Test': (client) => {
 
@@ -13,14 +14,15 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskEmployeeDirectory')
-            .click('@frontDeskEmployeeDirectory')
+            .click('@frontDeskEmployeeDirectory');
         client.frame(null);
 
         client.frame(2);
         client.page.frontDesk.employeeDirectory()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Front Desk/ Employee Directory')
+            .assert.containsText('@breadcrumb', 
+                'Front Desk/ Employee Directory')
 
             .activeTab('List')
 
@@ -40,15 +42,17 @@ module.exports = {
             .assert.containsText('@tomName', 'Employee, Tom')
 
             .assert.visible('@tomNote')
-            .assert.attributeEquals('@tomNote', 'onclick', 'doMsg(2); return false;')
+            .assert.attributeEquals('@tomNote', 'onclick', 
+                'doMsg(2); return false;')
 
             .assert.visible('@johnName')
             .assert.containsText('@johnName', 'Superuser, John')
 
             .assert.visible('@johnNote')
-            .assert.attributeEquals('@johnNote', 'onclick', 'doMsg(1); return false;')
+            .assert.attributeEquals('@johnNote', 'onclick', 
+                'doMsg(1); return false;');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

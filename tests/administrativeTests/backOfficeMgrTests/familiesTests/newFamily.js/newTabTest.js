@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeFamiliesTests',
-        'backOfficeFamiliesNewFamilyTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeFamiliesTests', 'backOfficeFamiliesNewFamilyTest'],
 
     'Back Office Families New Family Test': (client) => {
 
@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@backOfficeMgrFamilies')
             .click('@backOfficeMgrFamilies')
             .assert.visible('@backOfficeMgrFamiliesNewFamily')
-            .click('@backOfficeMgrFamiliesNewFamily')
+            .click('@backOfficeMgrFamiliesNewFamily');
         client.frame(null);
 
         client.frame(2);
@@ -282,9 +282,9 @@ module.exports = {
 
             .assert.visible('@chooseRaceBtn')
             .assert.attributeEquals('@chooseRaceBtn', 'value', ' Choose Race ')
-            .assert.attributeEquals('@chooseRaceBtn', 'onclick', 'dorace(0)')
+            .assert.attributeEquals('@chooseRaceBtn', 'onclick', 'dorace(0)');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -61,7 +61,7 @@ module.exports = {
             .assert.hidden('@frontDeskEmployeeDirectory')
             .assert.hidden('@frontDeskClassroomDirectory')
             .assert.hidden('@frontDeskDepartments')
-            .assert.hidden('@frontDeskFacility')
+            .assert.hidden('@frontDeskFacility');
 
         client.frame(null);
 

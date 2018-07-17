@@ -19,7 +19,8 @@ module.exports = {
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
-            .assert.containsText('@toast', 'U/P Incorrect: ' + schoolID + ' - ' + username);
+            .assert.containsText('@toast', 'U/P Incorrect: ' + schoolID + 
+                ' - ' + username);
 
         client.end();
     }

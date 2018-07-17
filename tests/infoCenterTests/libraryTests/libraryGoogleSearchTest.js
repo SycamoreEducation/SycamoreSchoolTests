@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['infoCenterTests', 'infoCenterLibraryTests', 'libraryGoogleSearchTest'],
+    tags: ['infoCenterTests', 'infoCenterLibraryTests', 
+        'libraryGoogleSearchTest'],
 
     'Info Center Library Google Search Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterLibrary')
-            .click('@infoCenterLibrary')
+            .click('@infoCenterLibrary');
         client.frame(null);
 
         client.frame(2);
@@ -23,7 +24,8 @@ module.exports = {
             .click('@googleSearchTab')
 
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Library Manager/Book/ Google Search')
+            .assert.containsText('@breadcrumb', 
+                'Library Manager/Book/ Google Search')
 
             .activeTab('Google Search')
 
@@ -31,19 +33,24 @@ module.exports = {
             .assert.containsText('@localSearchTab', 'Local Search')
 
             .assert.visible('@googleBooksHeader')
-            .assert.containsText('@googleBooksHeader', 'Powered by Google Books')
+            .assert.containsText('@googleBooksHeader', 
+                'Powered by Google Books')
 
             .assert.visible('@searchHeader')
-            .assert.containsText('@searchHeader', 'Search by Title, Author, Subject or any Identifier, i.e. ISBN')
+            .assert.containsText('@searchHeader', 
+                'Search by Title, Author, Subject or any Identifier, i.e. ISBN')
 
             .assert.visible('@googleInputField')
 
             .assert.visible('@googleSearchBooksBtn')
-            .assert.attributeEquals('@googleSearchBooksBtn', 'value', ' Search Books ')
-            .assert.attributeEquals('@googleSearchBooksBtn', 'onclick', 'dosearch()')
+            .assert.attributeEquals('@googleSearchBooksBtn', 'value', 
+                ' Search Books ')
+            .assert.attributeEquals('@googleSearchBooksBtn', 'onclick', 
+                'dosearch()')
 
             .assert.visible('@searchSubHeading')
-            .assert.containsText('@searchSubHeading', 'Approximately 12 million Books in collection')
+            .assert.containsText('@searchSubHeading', 
+                'Approximately 12 million Books in collection')
 
             .assert.visible('@cover')
             .assert.containsText('@cover', 'Cover')
@@ -58,9 +65,9 @@ module.exports = {
             .assert.containsText('@localNum', 'Local #')
 
             .assert.visible('@identifiers')
-            .assert.containsText('@identifiers', 'Identifiers')
+            .assert.containsText('@identifiers', 'Identifiers');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

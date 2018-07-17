@@ -1,6 +1,6 @@
 module.exports = {
-    tags: ['administrativeTests', 'backOfficeMgrTests', 'backOfficeReportsTests',
-        'backOfficeReportsTemplatesTabTest'],
+    tags: ['administrativeTests', 'backOfficeMgrTests', 
+        'backOfficeReportsTests', 'backOfficeReportsTemplatesTabTest'],
 
     'Back Office Reports Templates Tab Test': (client) => {
 
@@ -16,7 +16,7 @@ module.exports = {
             .assert.visible('@backOfficeMgr')
             .click('@backOfficeMgr')
             .assert.visible('@backOfficeReports')
-            .click('@backOfficeReports')
+            .click('@backOfficeReports');
         client.frame(null);
 
         client.frame(2);
@@ -89,9 +89,9 @@ module.exports = {
 
             .assert.visible('@testStudentCode')
 
-            .assert.visible('@testStudentName')
+            .assert.visible('@testStudentName');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

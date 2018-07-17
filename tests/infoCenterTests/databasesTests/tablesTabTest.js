@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['infoCenterTests', 'infoCenterDatabasesTests', 'databasesTablesTest'],
+    tags: ['infoCenterTests', 'infoCenterDatabasesTests', 
+        'databasesTablesTest'],
 
     'Info Center Databases Tables Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterDatabases')
-            .click('@infoCenterDatabases')
+            .click('@infoCenterDatabases');
         client.frame(null);
 
         client.frame(2);
@@ -28,9 +29,9 @@ module.exports = {
             .assert.containsText('@tableNameHeader', 'Table Name')
 
             .assert.visible('@descriptionHeader')
-            .assert.containsText('@descriptionHeader', 'Description')
+            .assert.containsText('@descriptionHeader', 'Description');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

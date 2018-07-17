@@ -347,7 +347,7 @@ module.exports = {
             .assert.hidden('@backOfficeMgr')
             .assert.hidden('@attendance')
             .assert.hidden('@administration')
-            .assert.hidden('@humanReources')
+            .assert.hidden('@humanReources');
 
         client.frame(null);
 

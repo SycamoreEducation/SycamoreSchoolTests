@@ -15,7 +15,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterCafeteria')
-            .click('@infoCenterCafeteria')
+            .click('@infoCenterCafeteria');
         client.frame(null);
 
         client.frame(2);
@@ -35,16 +35,16 @@ module.exports = {
                 moment().subtract(1, 'months').format('MMM YYYY'))
             .assert.attributeEquals('@backMonthBtn', 'href', 
                 `${page.url()}/lunch.php?viewyear=${moment()
-                .subtract(1, 'months').format('YYYY')}&viewmonth=${moment()
-                .subtract(1, 'months').format('MM')}`)
+                    .subtract(1, 'months').format('YYYY')}&viewmonth=${moment()
+                    .subtract(1, 'months').format('MM')}`)
             
             .assert.visible('@forwardMonthBtn')
             .assert.containsText('@forwardMonthBtn', 
-            moment().add(1, 'months').format('MMM YYYY'))
+                moment().add(1, 'months').format('MMM YYYY'))
             .assert.attributeEquals('@forwardMonthBtn', 'href', 
                 `${page.url()}/lunch.php?viewyear=${moment().add(1, 'months')
-                .format('YYYY')}&viewmonth=${moment().add(1, 'months')
-                .format('MM')}`)
+                    .format('YYYY')}&viewmonth=${moment().add(1, 'months')
+                    .format('MM')}`)
 
             .assert.visible('@monthHeader')
             .assert.containsText('@monthHeader', moment().format('MMMM YYYY'))
@@ -68,9 +68,9 @@ module.exports = {
             .assert.containsText('@fri', 'Fri')
 
             .assert.visible('@sat')
-            .assert.containsText('@sat', 'Sat')
+            .assert.containsText('@sat', 'Sat');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

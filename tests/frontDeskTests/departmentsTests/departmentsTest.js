@@ -13,18 +13,19 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskDepartments')
-            .click('@frontDeskDepartments')
+            .click('@frontDeskDepartments');
         client.frame(null);
 
         client.frame(2);
         client.page.frontDesk.departments()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Administrative/Human Resources/ Departments')
+            .assert.containsText('@breadcrumb', 
+                'Administrative/Human Resources/ Departments')
 
-            .activeTab('Browse')
+            .activeTab('Browse');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

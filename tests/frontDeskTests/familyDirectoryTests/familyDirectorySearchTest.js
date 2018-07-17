@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['frontDeskTests', 'familyDirectoryTests', 'familyDirectorySearchTest'],
+    tags: ['frontDeskTests', 'familyDirectoryTests', 
+        'familyDirectorySearchTest'],
 
     'Family Directory Search Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@frontDesk')
             .click('@frontDesk')
             .assert.visible('@frontDeskFamilyDirectory')
-            .click('@frontDeskFamilyDirectory')
+            .click('@frontDeskFamilyDirectory');
         client.frame(null);
 
         client.frame(2);
@@ -30,9 +31,9 @@ module.exports = {
 
             .assert.visible('@searchAddress')
 
-            .assert.visible('@searchInfo')
+            .assert.visible('@searchInfo');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

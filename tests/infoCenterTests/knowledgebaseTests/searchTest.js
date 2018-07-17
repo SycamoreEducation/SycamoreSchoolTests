@@ -14,7 +14,7 @@ module.exports = {
             .assert.visible('@infoCenter')
             .click('@infoCenter')
             .assert.visible('@infoCenterKnowledgebase')
-            .click('@infoCenterKnowledgebase')
+            .click('@infoCenterKnowledgebase');
         client.frame(null);
 
         client.frame(2);
@@ -39,9 +39,9 @@ module.exports = {
             .assert.attributeEquals('@searchBtn', 'type', 'submit')
 
             .assert.visible('@questionHeader')
-            .assert.containsText('@questionHeader', 'Question')
+            .assert.containsText('@questionHeader', 'Question');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -1,8 +1,8 @@
 var moment = require('moment');
 
 module.exports = {
-    tags: ['administrativeTests', 'attendanceTests', 'attendanceCheckInOutTests', 
-        'attendanceCheckInOutStudentsTabTest'],
+    tags: ['administrativeTests', 'attendanceTests', 
+        'attendanceCheckInOutTests', 'attendanceCheckInOutStudentsTabTest'],
 
     'Attendance Check In/Out Student Test': (client) => {
 
@@ -18,7 +18,7 @@ module.exports = {
             .assert.visible('@attendance')
             .click('@attendance')
             .assert.visible('@attendanceCheckInOut')
-            .click('@attendanceCheckInOut')
+            .click('@attendanceCheckInOut');
         client.frame(null);
 
         client.frame(2);
@@ -80,9 +80,9 @@ module.exports = {
             .assert.containsText('@checkOutHeader', 'Check Out')
 
             .assert.visible('@checkInHeader')
-            .assert.containsText('@checkInHeader', 'Check In')
+            .assert.containsText('@checkInHeader', 'Check In');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

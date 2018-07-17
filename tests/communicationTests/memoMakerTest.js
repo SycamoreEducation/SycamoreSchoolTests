@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@communication')
             .click('@communication')
             .assert.visible('@communicationMemoMaker')
-            .click('@communicationMemoMaker')
+            .click('@communicationMemoMaker');
         client.frame(null);
 
         client.frame(2);
@@ -146,9 +146,9 @@ module.exports = {
             .assert.containsText('@newsClassHeader', 'Class')
 
             .assert.visible('@newsSubjectHeader')
-            .assert.containsText('@newsSubjectHeader', 'Subject')
+            .assert.containsText('@newsSubjectHeader', 'Subject');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

@@ -1,5 +1,6 @@
 module.exports = {
-    tags: ['addressBookTests', 'addressBookByLastnameTests', 'addressBookByLastnameCategoriesTest'],
+    tags: ['addressBookTests', 'addressBookByLastnameTests', 
+        'addressBookByLastnameCategoriesTest'],
 
     'By Last Name Categories Test': (client) => {
 
@@ -13,7 +14,7 @@ module.exports = {
             .assert.visible('@addressBook')
             .click('@addressBook')
             .assert.visible('@addressBookByLastName')
-            .click('@addressBookByLastName')
+            .click('@addressBookByLastName');
         client.frame(null);
 
         client.frame(2);
@@ -52,7 +53,8 @@ module.exports = {
 
             .assert.visible('@categorySelect')
             .assert.containsText('@categorySelect', 'Select Category')
-            .assert.attributeEquals('@categorySelect', 'onchange', 'GetCatagory()')
+            .assert.attributeEquals('@categorySelect', 'onchange', 
+                'GetCatagory()')
 
             .assert.visible('@nameTitle')
             .assert.containsText('@nameTitle', 'Name')
@@ -64,9 +66,9 @@ module.exports = {
             .assert.containsText('@descriptionTitle', 'Description')
 
             .assert.visible('@phoneTitle')
-            .assert.containsText('@phoneTitle', 'Phone')
+            .assert.containsText('@phoneTitle', 'Phone');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }

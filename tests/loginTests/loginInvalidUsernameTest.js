@@ -20,7 +20,8 @@ module.exports = {
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
-            .assert.containsText('@toast', 'Non Active User: ' + schoolID + ' - ' + username);
+            .assert.containsText('@toast', 'Non Active User: ' + schoolID + 
+                ' - ' + username);
 
         client.end();
     }

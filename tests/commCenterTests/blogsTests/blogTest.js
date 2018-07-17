@@ -13,7 +13,7 @@ module.exports = {
             .assert.visible('@commCenter')
             .click('@commCenter')
             .assert.visible('@commCenterBlogs')
-            .click('@commCenterBlogs')
+            .click('@commCenterBlogs');
         client.frame(null);
 
         client.frame(2);
@@ -28,9 +28,9 @@ module.exports = {
             .assert.containsText('@updatedTitle', 'Updated')
 
             .assert.visible('@authorTitle')
-            .assert.containsText('@authorTitle', 'Author')
+            .assert.containsText('@authorTitle', 'Author');
 
-        client.frame(null)
+        client.frame(null);
 
         client.end();
     }
