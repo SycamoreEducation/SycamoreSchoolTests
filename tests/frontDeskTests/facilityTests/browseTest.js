@@ -17,7 +17,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(client.globals.pauseTime);
+        client.pause(client.globals.FRAME_PAUSE);
         client.page.frontDesk.facility()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
