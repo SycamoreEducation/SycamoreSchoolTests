@@ -3,6 +3,7 @@
   "output_folder": "reports",
   "page_objects_path": "objects",
   "custom_commands_path": "functions",
+  "globals_path": "globalVariables.js",
 
   "test_settings": {
     "default": {
