@@ -4,6 +4,10 @@
   "page_objects_path": "objects",
   "custom_commands_path": "functions",
   "globals_path": "globalVariables.js",
+  "test_workers": {
+    "enabled": true,
+    "workers": "auto"
+  },
 
   "test_settings": {
     "default": {
