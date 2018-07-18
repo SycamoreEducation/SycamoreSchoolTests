@@ -5,11 +5,11 @@
   "custom_commands_path": "functions",
   "globals_path": "globalVariables.js",
   "test_workers": {
-    "enabled": true,
+    "enabled": false,
     "workers": "auto"
   },
-  "live_output": false,
-  "detailed_output": false,
+  "live_output": true,
+  "detailed_output": true,
 
   "test_settings": {
     "default": {

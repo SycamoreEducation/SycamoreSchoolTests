@@ -20,7 +20,7 @@ module.exports = {
 
             .click('@commCenter')
 
-            .assert.visible('@commCenter')
+            .assert.hidden('@commCenter')
 
             .assert.visible('@commCenterBlogs')
             .assert.containsText('@commCenterBlogs', 'Blogs')
