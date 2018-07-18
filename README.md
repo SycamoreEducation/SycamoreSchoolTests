@@ -28,6 +28,9 @@ Create a `.env` file in the root of the directory.
 
 Available variables:
 ```
+USERNAME
+PASSWORD
+SCHOOL_ID
 FRAME_PAUSE
 ```
 
