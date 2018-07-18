@@ -5,16 +5,13 @@ module.exports = {
 
         var page = client.page.loginExistingSchoolID();
 
-        var username = 'superuser';
-        var password = 'guest';
-
         page.navigate()
             .assert.visible('@usernameField')
             .assert.visible('@passwordField')
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .schoolLogin(username, password);
+            .schoolLogin(client.globals.USERNAME, client.globals.PASSWORD);
 
         client.end();
     }

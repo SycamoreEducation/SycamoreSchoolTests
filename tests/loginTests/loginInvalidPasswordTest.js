@@ -5,8 +5,6 @@ module.exports = {
 
         var page = client.page.login();
 
-        var schoolID = '1';
-        var username = 'superuser';
         var password = 'gues';
 
         page.navigate()
@@ -16,12 +14,13 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .schoolLogin(username, password, schoolID)
+            .schoolLogin(client.globals.USERNAME, password, 
+                client.globals.SCHOOL_ID)
 
             .waitForElementVisible('@toast', 45000, false)
             .assert.visible('@toast')
-            .assert.containsText('@toast', 'U/P Incorrect: ' + schoolID + 
-                ' - ' + username);
+            .assert.containsText('@toast', 'U/P Incorrect: ' + 
+                client.globals.SCHOOL_ID + ' - ' + client.globals.USERNAME);
 
         client.end();
     }

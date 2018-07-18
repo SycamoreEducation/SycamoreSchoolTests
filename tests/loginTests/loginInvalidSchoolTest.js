@@ -6,8 +6,6 @@ module.exports = {
         var page = client.page.login();
 
         var schoolID = '0';
-        var username = 'superuser';
-        var password = 'guest';
 
         page.navigate()
             .assert.visible('@schoolField')
@@ -16,7 +14,8 @@ module.exports = {
             .assert.visible('@loginButton')
             .assert.elementNotPresent('@toast')
 
-            .schoolLogin(username, password, schoolID)
+            .schoolLogin(client.globals.USERNAME, client.globals.PASSWORD, 
+                schoolID)
 
             // TODO: WHY DOESN'T A TOAST APPEAR FOR INVALID SCHOOL?
             .assert.elementNotPresent('@toast');
