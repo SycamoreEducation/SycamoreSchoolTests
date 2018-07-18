@@ -49,8 +49,8 @@ module.exports = {
             .assert.visible('@descriptionHeader')
             .assert.containsText('@descriptionHeader', 'Description')
 
-            .assert.visible('@dbidHeader')
-            .assert.containsText('@dbidHeader', 'DBID');
+            .assert.visible('@DBIDHeader')
+            .assert.containsText('@DBIDHeader', 'DBID');
 
         client.frame(null);
 
