@@ -43,5 +43,5 @@ nightwatch --tag menuTests
 ```
 Running tests with custom report output:
 ```
-nightwatch --env reporting
+nightwatch --env reporting --reporter ./htmlReporter.js
 ```

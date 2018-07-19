@@ -1,9 +1,15 @@
 var HtmlReporter = require('nightwatch-html-reporter');
 
-module.exports = new HtmlReporter({
+var reporter = new HtmlReporter({
     openBrowser: true,
     reportsDirectory: __dirname + '/reports',
     themeName: 'default',
     reportFilename: 'nightwatch.html',
     uniqueFilename: true
 });
+
+module.exports = {
+    write: function(results, options, done) {
+        reporter.fn(results, done);
+    }
+};
