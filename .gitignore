@@ -1,5 +1,6 @@
 *.swo
 *.swp
 /reports
+/screenshots
 node_modules
 .env

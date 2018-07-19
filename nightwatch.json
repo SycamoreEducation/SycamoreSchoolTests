@@ -4,12 +4,6 @@
   "page_objects_path": "objects",
   "custom_commands_path": "functions",
   "globals_path": "globalVariables.js",
-  "test_workers": {
-    "enabled": false,
-    "workers": "auto"
-  },
-  "live_output": true,
-  "detailed_output": true,
 
   "test_settings": {
     "default": {
@@ -20,7 +14,26 @@
       "desiredCapabilities": {
         "browserName": "firefox",
         "marionette": true
-      }
+      },
+      "test_workers": true,
+      "live_output": false,
+      "detailed_output": true
+    },
+    "reporting": {
+      "launch_url": "http://web",
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "marionette": true
+      },
+      "test_workers": false,
+      "live_output": false,
+      "detailed_output": false
     }
   }
 }

@@ -1,13 +1,21 @@
 require('dotenv').load();
-//Nightwatch HTML Reporter [https://www.npmjs.com/package/nightwatch-html-reporter]
+
 var HtmlReporter = require('nightwatch-html-reporter');
 var reporter = new HtmlReporter({
-    openBrowser: false,
+    openBrowser: true,
     reportsDirectory: __dirname + '/reports',
-    themeName: 'cover'
+    themeName: 'default-gray',
+    hideSuccess: true,
+    reportFilename: 'nightwatch.html',
+    uniqueFilename: true,
+    relativeScreenshots: true
 });
 
 module.exports = {
-    reporter: reporter.fn,
-    FRAME_PAUSE: process.env.FRAME_PAUSE || 500
+    // reporter: reporter.fn,
+    FRAME_PAUSE: process.env.FRAME_PAUSE || 500,
+
+    reporting : {
+        reporter: reporter.fn
+    }
 };
