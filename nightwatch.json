@@ -4,7 +4,6 @@
   "page_objects_path": "objects",
   "custom_commands_path": "functions",
   "globals_path": "globalVariables.js",
-  "live_output": false,
 
   "test_settings": {
     "default": {
@@ -17,20 +16,10 @@
         "marionette": true
       },
       "test_workers": true,
-      "detailed_output": true
+      "detailed_output": true,
+      "live_output": false
     },
     "reporting": {
-      "launch_url": "http://web",
-      "screenshots": {
-        "enabled": false,
-        "on_failure": true,
-        "on_error": true,
-        "path": "screenshots"
-      },
-      "desiredCapabilities": {
-        "browserName": "firefox",
-        "marionette": true
-      },
       "test_workers": false,
       "detailed_output": false
     }
