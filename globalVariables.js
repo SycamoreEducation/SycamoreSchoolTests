@@ -12,7 +12,6 @@ var reporter = new HtmlReporter({
 });
 
 module.exports = {
-    // reporter: reporter.fn,
     FRAME_PAUSE: process.env.FRAME_PAUSE || 500,
 
     reporting : {
