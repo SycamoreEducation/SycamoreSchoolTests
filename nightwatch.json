@@ -4,6 +4,7 @@
   "page_objects_path": "objects",
   "custom_commands_path": "functions",
   "globals_path": "globalVariables.js",
+  "live_output": false,
 
   "test_settings": {
     "default": {
@@ -16,7 +17,6 @@
         "marionette": true
       },
       "test_workers": true,
-      "live_output": false,
       "detailed_output": true
     },
     "reporting": {
@@ -32,7 +32,6 @@
         "marionette": true
       },
       "test_workers": false,
-      "live_output": false,
       "detailed_output": false
     }
   }
