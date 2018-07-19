@@ -18,7 +18,7 @@ module.exports = {
             .assert.hidden('@gradeMgr')
             .assert.hidden('@gradeMgrReportCards')
             .assert.hidden('@gradeMgrGradingScales')
-            .assert.visible('@gradeMgrAttributesGrades')
+            .assert.hidden('@gradeMgrAttributesGrades')
             .assert.hidden('@gradeMgrGradeComments')
             .assert.hidden('@gradeMgrAdditionalFields')
             .assert.hidden('@gradeMgrGpaScales')
