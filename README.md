@@ -37,7 +37,11 @@ From within this directory, calling `nightwatch` will run all tests. You can als
 nightwatch tests/login.js
 ```
 Or you can run groups of tests by tagname, e.g:
+This will run all tests tagged with menuTests.
 ```
 nightwatch --tag menuTests
 ```
-This will run all tests tagged with menuTests.
+Running tests with custom report output:
+```
+nightwatch --env reporting --reporter ./htmlReporter.js
+```
