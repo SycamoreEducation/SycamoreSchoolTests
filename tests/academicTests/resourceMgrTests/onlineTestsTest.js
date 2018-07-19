@@ -37,7 +37,8 @@ module.exports = {
             .assert.attributeEquals('@teacherSelect', 'onchange', 'reDo()')
 
             .assert.visible('@checkboxHeader')
-            .assert.attributeEquals('@checkboxHeader', 'onclick', 'SetChecked(); return false;')
+            .assert.attributeEquals('@checkboxHeader', 'onclick', 
+                'SetChecked(); return false;')
 
             .assert.visible('@numericHeader')
             .assert.containsText('@numericHeader', '#')
