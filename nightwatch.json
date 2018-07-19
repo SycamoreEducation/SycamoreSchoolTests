@@ -22,7 +22,7 @@
     "reporting": {
       "launch_url": "http://web",
       "screenshots": {
-        "enabled": true,
+        "enabled": false,
         "on_failure": true,
         "on_error": true,
         "path": "screenshots"
