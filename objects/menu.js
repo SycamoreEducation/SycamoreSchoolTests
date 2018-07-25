@@ -472,8 +472,8 @@ module.exports = {
         releaseNotes: '#menu > li:nth-child(15) > ul > li:nth-child(6) > a',
         //System Support Menu
         systemSupport: '#menu > li:nth-child(17) > a',
-        openTickets: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
-        closedTickets: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
+        supportTickets: '#menu > li:nth-child(17) > ul > li:nth-child(1) > a',
+        legacyTickets: '#menu > li:nth-child(17) > ul > li:nth-child(2) > a',
         //Site Admin Menu
         siteAdmin: '#menu > li:nth-child(18) > a',
         siteAdminInformation: '#menu > li:nth-child(18) > ul > li:nth-child(1) > a',
