@@ -15,26 +15,26 @@ module.exports = {
             .assert.attributeEquals('@systemSupport', 'href', page.url() + 
                 '/schoolmenu.php#')
 
-            .assert.hidden('@openTickets')
-            .assert.hidden('@closedTickets')
+            .assert.hidden('@supportTickets')
+            .assert.hidden('@legacyTickets')
 
             .click('@systemSupport')
-            .assert.visible('@openTickets')
-            .assert.containsText('@openTickets', 'Open Tickets')
-            .assert.attributeEquals('@openTickets', 'href', page.url() + 
-                '/support.php?type=open')
+            .assert.visible('@supportTickets')
+            .assert.containsText('@supportTickets', 'Support Tickets')
+            .assert.attributeEquals('@supportTickets', 'onclick', 
+                'doVerify(event)')
             
-            .assert.visible('@closedTickets')
-            .assert.containsText('@closedTickets', 'Closed Tickets')
-            .assert.attributeEquals('@closedTickets', 'href', page.url() +
-                '/support.php?type=closed')
+            .assert.visible('@legacyTickets')
+            .assert.containsText('@legacyTickets', 'Legacy Tickets')
+            .assert.attributeEquals('@legacyTickets', 'href', page.url() +
+                '/support.php')
 
             .click('@systemSupport')
 
             .assert.visible('@systemSupport')
 
-            .assert.hidden('@openTickets')
-            .assert.hidden('@closedTickets');
+            .assert.hidden('@supportTickets')
+            .assert.hidden('@legacyTickets');
 
         client.frame(null);
 
