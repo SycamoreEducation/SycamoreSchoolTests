@@ -51,6 +51,6 @@ module.exports = {
         templateAImage: 'tr.se-center:nth-child(2) > td:nth-child(1) > img',
         templateBImage: 'tr.se-center:nth-child(2) > td:nth-child(2) > img',
         templateALabel: 'tr.se-font > td:nth-child(1)',
-        templateBLabel: 'tr.se-font > td:nth-child(2)',
+        templateBLabel: 'tr.se-font > td:nth-child(2)'
     }
 };
