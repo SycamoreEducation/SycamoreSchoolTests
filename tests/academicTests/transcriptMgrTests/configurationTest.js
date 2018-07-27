@@ -1,5 +1,3 @@
-var moment = require('moment');
-
 module.exports = {
     tags: ['academicTests', 'academicTranscriptMgrTests', 
         'academicTranscriptMgrConfigurationTest'],
@@ -72,8 +70,8 @@ module.exports = {
             .assert.visible('@noteInput')
 
             .assert.visible('@generalOptionsHeader')
-            .assert.containsText('@generalOptionsHeader', '* Options below are' +
-                ' not valid with Custom Transcripts')
+            .assert.containsText('@generalOptionsHeader', '* Options below are' 
+                + ' not valid with Custom Transcripts')
 
             .assert.visible('@fontSizeLabel')
             .assert.containsText('@fontSizeLabel', 'Font Size')
@@ -173,7 +171,7 @@ module.exports = {
             .assert.containsText('@templateALabel', 'Template A')
 
             .assert.visible('@templateBLabel')
-            .assert.containsText('@templateBLabel', 'Template B')
+            .assert.containsText('@templateBLabel', 'Template B');
 
         client.frame(null);
 
