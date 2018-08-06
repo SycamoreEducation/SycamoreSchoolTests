@@ -22,6 +22,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
+        client.pause(client.globals.FRAME_PAUSE);
         client.page.administrative.attendance.dailyAbsences()
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
@@ -50,7 +51,7 @@ module.exports = {
 
             .assert.visible('@dateTitle')
             .assert.containsText('@dateTitle', moment()
-                .format('dddd MMMM DD YYYY'))
+                .format('dddd MMMM D YYYY'))
 
             .assert.visible('@dateSelect')
             .assert.attributeEquals('@dateSelect', 'value', moment()
