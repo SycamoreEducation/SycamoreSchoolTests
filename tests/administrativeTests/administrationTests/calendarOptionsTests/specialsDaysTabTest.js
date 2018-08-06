@@ -31,7 +31,8 @@ module.exports = {
 
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Calendar Specials Days')
+            .assert.containsText('@breadcrumb', 
+                'Administrative/Administration/ Calendar Options')
 
             .activeTab('Specials Days')
 
