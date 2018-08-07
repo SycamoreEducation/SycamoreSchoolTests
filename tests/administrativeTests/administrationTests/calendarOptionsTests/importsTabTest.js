@@ -30,7 +30,8 @@ module.exports = {
 
             .waitForElementVisible('@breadcrumb', 5000)
             .assert.visible('@breadcrumb')
-            .assert.containsText('@breadcrumb', 'Calendor Imports')
+            .assert.containsText('@breadcrumb', 
+                'Administrative/Administration/ Calendar Options')
 
             .activeTab('Imports')
 
