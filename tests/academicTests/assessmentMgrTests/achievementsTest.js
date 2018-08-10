@@ -27,7 +27,8 @@ module.exports = {
             .assert.containsText('@breadcrumb', 
                 'Academic/Assessment Mgr/ Achievements')
 
-            .activeTab('2017-2018')
+            .activeTab(client.globals.YEAR_START + '-' + 
+                client.globals.YEAR_END)
 
             .assert.visible('@newAchievementBtn')
             .assert.attributeEquals('@newAchievementBtn', 'value',
