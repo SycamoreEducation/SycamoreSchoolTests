@@ -40,7 +40,8 @@ module.exports = {
             .assert.containsText('@schoolYearLabel', 'School Year')
 
             .assert.visible('@schoolYearSelect')
-            .assert.containsText('@schoolYearSelect', '2017-2018')
+            .assert.containsText('@schoolYearSelect', client.globals.YEAR_START 
+                + '-' + client.globals.YEAR_END)
             .assert.attributeEquals('@schoolYearSelect', 'onchange',
                 'DoRefresh()')
 
