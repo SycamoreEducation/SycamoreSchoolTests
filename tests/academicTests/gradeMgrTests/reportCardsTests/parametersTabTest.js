@@ -1,5 +1,3 @@
-var moment = require('moment');
-
 module.exports = {
     tags: ['academicTests', 'academicGradeMgrTests', 
         'academicGradeMgrReportCardsTests', 'reportCardsParametersTabTest'],
