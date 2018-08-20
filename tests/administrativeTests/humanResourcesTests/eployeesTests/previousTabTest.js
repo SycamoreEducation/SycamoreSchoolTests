@@ -20,7 +20,7 @@ module.exports = {
         client.frame(null);
 
         client.frame(2);
-        client.pause(100);
+        client.pause(client.globals.FRAME_PAUSE);
         client.page.administrative.humanResources.employees()
             .waitForElementVisible('@previousTab', 5000)
             .click('@previousTab')
