@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 module.exports = {
     tags: ['academicTests', 'academicGradeMgrTests', 
         'academicGradeMgrReportCardsTests', 'reportCardsParametersTabTest'],
@@ -133,7 +135,7 @@ module.exports = {
             .assert.attributeEquals('@versionMgtBtn', 'onclick', 'doVersions()')
 
             .assert.visible('@quarterInput')
-            .assert.attributeEquals('@quarterInput', 'value', 'Q4')
+            .assert.attributeEquals('@quarterInput', 'value', client.globals.CURRENT_QUARTER)
 
             .assert.visible('@studentDocumentsCheckbox')
 
