@@ -31,6 +31,7 @@ Available variables:
 FRAME_PAUSE
 YEAR_START
 YEAR_END
+CURRENT_QUARTER
 ```
 
 ## Running Tests
