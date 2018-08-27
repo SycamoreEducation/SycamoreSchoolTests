@@ -2,7 +2,7 @@ var moment = require('moment');
 
 module.exports = {
     tags: ['academicTests', 'academicAssessmentMgrTests', 
-        'academicAssessmentMgrLessonPlansByDayTest'],
+        'lessonPlansByDayTest'],
 
     'Academic Assessment Mgr Lesson Plans By Day Test': (client) => {
 
