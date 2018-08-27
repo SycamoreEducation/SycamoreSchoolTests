@@ -1,6 +1,6 @@
 module.exports = {
     tags: ['academicTests', 'academicAssessmentMgrTests', 
-        'academicAssessmentMgrLessonPlansByClassTest'],
+        'lessonPlansByClassTest'],
 
     'Academic Assessment Mgr Lesson Plans By Class Test': (client) => {
 
