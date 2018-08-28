@@ -43,7 +43,7 @@ module.exports = {
             .assert.visible('@footerLabel')
             .assert.containsText('@footerLabel', 'Footer')
 
-            .assert.visible('@footerInput')
+            .assert.visible('@footerInput');
 
         client.frame(null);
 
